@@ -1,0 +1,79 @@
+/* ===== Base Reset ===== */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+  color: #2d3748;
+}
+
+/* ===== Layout Structure ===== */
+
+.layout-main {
+  min-height: 75vh;
+  padding: 2rem 0;
+}
+
+/* ===== Header ===== */
+
+.layout-header {
+  background: #ffffff;
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Brand Logo */
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+
+.nav-link {
+  font-weight: 500;
+  color: #4a5568;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: #0d6efd !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+/* ===== Footer ===== */
+
+.layout-footer {
+  background: #ffffff;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.03);
+}
+
+.layout-footer .nav-link {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.layout-footer .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* ===== Smooth UI Feel ===== */
+
+* {
+  transition: all 0.15s ease-in-out;
+}
