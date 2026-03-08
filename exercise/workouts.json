@@ -1,0 +1,27 @@
+{
+    "abs" : {
+        "beginner": [],
+        "intermediate" : [],
+        "advanced" : []
+    },
+    "arm" : {
+        "beginner": [],
+        "intermediate" : [],
+        "advanced" : []
+    },
+    "chest" : {
+        "beginner": [],
+        "intermediate" : [],
+        "advanced" : []
+    },
+    "leg" : {
+        "beginner": [],
+        "intermediate" : [],
+        "advanced" : []
+    },
+    "shoulder & back" : {
+        "beginner": [],
+        "intermediate" : [],
+        "advanced" : []
+    }
+}

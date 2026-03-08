@@ -1,0 +1,490 @@
+{
+    "jumping_jacks": {
+        "name": "Jumping Jacks",
+        "muscle": "SHANDBK",
+        "instructions": "Jump feet apart while raising arms overhead, then jump back to starting position.",
+        "focus_area": [
+            "shoulders",
+            "upper back",
+            "cardio"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "landing stiffly",
+            "not raising arms fully"
+        ],
+        "breathing_tips": [
+            "breathe rhythmically",
+            "keep breathing steady"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "arm_raises": {
+        "name": "Arm Raises",
+        "muscle": "SHANDBK",
+        "instructions": "Stand straight and lift both arms forward to shoulder height then lower slowly.",
+        "focus_area": [
+            "shoulders",
+            "front deltoids"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "swinging arms",
+            "arching back"
+        ],
+        "breathing_tips": [
+            "exhale while lifting",
+            "inhale while lowering"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "rhomboid_pulls": {
+        "name": "Rhomboid Pulls",
+        "muscle": "SHANDBK",
+        "instructions": "Stand with arms forward and pull elbows back squeezing shoulder blades together.",
+        "focus_area": [
+            "rhomboids",
+            "upper back"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "shrugging shoulders",
+            "not squeezing back"
+        ],
+        "breathing_tips": [
+            "exhale pulling back"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_arm_raise": {
+        "name": "Side Arm Raise",
+        "muscle": "SHANDBK",
+        "instructions": "Lift arms out to the sides until shoulder height then lower slowly.",
+        "focus_area": [
+            "lateral deltoids"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "raising above shoulders",
+            "using momentum"
+        ],
+        "breathing_tips": [
+            "exhale lifting",
+            "inhale lowering"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "knee_push_ups": {
+        "name": "Knee Push Ups",
+        "muscle": "SHANDBK",
+        "instructions": "Perform push-ups with knees on the floor while keeping body straight.",
+        "focus_area": [
+            "shoulders",
+            "triceps",
+            "chest"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "sagging hips",
+            "flaring elbows"
+        ],
+        "breathing_tips": [
+            "inhale lowering",
+            "exhale pushing up"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_lying_floor_stretch_left": {
+        "name": "Side Lying Floor Stretch (Left)",
+        "muscle": "SHANDBK",
+        "instructions": "Lie on side and gently stretch the upper arm and shoulder.",
+        "focus_area": [
+            "shoulders",
+            "upper back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "forcing stretch"
+        ],
+        "breathing_tips": [
+            "slow deep breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_lying_floor_stretch_right": {
+        "name": "Side Lying Floor Stretch (Right)",
+        "muscle": "SHANDBK",
+        "instructions": "Lie on side and gently stretch the upper arm and shoulder.",
+        "focus_area": [
+            "shoulders",
+            "upper back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "overstretching"
+        ],
+        "breathing_tips": [
+            "relaxed breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "arm_scissors": {
+        "name": "Arm Scissors",
+        "muscle": "SHANDBK",
+        "instructions": "Extend arms forward and cross them back and forth like scissors.",
+        "focus_area": [
+            "shoulders",
+            "upper back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "moving too fast"
+        ],
+        "breathing_tips": [
+            "breathe steadily"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "cat_cow_pose": {
+        "name": "Cat Cow Pose",
+        "muscle": "SHANDBK",
+        "instructions": "On hands and knees alternate arching and rounding your back.",
+        "focus_area": [
+            "spine",
+            "upper back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "rushing movement"
+        ],
+        "breathing_tips": [
+            "inhale cow",
+            "exhale cat"
+        ],
+        "amount": 40,
+        "w_image": "",
+        "m_image": ""
+    },
+    "prone_triceps_push_ups": {
+        "name": "Prone Triceps Push Ups",
+        "muscle": "SHANDBK",
+        "instructions": "From plank position keep elbows close and push up using triceps.",
+        "focus_area": [
+            "triceps",
+            "shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "elbows flaring out"
+        ],
+        "breathing_tips": [
+            "exhale pushing up"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "reclined_rhomboid_squeezes": {
+        "name": "Reclined Rhomboid Squeezes",
+        "muscle": "SHANDBK",
+        "instructions": "Lie down and squeeze shoulder blades together.",
+        "focus_area": [
+            "rhomboids",
+            "upper back"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "shrugging shoulders"
+        ],
+        "breathing_tips": [
+            "exhale squeezing"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "child's pose": {
+        "name": "Child's Pose",
+        "muscle": "SHANDBK",
+        "instructions": "Sit back on heels and stretch arms forward on the floor.",
+        "focus_area": [
+            "back",
+            "shoulders"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "holding breath"
+        ],
+        "breathing_tips": [
+            "slow deep breathing"
+        ],
+        "amount": 40,
+        "w_image": "",
+        "m_image": ""
+    },
+    "triceps_kickbacks": {
+        "name": "Triceps Kickbacks",
+        "muscle": "SHANDBK",
+        "instructions": "Bend forward slightly and extend arms backward.",
+        "focus_area": [
+            "triceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "swinging arms"
+        ],
+        "breathing_tips": [
+            "exhale extending"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "incline_push_ups": {
+        "name": "Incline Push Ups",
+        "muscle": "SHANDBK",
+        "instructions": "Perform push-ups using a raised surface for support.",
+        "focus_area": [
+            "shoulders",
+            "triceps",
+            "chest"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "hips sagging"
+        ],
+        "breathing_tips": [
+            "inhale down",
+            "exhale up"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "floor_triceps_dips": {
+        "name": "Floor Triceps Dips",
+        "muscle": "SHANDBK",
+        "instructions": "Place hands behind and lower body bending elbows.",
+        "focus_area": [
+            "triceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "shoulders rolling forward"
+        ],
+        "breathing_tips": [
+            "exhale pushing up"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "hip_hinge": {
+        "name": "Hip Hinge",
+        "muscle": "SHANDBK",
+        "instructions": "Push hips backward keeping spine neutral.",
+        "focus_area": [
+            "lower back",
+            "posterior chain"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "rounding back"
+        ],
+        "breathing_tips": [
+            "inhale lowering",
+            "exhale rising"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "hover_push_up": {
+        "name": "Hover Push Up",
+        "muscle": "SHANDBK",
+        "instructions": "Lower into push-up and hold slightly above the floor briefly.",
+        "focus_area": [
+            "shoulders",
+            "triceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "dropping hips"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "swimmer_and_superman": {
+        "name": "Swimmer And Superman",
+        "muscle": "SHANDBK",
+        "instructions": "Lie face down and raise arms and legs alternating like swimming.",
+        "focus_area": [
+            "lower back",
+            "shoulders"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "lifting too high"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "hyperextension": {
+        "name": "Back Hyperextension",
+        "muscle": "SHANDBK",
+        "instructions": "Lift chest slightly off the floor while lying face down.",
+        "focus_area": [
+            "lower back"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "jerking motion"
+        ],
+        "breathing_tips": [
+            "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "pike_push_ups": {
+        "name": "Pike Push Ups",
+        "muscle": "SHANDBK",
+        "instructions": "From a pike position bend arms to lower head then push up.",
+        "focus_area": [
+            "shoulders",
+            "triceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "not keeping hips high"
+        ],
+        "breathing_tips": [
+            "inhale down",
+            "exhale up"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "reverse_push_ups": {
+        "name": "Reverse Push Ups",
+        "muscle": "SHANDBK",
+        "instructions": "Face upward with hands and feet on floor then bend elbows lowering body.",
+        "focus_area": [
+            "triceps",
+            "shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "shoulders collapsing"
+        ],
+        "breathing_tips": [
+            "exhale pushing up"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "inchworms": {
+        "name": "Inchworms",
+        "muscle": "SHANDBK",
+        "instructions": "Walk hands forward into plank then back to standing.",
+        "focus_area": [
+            "shoulders",
+            "core",
+            "back"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "bending knees too much"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "supine_push_up": {
+        "name": "Supine Push Up",
+        "muscle": "SHANDBK",
+        "instructions": "Lie under support and pull chest upward like inverted push-up.",
+        "focus_area": [
+            "upper back",
+            "biceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "not squeezing shoulder blades"
+        ],
+        "breathing_tips": [
+            "exhale pulling up"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "floor_y_raises": {
+        "name": "Floor Y Raises",
+        "muscle": "SHANDBK",
+        "instructions": "Lie face down and raise arms overhead forming a Y shape.",
+        "focus_area": [
+            "upper back",
+            "rear deltoids"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "lifting too high"
+        ],
+        "breathing_tips": [
+            "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "reverse_snow_angels": {
+        "name": "Reverse Snow Angels",
+        "muscle": "SHANDBK",
+        "instructions": "Lie face down and move arms from overhead to sides like making snow angels.",
+        "focus_area": [
+            "upper back",
+            "shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "lifting arms too high"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    }
+}

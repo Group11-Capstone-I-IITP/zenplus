@@ -1,0 +1,465 @@
+{
+  "jumping_jacks": {
+    "name": "Jumping Jacks",
+    "muscle": "ABS",
+    "instructions": "Stand upright with feet together and arms at your sides. Jump while spreading your legs and raising your arms overhead. Jump back to the starting position and repeat.",
+    "focus_area": [
+      "Core",
+      "Shoulders",
+      "Legs",
+      "Glutes"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Landing too hard on the feet",
+      "Not raising arms fully overhead",
+      "Moving too fast without control"
+    ],
+    "breathing_tips": [
+      "Inhale when returning to the starting position",
+      "Exhale as you jump and spread your arms and legs"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "abdominal_crunches": {
+    "name": "Abdominal Crunches",
+    "muscle": "ABS",
+    "instructions": "Lie on your back with knees bent and feet flat on the floor. Place your hands behind your head. Lift your shoulders off the floor using your abs, then slowly lower back down.",
+    "focus_area": [
+      "Upper Abs",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Pulling the neck with the hands",
+      "Lifting the lower back off the floor",
+      "Moving too quickly"
+    ],
+    "breathing_tips": [
+      "Exhale while lifting your shoulders",
+      "Inhale while lowering your body"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "russisn_twist": {
+    "name": "Russian Twist",
+    "muscle": "ABS",
+    "instructions": "Sit on the floor with knees bent and lean slightly back. Lift your feet slightly off the ground. Twist your torso from side to side while keeping your core engaged.",
+    "focus_area": [
+      "Obliques",
+      "Core",
+      "Hip Flexors"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Moving only the arms instead of the torso",
+      "Rounding the back too much",
+      "Twisting too quickly"
+    ],
+    "breathing_tips": [
+      "Exhale as you twist to each side",
+      "Inhale as you return to the center"
+    ],
+    "amount": "16 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "mountain_climber": {
+    "name": "Mountain Climber",
+    "muscle": "ABS",
+    "instructions": "Start in a high plank position. Bring one knee toward your chest, then quickly switch legs. Continue alternating legs in a running motion.",
+    "focus_area": [
+      "Core",
+      "Shoulders",
+      "Legs",
+      "Hip Flexors"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Hips lifting too high",
+      "Not keeping the core tight",
+      "Slow or uneven leg movement"
+    ],
+    "breathing_tips": [
+      "Maintain steady breathing",
+      "Exhale lightly as each knee drives forward"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "heel_touch": {
+    "name": "Heel Touch",
+    "muscle": "ABS",
+    "instructions": "Lie on your back with knees bent and feet flat. Keep arms by your sides. Reach your right hand toward your right heel, then alternate to the left side.",
+    "focus_area": [
+      "Obliques",
+      "Lower Abs",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Lifting the back too high",
+      "Moving the neck instead of the torso",
+      "Using momentum instead of control"
+    ],
+    "breathing_tips": [
+      "Exhale as you reach toward the heel",
+      "Inhale when returning to center"
+    ],
+    "amount": "20 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "leg_raises": {
+    "name": "Leg Raises",
+    "muscle": "ABS",
+    "instructions": "Lie flat on your back with legs straight. Place your hands beside you or under your hips. Lift both legs toward the ceiling, then slowly lower them without touching the floor.",
+    "focus_area": [
+      "Lower Abs",
+      "Hip Flexors",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Arching the lower back",
+      "Dropping the legs too fast",
+      "Bending the knees too much"
+    ],
+    "breathing_tips": [
+      "Exhale as you lift your legs",
+      "Inhale while lowering them slowly"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "plank": {
+    "name": "Plank",
+    "muscle": "ABS",
+    "instructions": "Start in a forearm plank position with elbows under shoulders. Keep your body in a straight line from head to heels. Hold the position while tightening your core.",
+    "focus_area": [
+      "Core",
+      "Shoulders",
+      "Lower Back",
+      "Glutes"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Letting hips drop too low",
+      "Raising hips too high",
+      "Holding breath"
+    ],
+    "breathing_tips": [
+      "Take slow deep breaths",
+      "Maintain steady breathing throughout"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "cobra_strech": {
+    "name": "Cobra Stretch",
+    "muscle": "ABS",
+    "instructions": "Lie face down with hands under your shoulders. Push through your palms to lift your chest while keeping hips on the floor. Hold the stretch gently.",
+    "focus_area": [
+      "Lower Back",
+      "Abdominals",
+      "Spine"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Overarching the lower back",
+      "Locking the elbows",
+      "Lifting hips off the floor"
+    ],
+    "breathing_tips": [
+      "Inhale as you lift your chest",
+      "Breathe slowly and deeply while holding"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "spine_lumbar_twist_stretch_left": {
+    "name": "Spine Lumbar Twist Stretch Left",
+    "muscle": "ABS",
+    "instructions": "Lie on your back and bend your knees. Drop both knees toward the left side while keeping shoulders on the floor. Hold the stretch.",
+    "focus_area": [
+      "Lower Back",
+      "Obliques",
+      "Spine"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Lifting shoulders off the floor",
+      "Forcing the stretch too far",
+      "Holding breath"
+    ],
+    "breathing_tips": [
+      "Take slow deep breaths",
+      "Exhale gently while relaxing into the stretch"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "spine_lumbar_twist_strech_right": {
+    "name": "Spine Lumbar Twist Stretch Right",
+    "muscle": "ABS",
+    "instructions": "Lie on your back and bend your knees. Drop both knees toward the right side while keeping shoulders flat on the floor. Hold the stretch.",
+    "focus_area": [
+      "Lower Back",
+      "Obliques",
+      "Spine"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Lifting shoulders off the floor",
+      "Forcing the stretch",
+      "Not relaxing the body"
+    ],
+    "breathing_tips": [
+      "Inhale slowly through the nose",
+      "Exhale while deepening the stretch gently"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "crossover_crunch": {
+    "name": "Crossover Crunch",
+    "muscle": "ABS",
+    "instructions": "Lie on your back with knees bent. Bring your right elbow toward your left knee while lifting your shoulders. Return and alternate sides.",
+    "focus_area": [
+      "Obliques",
+      "Upper Abs",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Pulling the neck with hands",
+      "Moving too fast",
+      "Not twisting the torso enough"
+    ],
+    "breathing_tips": [
+      "Exhale during the twist",
+      "Inhale when returning to the floor"
+    ],
+    "amount": "16 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "side_bridges_left": {
+    "name": "Side Bridges Left",
+    "muscle": "ABS",
+    "instructions": "Lie on your left side with your elbow under your shoulder. Stack your legs and lift your hips off the ground. Hold your body in a straight line.",
+    "focus_area": [
+      "Obliques",
+      "Core",
+      "Shoulders"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Letting hips drop",
+      "Shoulder not aligned with elbow",
+      "Bending the body instead of keeping it straight"
+    ],
+    "breathing_tips": [
+      "Maintain slow steady breathing",
+      "Avoid holding your breath"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "side_bridges_right": {
+    "name": "Side Bridges Right",
+    "muscle": "ABS",
+    "instructions": "Lie on your right side with your elbow under your shoulder. Keep legs stacked and lift your hips to form a straight line.",
+    "focus_area": [
+      "Obliques",
+      "Core",
+      "Shoulders"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Dropping hips during the hold",
+      "Placing elbow too far from shoulder",
+      "Twisting the torso"
+    ],
+    "breathing_tips": [
+      "Breathe slowly and evenly",
+      "Keep breathing relaxed while holding"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "butt_bridge": {
+    "name": "Butt Bridge",
+    "muscle": "ABS",
+    "instructions": "Lie on your back with knees bent and feet flat on the floor. Push through your heels to lift your hips upward. Lower slowly back down.",
+    "focus_area": [
+      "Glutes",
+      "Lower Back",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Arching the lower back too much",
+      "Feet placed too far from hips",
+      "Dropping hips quickly"
+    ],
+    "breathing_tips": [
+      "Exhale while lifting hips",
+      "Inhale when lowering down"
+    ],
+    "amount": "15 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "bicycle_crunches": {
+    "name": "Bicycle Crunches",
+    "muscle": "ABS",
+    "instructions": "Lie on your back with hands behind your head. Bring one knee toward your chest while rotating your opposite elbow toward it. Alternate sides in a pedaling motion.",
+    "focus_area": [
+      "Obliques",
+      "Upper Abs",
+      "Lower Abs"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Pulling on the neck",
+      "Moving legs too quickly",
+      "Not fully rotating the torso"
+    ],
+    "breathing_tips": [
+      "Exhale during each twist",
+      "Inhale when switching sides"
+    ],
+    "amount": "20 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "v_up": {
+    "name": "V Up",
+    "muscle": "ABS",
+    "instructions": "Lie flat with arms extended overhead. Lift your legs and upper body at the same time to form a V shape. Lower slowly back down.",
+    "focus_area": [
+      "Upper Abs",
+      "Lower Abs",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Using momentum instead of core",
+      "Bending the knees too much",
+      "Dropping down too quickly"
+    ],
+    "breathing_tips": [
+      "Exhale when lifting your body",
+      "Inhale while lowering down"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "push_up and rotation": {
+    "name": "Push Up And Rotation",
+    "muscle": "ABS",
+    "instructions": "Start in a push-up position and perform one push-up. As you push back up, rotate your body and raise one arm toward the ceiling. Alternate sides.",
+    "focus_area": [
+      "Core",
+      "Chest",
+      "Shoulders",
+      "Obliques"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Not rotating the torso fully",
+      "Letting hips sag during push-up",
+      "Moving too quickly"
+    ],
+    "breathing_tips": [
+      "Inhale while lowering for the push-up",
+      "Exhale when pushing up and rotating"
+    ],
+    "amount": "10 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "side_plank_right": {
+    "name": "Side Plank Right",
+    "muscle": "ABS",
+    "instructions": "Lie on your right side with your elbow under your shoulder. Lift your hips and hold your body in a straight line.",
+    "focus_area": [
+      "Obliques",
+      "Core",
+      "Shoulders"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Dropping hips during hold",
+      "Elbow placed too far from shoulder",
+      "Body not aligned"
+    ],
+    "breathing_tips": [
+      "Maintain slow breathing",
+      "Avoid holding breath"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "side_plank_left": {
+    "name": "Side Plank Left",
+    "muscle": "ABS",
+    "instructions": "Lie on your left side with elbow under shoulder. Lift hips and keep your body straight while holding the position.",
+    "focus_area": [
+      "Obliques",
+      "Core",
+      "Shoulders"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Letting hips drop",
+      "Twisting the torso",
+      "Not keeping the body straight"
+    ],
+    "breathing_tips": [
+      "Take slow steady breaths",
+      "Keep breathing relaxed"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "sit_ups": {
+    "name": "Sit Ups",
+    "muscle": "ABS",
+    "instructions": "Lie on your back with knees bent and feet on the floor. Lift your torso toward your knees using your abs. Lower slowly back down.",
+    "focus_area": [
+      "Upper Abs",
+      "Lower Abs",
+      "Hip Flexors"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Using momentum to swing up",
+      "Pulling the neck forward",
+      "Feet lifting off the floor"
+    ],
+    "breathing_tips": [
+      "Exhale while sitting up",
+      "Inhale when lowering down"
+    ],
+    "amount": "15 reps",
+    "w_image": "",
+    "m_image": ""
+  }
+}

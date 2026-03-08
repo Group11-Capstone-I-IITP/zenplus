@@ -1,0 +1,721 @@
+{
+    "side_hop": {
+        "name": "Side Hop",
+        "muscle": "LEG",
+        "instructions": "Stand with feet together and hop side to side quickly while keeping knees slightly bent.",
+        "focus_area": [
+            "calves",
+            "quads",
+            "balance"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "locking knees",
+            "landing too hard",
+            "poor balance"
+        ],
+        "breathing_tips": [
+            "breathe steadily",
+            "exhale during effort"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "squats": {
+        "name": "Bodyweight Squats",
+        "muscle": "LEG",
+        "instructions": "Stand with feet shoulder-width apart, lower hips until thighs are parallel, then stand back up.",
+        "focus_area": [
+            "quads",
+            "glutes",
+            "hamstrings"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "knees collapsing inward",
+            "heels lifting",
+            "rounding back"
+        ],
+        "breathing_tips": [
+            "inhale down",
+            "exhale when standing"
+        ],
+        "amount": 15,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_lying_leg_lift_left": {
+        "name": "Side Lying Leg Lift (Left)",
+        "muscle": "LEG",
+        "instructions": "Lie on your right side and lift the left leg upward slowly, then lower it.",
+        "focus_area": [
+            "outer thigh",
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "rotating hips",
+            "lifting too fast"
+        ],
+        "breathing_tips": [
+            "exhale while lifting",
+            "inhale lowering"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_lying_leg_lift_right": {
+        "name": "Side Lying Leg Lift (Right)",
+        "muscle": "LEG",
+        "instructions": "Lie on your left side and lift the right leg upward slowly, then lower it.",
+        "focus_area": [
+            "outer thigh",
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "rotating hips",
+            "lifting too fast"
+        ],
+        "breathing_tips": [
+            "exhale lifting",
+            "inhale lowering"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "backward_lunge": {
+        "name": "Backward Lunge",
+        "muscle": "LEG",
+        "instructions": "Step one foot backward and lower into a lunge, then return to standing.",
+        "focus_area": [
+            "quads",
+            "glutes",
+            "hamstrings"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "leaning forward",
+            "knee going past toes"
+        ],
+        "breathing_tips": [
+            "inhale down",
+            "exhale up"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "donkey_kicks_left": {
+        "name": "Donkey Kicks (Left)",
+        "muscle": "LEG",
+        "instructions": "From hands and knees, kick the left leg upward keeping the knee bent.",
+        "focus_area": [
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "arching lower back",
+            "swinging leg"
+        ],
+        "breathing_tips": [
+            "exhale while kicking"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "donkey_kicks_right": {
+        "name": "Donkey Kicks (Right)",
+        "muscle": "LEG",
+        "instructions": "From hands and knees, kick the right leg upward keeping the knee bent.",
+        "focus_area": [
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "arching lower back",
+            "swinging leg"
+        ],
+        "breathing_tips": [
+            "exhale while kicking"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "left_quad_stretch_with_wall": {
+        "name": "Left Quad Stretch With Wall",
+        "muscle": "LEG",
+        "instructions": "Stand near a wall and hold your left foot behind you stretching the quadriceps.",
+        "focus_area": [
+            "quads"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "leaning forward",
+            "not keeping knees together"
+        ],
+        "breathing_tips": [
+            "slow steady breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "right_quad_strech_with_wall": {
+        "name": "Right Quad Stretch With Wall",
+        "muscle": "LEG",
+        "instructions": "Stand near a wall and hold your right foot behind you stretching the quadriceps.",
+        "focus_area": [
+            "quads"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "leaning forward",
+            "knees separating"
+        ],
+        "breathing_tips": [
+            "relaxed breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "knee_to_chest_stretch_left": {
+        "name": "Knee To Chest Stretch (Left)",
+        "muscle": "LEG",
+        "instructions": "Lie on your back and pull the left knee toward the chest.",
+        "focus_area": [
+            "glutes",
+            "lower back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "pulling too hard"
+        ],
+        "breathing_tips": [
+            "deep breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "knee_to_strech_right": {
+        "name": "Knee To Chest Stretch (Right)",
+        "muscle": "LEG",
+        "instructions": "Lie on your back and pull the right knee toward the chest.",
+        "focus_area": [
+            "glutes",
+            "lower back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "pulling aggressively"
+        ],
+        "breathing_tips": [
+            "breathe slowly"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "wall_calf_raises": {
+        "name": "Wall Calf Raises",
+        "muscle": "LEG",
+        "instructions": "Stand facing a wall and raise your heels off the floor.",
+        "focus_area": [
+            "calves"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "bouncing",
+            "not full range"
+        ],
+        "breathing_tips": [
+            "exhale raising heels"
+        ],
+        "amount": 15,
+        "w_image": "",
+        "m_image": ""
+    },
+    "sumo_squat_calf_raises_with_wall": {
+        "name": "Sumo Squat Calf Raises",
+        "muscle": "LEG",
+        "instructions": "Stand wide in a sumo squat position and raise heels while holding a wall.",
+        "focus_area": [
+            "inner thighs",
+            "calves"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "knees collapsing inward"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "calf_stretch_left": {
+        "name": "Left Calf Stretch",
+        "muscle": "LEG",
+        "instructions": "Place the left foot behind and press the heel down to stretch the calf.",
+        "focus_area": [
+            "calves"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "bending back knee"
+        ],
+        "breathing_tips": [
+            "slow breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "calf_stretch_right": {
+        "name": "Right Calf Stretch",
+        "muscle": "LEG",
+        "instructions": "Place the right foot behind and press the heel down to stretch the calf.",
+        "focus_area": [
+            "calves"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "lifting heel"
+        ],
+        "breathing_tips": [
+            "deep breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "jumping_jacks": {
+        "name": "Jumping Jacks",
+        "muscle": "LEG",
+        "instructions": "Jump feet apart while raising arms overhead then return.",
+        "focus_area": [
+            "calves",
+            "quads",
+            "cardio"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "landing stiffly"
+        ],
+        "breathing_tips": [
+            "steady rhythm breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "fire_hydrant_left": {
+        "name": "Fire Hydrant (Left)",
+        "muscle": "LEG",
+        "instructions": "From hands and knees lift the left leg sideways.",
+        "focus_area": [
+            "glutes",
+            "hips"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "twisting hips"
+        ],
+        "breathing_tips": [
+            "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "fire_hydrant_right": {
+        "name": "Fire Hydrant (Right)",
+        "muscle": "LEG",
+        "instructions": "From hands and knees lift the right leg sideways.",
+        "focus_area": [
+            "glutes",
+            "hips"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "arching back"
+        ],
+        "breathing_tips": [
+            "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "lunges": {
+        "name": "Forward Lunges",
+        "muscle": "LEG",
+        "instructions": "Step forward and bend both knees until thighs are nearly parallel.",
+        "focus_area": [
+            "quads",
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "knee over toes"
+        ],
+        "breathing_tips": [
+            "exhale pushing up"
+        ],
+        "amount": 14,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_leg_circles_left": {
+        "name": "Side Leg Circles (Left)",
+        "muscle": "LEG",
+        "instructions": "Lift the left leg and move it in small circles.",
+        "focus_area": [
+            "hips",
+            "outer thighs"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "swinging too big"
+        ],
+        "breathing_tips": [
+            "normal breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "side_leg_cicles_right": {
+        "name": "Side Leg Circles (Right)",
+        "muscle": "LEG",
+        "instructions": "Lift the right leg and move it in circles.",
+        "focus_area": [
+            "hips",
+            "outer thighs"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "fast uncontrolled circles"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "reverse_flutter_kicks": {
+        "name": "Reverse Flutter Kicks",
+        "muscle": "LEG",
+        "instructions": "Lie face down and alternate lifting legs up and down.",
+        "focus_area": [
+            "glutes",
+            "hamstrings"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "lifting too high"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 30,
+        "w_image": "",
+        "m_image": ""
+    },
+    "wall_sit": {
+        "name": "Wall Sit",
+        "muscle": "LEG",
+        "instructions": "Slide your back down a wall until thighs are parallel to the floor.",
+        "focus_area": [
+            "quads",
+            "glutes"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "knees too forward"
+        ],
+        "breathing_tips": [
+            "slow breathing"
+        ],
+        "amount": 40,
+        "w_image": "",
+        "m_image": ""
+    },
+    "calf_raise_with_splayed_foot": {
+        "name": "Calf Raise With Splayed Foot",
+        "muscle": "LEG",
+        "instructions": "Raise heels while feet point outward.",
+        "focus_area": [
+            "calves"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "bouncing"
+        ],
+        "breathing_tips": [
+            "exhale raising"
+        ],
+        "amount": 15,
+        "w_image": "",
+        "m_image": ""
+    },
+    "single_leg_calf_hop_left": {
+        "name": "Single Leg Calf Hop (Left)",
+        "muscle": "LEG",
+        "instructions": "Hop repeatedly on the left foot.",
+        "focus_area": [
+            "calves",
+            "balance"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "landing stiff"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 20,
+        "w_image": "",
+        "m_image": ""
+    },
+    "single_leg_calf_hop_right": {
+        "name": "Single Leg Calf Hop (Right)",
+        "muscle": "LEG",
+        "instructions": "Hop repeatedly on the right foot.",
+        "focus_area": [
+            "calves",
+            "balance"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "poor balance"
+        ],
+        "breathing_tips": [
+            "steady breathing"
+        ],
+        "amount": 20,
+        "w_image": "",
+        "m_image": ""
+    },
+    "burpees": {
+        "name": "Burpees",
+        "muscle": "LEG",
+        "instructions": "Squat down, jump back to plank, return and jump upward.",
+        "focus_area": [
+            "legs",
+            "core",
+            "cardio"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "rushing form"
+        ],
+        "breathing_tips": [
+            "exhale on jump"
+        ],
+        "amount": 10,
+        "w_image": "",
+        "m_image": ""
+    },
+    "curtsy_lunges": {
+        "name": "Curtsy Lunges",
+        "muscle": "LEG",
+        "instructions": "Step one leg diagonally behind and lower into a lunge.",
+        "focus_area": [
+            "glutes",
+            "inner thighs"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "leaning forward"
+        ],
+        "breathing_tips": [
+            "exhale up"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "jumping_squats": {
+        "name": "Jumping Squats",
+        "muscle": "LEG",
+        "instructions": "Perform a squat and jump explosively upward.",
+        "focus_area": [
+            "quads",
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "landing stiff"
+        ],
+        "breathing_tips": [
+            "exhale on jump"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "lying_butterfly_stretch": {
+        "name": "Lying Butterfly Stretch",
+        "muscle": "LEG",
+        "instructions": "Lie on back with soles together and knees dropping outward.",
+        "focus_area": [
+            "inner thighs"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "forcing knees down"
+        ],
+        "breathing_tips": [
+            "deep breathing"
+        ],
+        "amount": 40,
+        "w_image": "",
+        "m_image": ""
+    },
+    "bottom_leg_lift_left": {
+        "name": "Bottom Leg Lift (Left)",
+        "muscle": "LEG",
+        "instructions": "Lie on your side with the top leg bent in front. Lift the bottom leg upward slowly.",
+        "focus_area": [
+            "inner thighs"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "lifting too fast",
+            "rotating hips"
+        ],
+        "breathing_tips": [
+            "exhale lifting",
+            "inhale lowering"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "bottom_leg_lift_right": {
+        "name": "Bottom Leg Lift (Right)",
+        "muscle": "LEG",
+        "instructions": "Lie on your side with the top leg bent in front. Lift the bottom leg upward slowly.",
+        "focus_area": [
+            "inner thighs"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "swinging the leg",
+            "twisting hips"
+        ],
+        "breathing_tips": [
+            "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "glute_kick_back_right": {
+        "name": "Glute Kickback (Right)",
+        "muscle": "LEG",
+        "instructions": "From hands and knees extend the right leg straight back and squeeze the glute.",
+        "focus_area": [
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "arching the back",
+            "swinging the leg"
+        ],
+        "breathing_tips": [
+            "exhale while kicking back"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "glute_kick_back_left": {
+        "name": "Glute Kickback (Left)",
+        "muscle": "LEG",
+        "instructions": "From hands and knees extend the left leg straight back and squeeze the glute.",
+        "focus_area": [
+            "glutes"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "arching lower back",
+            "fast uncontrolled movement"
+        ],
+        "breathing_tips": [
+            "exhale kicking back"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "leaning_stretcher_raises": {
+        "name": "Leaning Stretch Raises",
+        "muscle": "LEG",
+        "instructions": "Lean forward slightly while holding support and raise your heels to stretch and strengthen calves.",
+        "focus_area": [
+            "calves"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "bouncing",
+            "not full range"
+        ],
+        "breathing_tips": [
+            "exhale lifting heels"
+        ],
+        "amount": 15,
+        "w_image": "",
+        "m_image": ""
+    },
+    "wall_resisting_single_leg_calf_raise_right": {
+        "name": "Wall Resisting Single Leg Calf Raise (Right)",
+        "muscle": "LEG",
+        "instructions": "Stand near a wall, lift the left leg and raise the right heel while pressing lightly into the wall.",
+        "focus_area": [
+            "calves",
+            "balance"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "leaning too much",
+            "partial range"
+        ],
+        "breathing_tips": [
+            "exhale raising heel"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "wall_resisting_single_leg_calf_raise_left": {
+        "name": "Wall Resisting Single Leg Calf Raise (Left)",
+        "muscle": "LEG",
+        "instructions": "Stand near a wall, lift the right leg and raise the left heel while pressing lightly into the wall.",
+        "focus_area": [
+            "calves",
+            "balance"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "bouncing",
+            "not stabilizing"
+        ],
+        "breathing_tips": [
+            "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    }
+}

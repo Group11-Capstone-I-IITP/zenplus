@@ -1,0 +1,739 @@
+{
+  "arm_raises": {
+    "name": "Arm Raises",
+    "muscle": "ARM",
+    "instructions": "Stand straight with your arms at your sides. Raise both arms forward until they reach shoulder height. Slowly lower them back to the starting position and repeat.",
+    "focus_area": [
+      "Shoulders",
+      "Upper Arms",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Swinging the arms instead of controlled movement",
+      "Raising arms above shoulder height",
+      "Leaning the torso backward"
+    ],
+    "breathing_tips": [
+      "Exhale while lifting the arms",
+      "Inhale while lowering them"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "side_arm_raise": {
+    "name": "Side Arm Raise",
+    "muscle": "ARM",
+    "instructions": "Stand upright with arms by your sides. Lift both arms out to the sides until they reach shoulder height. Lower them slowly back to the starting position.",
+    "focus_area": [
+      "Shoulders",
+      "Upper Arms"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Using momentum to lift arms",
+      "Shrugging the shoulders",
+      "Raising arms too high"
+    ],
+    "breathing_tips": [
+      "Exhale while raising arms",
+      "Inhale while lowering them"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "triceps_dips": {
+    "name": "Triceps Dips",
+    "muscle": "ARM",
+    "instructions": "Sit on the edge of a chair or bench and place your hands beside your hips. Slide your hips off the edge and bend your elbows to lower your body. Push back up to the starting position.",
+    "focus_area": [
+      "Triceps",
+      "Shoulders",
+      "Chest"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Bending the elbows too wide",
+      "Dropping hips too low",
+      "Moving too fast"
+    ],
+    "breathing_tips": [
+      "Inhale while lowering the body",
+      "Exhale while pushing up"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "arm_circles_clockwise": {
+    "name": "Arm Circles Clockwise",
+    "muscle": "ARM",
+    "instructions": "Stand with arms extended out to the sides. Move your arms in small circles in a clockwise direction while keeping them straight.",
+    "focus_area": [
+      "Shoulders",
+      "Upper Arms"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Bending the elbows too much",
+      "Moving the torso instead of arms",
+      "Making circles too large"
+    ],
+    "breathing_tips": [
+      "Maintain steady breathing",
+      "Avoid holding your breath"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "arm_circles_counterclockwise": {
+    "name": "Arm Circles Counterclockwise",
+    "muscle": "ARM",
+    "instructions": "Stand with arms extended at shoulder height. Rotate your arms in small circles in the counterclockwise direction.",
+    "focus_area": [
+      "Shoulders",
+      "Upper Arms"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Dropping the arms below shoulder level",
+      "Moving the torso too much",
+      "Circles too fast"
+    ],
+    "breathing_tips": [
+      "Breathe slowly and steadily",
+      "Do not hold your breath"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "diamond_push_ups": {
+    "name": "Diamond Push Ups",
+    "muscle": "ARM",
+    "instructions": "Start in a push-up position with your hands close together forming a diamond shape. Lower your chest toward your hands. Push back up to the starting position.",
+    "focus_area": [
+      "Triceps",
+      "Chest",
+      "Shoulders",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Hands placed too far apart",
+      "Hips sagging during movement",
+      "Partial range of motion"
+    ],
+    "breathing_tips": [
+      "Inhale while lowering",
+      "Exhale while pushing up"
+    ],
+    "amount": "10 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "jumping_jacks": {
+    "name": "Jumping Jacks",
+    "muscle": "ARM",
+    "instructions": "Stand with feet together and arms at your sides. Jump while spreading your legs and raising your arms overhead. Jump back to the starting position.",
+    "focus_area": [
+      "Shoulders",
+      "Legs",
+      "Core"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Landing too hard",
+      "Not raising arms fully",
+      "Moving too quickly without control"
+    ],
+    "breathing_tips": [
+      "Inhale while returning to start",
+      "Exhale while jumping outward"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "chest_press_pulse": {
+    "name": "Chest Press Pulse",
+    "muscle": "ARM",
+    "instructions": "Stand or sit with arms extended forward at chest level. Press your palms together and pulse them slightly inward repeatedly.",
+    "focus_area": [
+      "Chest",
+      "Shoulders",
+      "Arms"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Dropping elbows too low",
+      "Not engaging chest muscles",
+      "Moving too fast"
+    ],
+    "breathing_tips": [
+      "Maintain steady breathing",
+      "Exhale lightly during each pulse"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "leg_barbell_curl_left": {
+    "name": "Leg Barbell Curl Left",
+    "muscle": "ARM",
+    "instructions": "Stand upright and simulate a barbell curl with your left arm while lifting the opposite knee slightly. Lower the arm and repeat.",
+    "focus_area": [
+      "Biceps",
+      "Forearms",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Swinging the arm",
+      "Leaning backward",
+      "Not controlling the movement"
+    ],
+    "breathing_tips": [
+      "Exhale while curling",
+      "Inhale while lowering"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "leg_barbell_curl_right": {
+    "name": "Leg Barbell Curl Right",
+    "muscle": "ARM",
+    "instructions": "Stand straight and perform a curl motion with your right arm while lifting the opposite knee slightly. Return to start and repeat.",
+    "focus_area": [
+      "Biceps",
+      "Forearms",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Using momentum",
+      "Leaning the body backward",
+      "Incomplete curl motion"
+    ],
+    "breathing_tips": [
+      "Exhale while curling",
+      "Inhale while lowering"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "diagonal_plank": {
+    "name": "Diagonal Plank",
+    "muscle": "ARM",
+    "instructions": "Start in a plank position with hands under shoulders. Extend one arm forward while keeping your body stable. Hold briefly and return to plank.",
+    "focus_area": [
+      "Shoulders",
+      "Core",
+      "Upper Arms"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Letting hips drop",
+      "Moving the torso too much",
+      "Locking the elbows"
+    ],
+    "breathing_tips": [
+      "Breathe steadily throughout",
+      "Exhale when extending the arm"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "punches": {
+    "name": "Punches",
+    "muscle": "ARM",
+    "instructions": "Stand with feet shoulder width apart. Extend one arm forward in a punching motion and return quickly. Alternate arms in a steady rhythm.",
+    "focus_area": [
+      "Shoulders",
+      "Biceps",
+      "Triceps",
+      "Core"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Locking the elbows fully",
+      "Not engaging the core",
+      "Punching too slowly"
+    ],
+    "breathing_tips": [
+      "Exhale with each punch",
+      "Keep breathing steady"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "push_ups": {
+    "name": "Push Ups",
+    "muscle": "ARM",
+    "instructions": "Start in a plank position with hands under shoulders. Lower your body until your chest is near the floor. Push back up to the starting position.",
+    "focus_area": [
+      "Triceps",
+      "Chest",
+      "Shoulders",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Hips sagging",
+      "Elbows flaring out too much",
+      "Partial range of motion"
+    ],
+    "breathing_tips": [
+      "Inhale while lowering",
+      "Exhale while pushing up"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "inchworms": {
+    "name": "Inchworms",
+    "muscle": "ARM",
+    "instructions": "Stand upright and bend forward to place your hands on the floor. Walk your hands forward into a plank position. Walk them back toward your feet and stand up.",
+    "focus_area": [
+      "Shoulders",
+      "Arms",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Bending knees too much",
+      "Moving too quickly",
+      "Not keeping the core tight"
+    ],
+    "breathing_tips": [
+      "Inhale while bending forward",
+      "Exhale while walking hands forward"
+    ],
+    "amount": "10 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "wall_push_ups": {
+    "name": "Wall Push Ups",
+    "muscle": "ARM",
+    "instructions": "Stand facing a wall and place your hands on it at shoulder height. Bend your elbows to bring your chest closer to the wall. Push back to the starting position.",
+    "focus_area": [
+      "Triceps",
+      "Chest",
+      "Shoulders"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Standing too close to the wall",
+      "Not bending elbows enough",
+      "Rushing the movement"
+    ],
+    "breathing_tips": [
+      "Inhale while leaning in",
+      "Exhale while pushing away"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "triceps_strech_left": {
+    "name": "Triceps Stretch Left",
+    "muscle": "ARM",
+    "instructions": "Raise your left arm overhead and bend the elbow so your hand reaches your upper back. Use your other hand to gently push the elbow back.",
+    "focus_area": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Arching the back",
+      "Pulling too hard on the elbow"
+    ],
+    "breathing_tips": [
+      "Breathe slowly",
+      "Relax the shoulders while holding"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "triceps_strech_right": {
+    "name": "Triceps Stretch Right",
+    "muscle": "ARM",
+    "instructions": "Raise your right arm overhead and bend the elbow so your hand reaches your upper back. Gently press the elbow with the opposite hand.",
+    "focus_area": [
+      "Triceps",
+      "Shoulders"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Arching the back",
+      "Pulling too forcefully"
+    ],
+    "breathing_tips": [
+      "Take slow deep breaths",
+      "Relax during the stretch"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "standing_biceps_strech_left": {
+    "name": "Standing Biceps Stretch Left",
+    "muscle": "ARM",
+    "instructions": "Stand straight and extend your left arm behind you, palm facing away. Gently rotate your shoulder to stretch the biceps.",
+    "focus_area": [
+      "Biceps",
+      "Shoulders",
+      "Forearms"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Overstretching the shoulder",
+      "Bending the elbow"
+    ],
+    "breathing_tips": [
+      "Breathe slowly and deeply",
+      "Relax the shoulder while holding"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "standing_biceps_strech_right": {
+    "name": "Standing Biceps Stretch Right",
+    "muscle": "ARM",
+    "instructions": "Stand straight and extend your right arm behind you with palm facing away. Rotate shoulder gently to stretch biceps.",
+    "focus_area": [
+      "Biceps",
+      "Shoulders",
+      "Forearms"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Overstretching",
+      "Bending the elbow"
+    ],
+    "breathing_tips": [
+      "Exhale slowly while stretching",
+      "Keep shoulder relaxed"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "floor_tricep_dips": {
+    "name": "Floor Tricep Dips",
+    "muscle": "ARM",
+    "instructions": "Sit on the floor, place hands behind hips, fingers facing forward. Lift hips and bend elbows to lower body, then push back up.",
+    "focus_area": [
+      "Triceps",
+      "Shoulders",
+      "Chest"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Elbows flaring out",
+      "Hips touching floor",
+      "Moving too quickly"
+    ],
+    "breathing_tips": [
+      "Inhale while lowering",
+      "Exhale while pushing up"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "military_push_ups": {
+    "name": "Military Push Ups",
+    "muscle": "ARM",
+    "instructions": "Start in push-up position with hands close to your body. Lower chest toward floor, elbows tucked. Push back up.",
+    "focus_area": [
+      "Triceps",
+      "Chest",
+      "Shoulders",
+      "Core"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Hips sagging",
+      "Elbows flaring",
+      "Partial range of motion"
+    ],
+    "breathing_tips": [
+      "Inhale while lowering",
+      "Exhale while pushing up"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "alternating_hooks": {
+    "name": "Alternating Hooks",
+    "muscle": "ARM",
+    "instructions": "Stand with feet shoulder-width apart. Punch one arm across your body, then the other in alternating rhythm.",
+    "focus_area": [
+      "Biceps",
+      "Triceps",
+      "Shoulders",
+      "Core"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Twisting torso incorrectly",
+      "Locking elbows",
+      "Punching too slowly"
+    ],
+    "breathing_tips": [
+      "Exhale on each punch",
+      "Inhale while switching arms"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "push_up and rotation": {
+    "name": "Push Up And Rotation",
+    "muscle": "ARM",
+    "instructions": "Perform a push-up, then rotate body and lift one arm toward ceiling. Alternate sides with each push-up.",
+    "focus_area": [
+      "Triceps",
+      "Shoulders",
+      "Core",
+      "Chest"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Not rotating torso fully",
+      "Hips sagging",
+      "Rushing the movement"
+    ],
+    "breathing_tips": [
+      "Inhale lowering down",
+      "Exhale pushing up and rotating"
+    ],
+    "amount": "10 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "skipping_without_rope": {
+    "name": "Skipping Without Rope",
+    "muscle": "ARM",
+    "instructions": "Stand tall and simulate rope skipping motion with arms. Jump lightly on the balls of your feet.",
+    "focus_area": [
+      "Shoulders",
+      "Forearms",
+      "Legs",
+      "Core"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Landing hard on heels",
+      "Not swinging arms",
+      "Bending torso forward"
+    ],
+    "breathing_tips": [
+      "Breathe naturally",
+      "Maintain rhythm with jumps"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "burpees": {
+    "name": "Burpees",
+    "muscle": "ARM",
+    "instructions": "Stand upright, squat down and place hands on floor. Jump feet back to plank, perform push-up, jump feet forward, then jump up.",
+    "focus_area": [
+      "Triceps",
+      "Shoulders",
+      "Chest",
+      "Core",
+      "Legs"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Skipping push-up",
+      "Not landing softly",
+      "Hips sagging during plank"
+    ],
+    "breathing_tips": [
+      "Exhale during push-up and jump",
+      "Inhale while returning to start"
+    ],
+    "amount": "10 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "arm_scissors": {
+    "name": "Arm Scissors",
+    "muscle": "ARM",
+    "instructions": "Extend your arms straight in front of you at shoulder height. Open arms wide to the sides and cross them back in front like scissors. Repeat rhythmically.",
+    "focus_area": [
+      "Shoulders",
+      "Upper Arms",
+      "Chest"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Bending the elbows",
+      "Moving too quickly",
+      "Not keeping arms at shoulder height"
+    ],
+    "breathing_tips": [
+      "Inhale while opening",
+      "Exhale while crossing"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "arm_curls_crunch_left": {
+    "name": "Arm Curls Crunch Left",
+    "muscle": "ARM",
+    "instructions": "Lie on your back with knees bent. Hold a weight in your left hand and perform a bicep curl while crunching your upper body slightly. Lower and repeat.",
+    "focus_area": [
+      "Biceps",
+      "Core",
+      "Forearms"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Using momentum to lift weight",
+      "Not engaging core",
+      "Elbow flaring out"
+    ],
+    "breathing_tips": [
+      "Exhale while curling",
+      "Inhale while lowering"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "arm_curls_crunch_right": {
+    "name": "Arm Curls Crunch Right",
+    "muscle": "ARM",
+    "instructions": "Lie on your back and perform a bicep curl with the right arm while slightly crunching your upper body. Lower and repeat.",
+    "focus_area": [
+      "Biceps",
+      "Core",
+      "Forearms"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Swinging the weight",
+      "Elbow moving away from body",
+      "Not crunching slightly"
+    ],
+    "breathing_tips": [
+      "Exhale while curling",
+      "Inhale while lowering"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "shoulder_gators": {
+    "name": "Shoulder Gators",
+    "muscle": "ARM",
+    "instructions": "Stand upright and mimic a swimming motion with your arms in small circles. Move shoulders and arms smoothly.",
+    "focus_area": [
+      "Shoulders",
+      "Upper Arms",
+      "Back"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Bending elbows too much",
+      "Moving torso instead of arms",
+      "Circles too large or fast"
+    ],
+    "breathing_tips": [
+      "Breathe naturally",
+      "Keep movements controlled"
+    ],
+    "amount": "30 seconds",
+    "w_image": "",
+    "m_image": ""
+  },
+  "doorway_curls_left": {
+    "name": "Doorway Curls Left",
+    "muscle": "ARM",
+    "instructions": "Stand in a doorway and place your left hand on the frame. Step back slightly and perform a bicep curl using the doorframe for resistance.",
+    "focus_area": [
+      "Biceps",
+      "Forearms",
+      "Shoulders"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Elbow moving away from body",
+      "Using torso momentum",
+      "Incorrect hand placement"
+    ],
+    "breathing_tips": [
+      "Exhale while curling",
+      "Inhale while lowering"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "doorway_curls_right": {
+    "name": "Doorway Curls Right",
+    "muscle": "ARM",
+    "instructions": "Place your right hand on the doorway frame and step back slightly. Curl your arm using the frame for resistance. Return and repeat.",
+    "focus_area": [
+      "Biceps",
+      "Forearms",
+      "Shoulders"
+    ],
+    "type": "reps",
+    "common_mistakes": [
+      "Moving elbow away from body",
+      "Swinging torso",
+      "Incorrect grip"
+    ],
+    "breathing_tips": [
+      "Exhale curling",
+      "Inhale lowering"
+    ],
+    "amount": "12 reps",
+    "w_image": "",
+    "m_image": ""
+  },
+  "modified_push_up_low_hold": {
+    "name": "Modified Push Up Low Hold",
+    "muscle": "ARM",
+    "instructions": "Start in a modified push-up position on knees. Lower body halfway to floor and hold for a few seconds. Push back up and repeat.",
+    "focus_area": [
+      "Triceps",
+      "Chest",
+      "Shoulders",
+      "Core"
+    ],
+    "type": "time",
+    "common_mistakes": [
+      "Hips sagging",
+      "Holding breath",
+      "Bending elbows too much"
+    ],
+    "breathing_tips": [
+      "Exhale while pushing up",
+      "Inhale while lowering"
+    ],
+    "amount": "20 seconds",
+    "w_image": "",
+    "m_image": ""
+  }
+}

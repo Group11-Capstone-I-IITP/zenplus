@@ -1,0 +1,421 @@
+{
+    "jumping_jacks": {
+        "name": "Jumping Jacks",
+        "muscle": "CHEST",
+        "instructions": "Stand upright with feet together and arms at your sides. Jump while spreading your legs and raising your arms overhead. Jump back to the starting position and repeat.",
+        "focus_area": [
+            "Chest",
+            "Shoulders",
+            "Legs",
+            "Core"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "Landing too hard on the feet",
+            "Not raising arms fully overhead",
+            "Moving too fast without control"
+        ],
+        "breathing_tips": [
+            "Inhale when returning to the starting position",
+            "Exhale as you jump and spread your arms and legs"
+        ],
+        "amount": "30 seconds",
+        "w_image": "",
+        "m_image": ""
+    },
+    "incline_push_ups": {
+        "name": "Incline Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Place your hands on a bench or elevated surface. Keep your body straight and lower your chest toward the surface. Push back up to the starting position.",
+        "focus_area": [
+            "Chest",
+            "Triceps",
+            "Shoulders",
+            "Core"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Letting hips sag",
+            "Not lowering chest enough",
+            "Elbows flaring out too wide"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering your body",
+            "Exhale while pushing up"
+        ],
+        "amount": "12 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "push_ups": {
+        "name": "Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Start in a plank position with hands under shoulders. Lower your chest toward the floor while keeping your body straight. Push back up to the starting position.",
+        "focus_area": [
+            "Chest",
+            "Triceps",
+            "Shoulders",
+            "Core"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Hips sagging",
+            "Partial range of motion",
+            "Elbows flaring too wide"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "12 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "wide_arm_push_ups": {
+        "name": "Wide Arm Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Place your hands wider than shoulder width on the floor. Lower your chest toward the ground while keeping your body straight. Push back up to the starting position.",
+        "focus_area": [
+            "Chest",
+            "Shoulders",
+            "Core"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Hands placed too wide",
+            "Hips dropping",
+            "Not controlling the movement"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "triceps_dips": {
+        "name": "Triceps Dips",
+        "muscle": "CHEST",
+        "instructions": "Sit on the edge of a bench or chair and place your hands beside your hips. Slide forward and bend your elbows to lower your body. Push back up to the starting position.",
+        "focus_area": [
+            "Triceps",
+            "Chest",
+            "Shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Dropping hips too low",
+            "Elbows flaring outward",
+            "Moving too fast"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "12 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "knee_push_ups": {
+        "name": "Knee Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Start in a push-up position with knees on the floor. Lower your chest toward the ground while keeping your back straight. Push back up.",
+        "focus_area": [
+            "Chest",
+            "Triceps",
+            "Shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Arching the lower back",
+            "Not lowering enough",
+            "Elbows flaring too wide"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "12 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "cobra_stretch": {
+        "name": "Cobra Stretch",
+        "muscle": "CHEST",
+        "instructions": "Lie face down with your hands under your shoulders. Push through your palms to lift your chest while keeping hips on the floor. Hold the stretch.",
+        "focus_area": [
+            "Chest",
+            "Abdominals",
+            "Lower Back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "Overarching the back",
+            "Locking the elbows",
+            "Lifting hips off the floor"
+        ],
+        "breathing_tips": [
+            "Inhale while lifting chest",
+            "Breathe slowly while holding"
+        ],
+        "amount": "30 seconds",
+        "w_image": "",
+        "m_image": ""
+    },
+    "chest_strech": {
+        "name": "Chest Stretch",
+        "muscle": "CHEST",
+        "instructions": "Stand upright and clasp your hands behind your back. Straighten your arms and gently lift them to open your chest.",
+        "focus_area": [
+            "Chest",
+            "Shoulders"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "Bending the elbows",
+            "Overstretching the shoulders"
+        ],
+        "breathing_tips": [
+            "Inhale deeply while opening the chest",
+            "Exhale slowly while holding"
+        ],
+        "amount": "30 seconds",
+        "w_image": "",
+        "m_image": ""
+    },
+    "hindu_push_ups": {
+        "name": "Hindu Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Start in a pike position with hips raised. Lower your chest forward and down in a sweeping motion. Push upward into a cobra-like position.",
+        "focus_area": [
+            "Chest",
+            "Shoulders",
+            "Triceps",
+            "Core"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Moving too fast",
+            "Not maintaining fluid motion",
+            "Hips dropping too early"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering forward",
+            "Exhale while pushing upward"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "staggered_push_ups": {
+        "name": "Staggered Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Start in a push-up position with one hand slightly forward and the other slightly back. Perform a push-up and switch hand positions after each set.",
+        "focus_area": [
+            "Chest",
+            "Triceps",
+            "Shoulders",
+            "Core"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Uneven body alignment",
+            "Hips sagging",
+            "Not switching hand positions"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "push_up_and_rotation": {
+        "name": "Push Up And Rotation",
+        "muscle": "CHEST",
+        "instructions": "Perform a push-up, then rotate your body and raise one arm toward the ceiling. Return to push-up position and alternate sides.",
+        "focus_area": [
+            "Chest",
+            "Shoulders",
+            "Core",
+            "Triceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Not rotating fully",
+            "Hips sagging",
+            "Moving too quickly"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up and rotating"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "decline_push_ups": {
+        "name": "Decline Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Place your feet on an elevated surface and hands on the floor. Lower your chest toward the ground and push back up.",
+        "focus_area": [
+            "Upper Chest",
+            "Shoulders",
+            "Triceps",
+            "Core"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Arching the back",
+            "Feet placed too high",
+            "Elbows flaring out"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "shoulder_stretch": {
+        "name": "Shoulder Stretch",
+        "muscle": "CHEST",
+        "instructions": "Bring one arm across your chest and hold it with the other arm. Gently pull to stretch the shoulder.",
+        "focus_area": [
+            "Shoulders",
+            "Upper Back"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "Pulling too hard",
+            "Raising the shoulder"
+        ],
+        "breathing_tips": [
+            "Breathe slowly and deeply",
+            "Relax while holding the stretch"
+        ],
+        "amount": "30 seconds",
+        "w_image": "",
+        "m_image": ""
+    },
+    "arm_circles": {
+        "name": "Arm Circles",
+        "muscle": "CHEST",
+        "instructions": "Extend your arms out to the sides at shoulder height. Move them in small circles forward or backward.",
+        "focus_area": [
+            "Shoulders",
+            "Upper Arms",
+            "Chest"
+        ],
+        "type": "time",
+        "common_mistakes": [
+            "Dropping arms below shoulder height",
+            "Circles too large",
+            "Moving torso instead of arms"
+        ],
+        "breathing_tips": [
+            "Maintain steady breathing",
+            "Avoid holding breath"
+        ],
+        "amount": "30 seconds",
+        "w_image": "",
+        "m_image": ""
+    },
+    "burpees": {
+        "name": "Burpees",
+        "muscle": "CHEST",
+        "instructions": "Stand upright, squat down and place your hands on the floor. Jump your feet back into a plank and perform a push-up. Jump feet forward and jump up.",
+        "focus_area": [
+            "Chest",
+            "Shoulders",
+            "Core",
+            "Legs"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Skipping the push-up",
+            "Landing too hard",
+            "Hips sagging in plank"
+        ],
+        "breathing_tips": [
+            "Exhale during push-up and jump",
+            "Inhale when returning to start"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "diamond_push_ups": {
+        "name": "Diamond Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Place your hands close together forming a diamond shape under your chest. Lower your body toward the floor and push back up.",
+        "focus_area": [
+            "Triceps",
+            "Chest",
+            "Shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Hands too far apart",
+            "Elbows flaring out",
+            "Hips sagging"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "box_push_ups": {
+        "name": "Box Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Start in a box-shaped position with knees on the floor and hips raised. Lower your chest toward the floor and push back up.",
+        "focus_area": [
+            "Chest",
+            "Shoulders",
+            "Triceps"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Dropping hips too low",
+            "Not lowering enough",
+            "Moving too quickly"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up"
+        ],
+        "amount": "12 reps",
+        "w_image": "",
+        "m_image": ""
+    },
+    "spiderman_push_ups": {
+        "name": "Spiderman Push Ups",
+        "muscle": "CHEST",
+        "instructions": "Perform a push-up while bringing one knee toward the elbow on the same side. Return to plank and alternate sides.",
+        "focus_area": [
+            "Chest",
+            "Triceps",
+            "Core",
+            "Shoulders"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "Not bringing knee high enough",
+            "Hips sagging",
+            "Moving too quickly"
+        ],
+        "breathing_tips": [
+            "Inhale while lowering",
+            "Exhale while pushing up and bringing knee forward"
+        ],
+        "amount": "10 reps",
+        "w_image": "",
+        "m_image": ""
+    }
+}
