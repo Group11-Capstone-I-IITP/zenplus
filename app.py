@@ -10,7 +10,7 @@ from helpers import login_required, apology
 app = Flask(__name__)
 
 # Session
-app.config["SESSION_PERMENENT"] = False
+app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
@@ -38,11 +38,11 @@ def login():
             return apology("must provide password", 400)
         
         rows = db.execute(
-            "SELECT * FROM users WHERE username = ?", request.form.get("password")
+            "SELECT * FROM users WHERE username = ?", request.form.get("username")
         )
 
         # Ensure username exists and password is correct
-        if len(rows) != 1 or check_password_hash(
+        if len(rows) != 1 or not check_password_hash(
             rows[0]["hash"], request.form.get("password")
         ):
             return apology("invalid username/password", 400)
@@ -55,7 +55,7 @@ def login():
     else:
         return render_template("login.html")
 
-@app.route("/registration", methods=["GET", "POST"])
+@app.route("/register", methods=["GET", "POST"])
 def registration():
     """Register user"""
     if request.method == "POST":
@@ -87,7 +87,7 @@ def registration():
         else:
             return apology("username already exists", 400)
         
-    return render_template("registration.html")
+    return render_template("register.html")
 
 @app.route("/logout")
 def logout():
