@@ -344,7 +344,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "triceps_strech_left": {
+  "triceps_stretch_left": {
     "name": "Triceps Stretch Left",
     "muscle": "ARM",
     "instructions": "Raise your left arm overhead and bend the elbow so your hand reaches your upper back. Use your other hand to gently push the elbow back.",
@@ -365,7 +365,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "triceps_strech_right": {
+  "triceps_stretch_right": {
     "name": "Triceps Stretch Right",
     "muscle": "ARM",
     "instructions": "Raise your right arm overhead and bend the elbow so your hand reaches your upper back. Gently press the elbow with the opposite hand.",
@@ -386,7 +386,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "standing_biceps_strech_left": {
+  "standing_biceps_stretch_left": {
     "name": "Standing Biceps Stretch Left",
     "muscle": "ARM",
     "instructions": "Stand straight and extend your left arm behind you, palm facing away. Gently rotate your shoulder to stretch the biceps.",
@@ -408,7 +408,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "standing_biceps_strech_right": {
+  "standing_biceps_stretch_right": {
     "name": "Standing Biceps Stretch Right",
     "muscle": "ARM",
     "instructions": "Stand straight and extend your right arm behind you with palm facing away. Rotate shoulder gently to stretch biceps.",
@@ -501,7 +501,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "push_up and rotation": {
+  "push_up_and_rotation": {
     "name": "Push Up And Rotation",
     "muscle": "ARM",
     "instructions": "Perform a push-up, then rotate body and lift one arm toward ceiling. Alternate sides with each push-up.",

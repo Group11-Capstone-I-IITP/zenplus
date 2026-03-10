@@ -219,7 +219,7 @@
         "w_image": "",
         "m_image": ""
     },
-    "child's pose": {
+    "child's_pose": {
         "name": "Child's Pose",
         "muscle": "SHANDBK",
         "instructions": "Sit back on heels and stretch arms forward on the floor.",

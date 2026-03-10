@@ -1,5 +1,5 @@
 import os
-
+import json
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
@@ -16,6 +16,24 @@ Session(app)
 
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///zenpulse.db")
+
+# Load your blueprint (the order of exercises) when the app starts
+with open('exercise/workouts.json', 'r') as f:
+    WORKOUT_ROUTINES = json.load(f)
+
+# Helper function to dynamically load the right muscle file
+def load_muscle_data(muscle_name):
+    # Format the name: "shoulder & back" -> "shoulder_and_back"
+    formatted_name = muscle_name.replace(" & ", "_and_").replace(" ", "_")
+    
+    # Add the 'exercise/' folder path here!
+    filename = f"exercise/{formatted_name}.json"
+    
+    try:
+        with open(filename, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
 
 @app.after_request
 def after_request(response):
@@ -103,3 +121,53 @@ def logout():
 def index():
     """Show homepage"""
     return render_template("index.html")
+
+@app.route("/workout/<muscle>/<level>/<int:step>")
+@login_required
+def workout_step(muscle, level, step):
+
+    sequence = WORKOUT_ROUTINES[muscle][level]
+    muscle_db = load_muscle_data(muscle)
+
+    full_workout = []
+    for ex in sequence:
+        if ex in muscle_db:
+            full_workout.append(muscle_db[ex])
+        else:
+            # This will print in your terminal so you know exactly which typo to fix!
+            print(f"WARNING: Exercise '{ex}' not found in {muscle}.json")
+
+    if step >= len(full_workout):
+        return redirect("/workout_complete")
+
+    exercise = full_workout[step]
+
+    return render_template(
+        "exercise.html",
+        workout=exercise,
+        muscle=muscle,
+        level=level,
+        step=step
+    )
+
+@app.route("/select_workout")
+@login_required
+def select_workout():
+    """Show the workout selection form"""
+    return render_template("select_workout.html")
+
+@app.route("/rest/<muscle>/<level>/<int:step>")
+@login_required
+def rest_page(muscle, level, step):
+
+    return render_template(
+        "rest.html",
+        muscle=muscle,
+        level=level,
+        step=step
+    )
+
+@app.route("/workout_complete")
+@login_required
+def workout_complete():
+    return render_template("finish.html")

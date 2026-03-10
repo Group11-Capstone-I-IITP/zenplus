@@ -45,7 +45,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "russisn_twist": {
+  "russian_twist": {
     "name": "Russian Twist",
     "muscle": "ABS",
     "instructions": "Sit on the floor with knees bent and lean slightly back. Lift your feet slightly off the ground. Twist your torso from side to side while keeping your core engaged.",
@@ -162,7 +162,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "cobra_strech": {
+  "cobra_stretch": {
     "name": "Cobra Stretch",
     "muscle": "ABS",
     "instructions": "Lie face down with hands under your shoulders. Push through your palms to lift your chest while keeping hips on the floor. Hold the stretch gently.",
@@ -208,7 +208,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "spine_lumbar_twist_strech_right": {
+  "spine_lumbar_twist_stretch_right": {
     "name": "Spine Lumbar Twist Stretch Right",
     "muscle": "ABS",
     "instructions": "Lie on your back and bend your knees. Drop both knees toward the right side while keeping shoulders flat on the floor. Hold the stretch.",
@@ -369,7 +369,7 @@
     "w_image": "",
     "m_image": ""
   },
-  "push_up and rotation": {
+  "push_up_and_rotation": {
     "name": "Push Up And Rotation",
     "muscle": "ABS",
     "instructions": "Start in a push-up position and perform one push-up. As you push back up, rotate your body and raise one arm toward the ceiling. Alternate sides.",

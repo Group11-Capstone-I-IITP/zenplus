@@ -166,7 +166,7 @@
         "w_image": "",
         "m_image": ""
     },
-    "right_quad_strech_with_wall": {
+    "right_quad_stretch_with_wall": {
         "name": "Right Quad Stretch With Wall",
         "muscle": "LEG",
         "instructions": "Stand near a wall and hold your right foot behind you stretching the quadriceps.",
@@ -204,7 +204,7 @@
         "w_image": "",
         "m_image": ""
     },
-    "knee_to_strech_right": {
+    "knee_to_chest_stretch_right": {
         "name": "Knee To Chest Stretch (Right)",
         "muscle": "LEG",
         "instructions": "Lie on your back and pull the right knee toward the chest.",
@@ -393,7 +393,7 @@
         "w_image": "",
         "m_image": ""
     },
-    "side_leg_cicles_right": {
+    "side_leg_circles_right": {
         "name": "Side Leg Circles (Right)",
         "muscle": "LEG",
         "instructions": "Lift the right leg and move it in circles.",
@@ -713,6 +713,28 @@
         ],
         "breathing_tips": [
             "exhale lifting"
+        ],
+        "amount": 12,
+        "w_image": "",
+        "m_image": ""
+    },
+    "sumo_squat": {
+        "name": "Sumo Squat",
+        "muscle": "LEG",
+        "instructions": "Stand with feet wider than shoulder-width, toes slightly out. Lower your hips down and back into a squat, keeping chest up and knees tracking over toes. Return to standing.",
+        "focus_area": [
+            "quads",
+            "glutes",
+            "inner thighs"
+        ],
+        "type": "reps",
+        "common_mistakes": [
+            "letting knees cave in",
+            "rounding the back",
+            "lifting heels"
+        ],
+        "breathing_tips": [
+            "inhale lowering down, exhale rising up"
         ],
         "amount": 12,
         "w_image": "",
