@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Select Workout
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/select_workout.css') }}">
+{% endblock %}
+
+{% block main %}
+<h1>Build Your Workout</h1>
+
+<div class="cards-container">
+    <div class="card" data-muscle="abs" data-level="beginner">
+        <img src="{{ url_for('static', filename='images/abs_beginner.jpg') }}" alt="Abs Beginner">
+        <div class="card-body">
+            <h3>Abs</h3>
+            <h5>Beginner</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="abs" data-level="intermediate">
+        <img src="{{ url_for('static', filename='images/abs_intermediate.jpg') }}" alt="Abs Intermediate">
+        <div class="card-body">
+            <h3>Abs</h3>
+            <h5>Intermediate</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="abs" data-level="advanced">
+        <img src="{{ url_for('static', filename='images/abs_advanced.jpg') }}" alt="Abs Advanced">
+        <div class="card-body">
+            <h3>Abs</h3>
+            <h5>Advanced</h5>
+        </div>
+    </div>
+
+    <div class="card" data-muscle="arm" data-level="beginner">
+        <img src="{{ url_for('static', filename='images/arm_beginner.jpg') }}" alt="Arm Beginner">
+        <div class="card-body">
+            <h3>Arms</h3>
+            <h5>Beginner</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="arm" data-level="intermediate">
+        <img src="{{ url_for('static', filename='images/arm_intermediate.jpg') }}" alt="Arm Intermediate">
+        <div class="card-body">
+            <h3>Arms</h3>
+            <h5>Intermediate</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="arm" data-level="advanced">
+        <img src="{{ url_for('static', filename='images/arm_advanced.png') }}" alt="Arm Advanced">
+        <div class="card-body">
+            <h3>Arms</h3>
+            <h5>Advanced</h5>
+        </div>
+    </div>
+
+    <div class="card" data-muscle="chest" data-level="beginner">
+        <img src="{{ url_for('static', filename='images/chest_beginner.jpg') }}" alt="Chest Beginner">
+        <div class="card-body">
+            <h3>Chest</h3>
+            <h5>Beginner</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="chest" data-level="intermediate">
+        <img src="{{ url_for('static', filename='images/chest_intermediate.jpg') }}" alt="Chest Intermediate">
+        <div class="card-body">
+            <h3>Chest</h3>
+            <h5>Intermediate</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="chest" data-level="advanced">
+        <img src="{{ url_for('static', filename='images/chest_advanced.jpg') }}" alt="Chest Advanced">
+        <div class="card-body">
+            <h3>Chest</h3>
+            <h5>Advanced</h5>
+        </div>
+    </div>
+
+    <div class="card" data-muscle="leg" data-level="beginner">
+        <img src="{{ url_for('static', filename='images/leg_beginner.jpg') }}" alt="Leg Beginner">
+        <div class="card-body">
+            <h3>Legs</h3>
+            <h5>Beginner</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="leg" data-level="intermediate">
+        <img src="{{ url_for('static', filename='images/leg_intermediate.jpg') }}" alt="Leg Intermediate">
+        <div class="card-body">
+            <h3>Legs</h3>
+            <h5>Intermediate</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="leg" data-level="advanced">
+        <img src="{{ url_for('static', filename='images/leg_advanced.png') }}" alt="Leg Advanced">
+        <div class="card-body">
+            <h3>Legs</h3>
+            <h5>Advanced</h5>
+        </div>
+    </div>
+
+    <div class="card" data-muscle="shoulder & back" data-level="beginner">
+        <img src="{{ url_for('static', filename='images/shoulder_back_beginner.jpg') }}" alt="Shoulder & Back Beginner">
+        <div class="card-body">
+            <h3>Shoulder & Back</h3>
+            <h5>Beginner</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="shoulder & back" data-level="intermediate">
+        <img src="{{ url_for('static', filename='images/shoulder_back_intermediate.jpg') }}" alt="Shoulder & Back Intermediate">
+        <div class="card-body">
+            <h3>Shoulder & Back</h3>
+            <h5>Intermediate</h5>
+        </div>
+    </div>
+    <div class="card" data-muscle="shoulder & back" data-level="advanced">
+        <img src="{{ url_for('static', filename='images/shoulder_back_advanced.jpg') }}" alt="Shoulder & Back Advanced">
+        <div class="card-body">
+            <h3>Shoulder & Back</h3>
+            <h5>Advanced</h5>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/select_workout.js') }}"></script>
+{% endblock %}

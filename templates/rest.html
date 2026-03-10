@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rest Period
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/rest.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="rest-container" data-next-url="/workout/{{ muscle }}/{{ level }}/{{ step }}">
+    
+    <h2 class="rest-title">Rest</h2>
+
+    <div class="metric-display">
+        <div class="timer-box">
+            <span id="timer">20</span> <span class="unit">sec</span>
+        </div>
+    </div>
+
+    <div class="controls-wrapper">
+        <button class="btn-control btn-secondary time-btn" data-add="10">+10 sec</button>
+        <button class="btn-control btn-secondary time-btn" data-add="30">+30 sec</button>
+        <button class="btn-control btn-secondary time-btn" data-add="60">+ 1 min</button>
+        
+        <a href="/workout/{{ muscle }}/{{ level }}/{{ step }}" class="btn-control btn-skip">Skip</a>
+    </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/rest.js') }}"></script>
+{% endblock %}

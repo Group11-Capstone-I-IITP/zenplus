@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Current Workout
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/exercise.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="exercise-container">
+    <h2 class="exercise-title">{{ workout.name }}</h2>
+
+    {% if workout.w_image %}
+        <div class="image-wrapper">
+            <img src="{{ workout.w_image }}" alt="{{ workout.name }}" class="workout-img">
+        </div>
+    {% endif %}
+
+    <div class="metric-display">
+        {% if workout.type == "time" %}
+            <div class="timer-box">
+                <span id="timer">{{ workout.amount }}</span> <span class="unit">sec</span>
+            </div>
+        {% else %}
+            <div class="reps-box">
+                <span class="amount">{{ workout.amount }}</span> <span class="unit">reps</span>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="controls-wrapper">
+        {% if step > 0 %}
+            <a href="/workout/{{ muscle }}/{{ level }}/{{ step-1 }}" class="btn-control btn-secondary">Previous</a>
+        {% endif %}
+
+        {% if workout.type == "time" %}
+            <button id="startBtn" class="btn-control btn-primary" 
+                    data-time="{{ workout.amount }}" 
+                    data-next-url="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}">
+                Start
+            </button>
+            <a href="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}" class="btn-control btn-skip">Skip</a>
+        {% else %}
+            <a href="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}" class="btn-control btn-primary">Next</a>
+        {% endif %}
+    </div>
+
+    <div class="info-sections">
+        <div class="info-block">
+            <h5>📝 Instruction</h5>
+            <p>{{ workout.instructions }}</p>
+        </div>
+
+        <div class="info-block">
+            <h5>🎯 Focus Area</h5>
+            <ul class="elegant-list list-focus">
+                {% for area in workout.focus_area %}
+                <li>{{ area }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% if workout.m_image %}
+        <div class="muscle-image-wrapper">
+            <img src="{{ workout.m_image }}" alt="Target Muscles for {{ workout.name }}" class="muscle-img-elegant">
+        </div>
+        {% endif %}
+
+        <div class="info-block">
+            <h5>⚠️ Common Mistakes</h5>
+            <ul class="elegant-list list-mistake">
+                {% for mistake in workout.common_mistakes %}
+                <li>{{ mistake }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h5>🫁 Breathing Tips</h5>
+            <ul class="elegant-list list-breath">
+                {% for tips in workout.breathing_tips %}
+                <li>{{ tips }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/exercise.js') }}"></script>
+{% endblock %}

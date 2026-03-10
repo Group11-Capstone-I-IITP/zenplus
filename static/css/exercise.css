@@ -1,0 +1,213 @@
+/* Container Formatting */
+.exercise-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.exercise-title {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+.image-wrapper {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.workout-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Timer and Reps Display */
+.metric-display {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.timer-box, .reps-box {
+    display: inline-block;
+    background-color: #f8f9fa;
+    padding: 15px 40px;
+    border-radius: 50px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#timer, .amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.unit {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-left: 5px;
+}
+
+/* Buttons */
+.controls-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn-control {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-control:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.btn-secondary:hover {
+    background-color: #bdc3c7;
+    color: #2c3e50;
+}
+
+.btn-skip {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+/* =========================================
+   Elegant Information Sections (No Boxes)
+   ========================================= */
+
+.info-sections {
+    max-width: 650px;
+    margin: 50px auto 0;
+    border-top: 1px solid #eaeaea;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-block {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Elegant Headings */
+.info-block h5 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Paragraph Formatting */
+.info-block p {
+    color: #2c3e50;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* Seamless Muscle Image */
+.muscle-image-wrapper {
+    text-align: center;
+}
+
+.muscle-img-elegant {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+}
+
+/* =========================================
+   Custom Elegant Lists
+   ========================================= */
+
+.elegant-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.elegant-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* Create custom bullet points using ::before */
+.elegant-list li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* Blue dot for Focus Area */
+.list-focus li::before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.8rem;
+    top: -6px;
+}
+
+/* Red 'x' for Mistakes */
+.list-mistake li::before {
+    content: "×";
+    color: #e74c3c;
+    font-size: 1.4rem;
+    top: -2px;
+    left: 2px;
+}
+
+/* Green wave for Breathing */
+.list-breath li::before {
+    content: "〰";
+    color: #1abc9c;
+    font-size: 1.2rem;
+    top: -2px;
+}
+
+/* Soft fade-in animation for a premium feel */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
