@@ -13,17 +13,27 @@
     margin-bottom: 20px;
 }
 
-/* Image Styling */
-.image-wrapper {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.workout-img {
-    max-width: 100%;
-    height: auto;
+/* =========================================
+   Responsive Video Wrapper (16:9 Aspect Ratio)
+   ========================================= */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    background-color: #000; /* Sleek black background while loading */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* Timer and Reps Display */
@@ -98,6 +108,8 @@
 .btn-skip {
     background-color: #e0e0e0;
     color: #555;
+    display: flex;
+    align-items: center;
 }
 
 /* =========================================
@@ -173,7 +185,6 @@
     font-size: 1.05rem;
 }
 
-/* Create custom bullet points using ::before */
 .elegant-list li::before {
     position: absolute;
     left: 0;
@@ -181,7 +192,6 @@
     font-weight: bold;
 }
 
-/* Blue dot for Focus Area */
 .list-focus li::before {
     content: "•";
     color: #3498db;
@@ -189,7 +199,6 @@
     top: -6px;
 }
 
-/* Red 'x' for Mistakes */
 .list-mistake li::before {
     content: "×";
     color: #e74c3c;
@@ -198,7 +207,6 @@
     left: 2px;
 }
 
-/* Green wave for Breathing */
 .list-breath li::before {
     content: "〰";
     color: #1abc9c;
@@ -206,7 +214,6 @@
     top: -2px;
 }
 
-/* Soft fade-in animation for a premium feel */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }

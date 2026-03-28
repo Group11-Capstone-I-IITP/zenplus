@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('zenpulse.db')
+conn = sqlite3.connect('zenplus.db')
 c = conn.cursor()
 #--------------------------------------------------------------------------------------------#
 
@@ -8,6 +8,8 @@ c = conn.cursor()
 c.execute('''
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
     username TEXT NOT NULL,
     hash TEXT NOT NULL
 )

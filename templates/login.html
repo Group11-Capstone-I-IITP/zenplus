@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block main %}
+    <div class="login-container">
+        <div class="login-card">
+            <div class="brand">
+                <i class="fas fa-dumbbell"></i>
+                <h1>ZEN<span>PLUS</span></h1>
+                <p>Ready for your next set?</p>
+            </div>
+            
+            <form id="loginForm" action="/login" method="post">
+            <!-- added action and method to connect app.py -->
+                <div class="input-group">
+                <!-- changed email to username -->
+                    <label for="username">Username</label>
+                    <!-- added name to connect app.py -->
+                    <!-- changed placeholder -->
+                    <input type="text" id="email" name="username" placeholder="Username" required>
+                </div>
+                
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="forgot-link">Forgot?</a>
+                    </div>
+                    <!-- added name to connect app.py -->
+                     <!-- changed placeholder -->
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <button type="submit" class="login-btn">START WORKOUT</button>
+            </form>
+
+            <div class="footer">
+                <p>New to the team? <a href="#">Join now</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<!-- <script src="{{ url_for('static', filename='js/login.js') }}"></script> -->
+{% endblock %}

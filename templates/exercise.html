@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Current Workout
+Current Workout
 {% endblock %}
 
 {% block styles %}
@@ -13,37 +13,49 @@
     <h2 class="exercise-title">{{ workout.name }}</h2>
 
     {% if workout.w_image %}
-        <div class="image-wrapper">
-            <img src="{{ workout.w_image }}" alt="{{ workout.name }}" class="workout-img">
-        </div>
+    {# Extract video ID from different URL formats #}
+    {% set url = workout.w_image %}
+    {% if "youtu.be/" in url %}
+    {% set video_id = url.split("youtu.be/")[-1].split("?")[0] %}
+    {% elif "youtube.com/watch?v=" in url %}
+    {% set video_id = url.split("v=")[-1].split("&")[0] %}
+    {% else %}
+    {% set video_id = url %} {# assume it's already an ID #}
+    {% endif %}
+
+    <div class="video-wrapper">
+        <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/{{ video_id }}?controls=0&rel=0&modestbranding=1&iv_load_policy=3&autoplay=0&loop=1&playlist={{ video_id }}"
+            frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen>
+        </iframe>
+    </div>
     {% endif %}
 
     <div class="metric-display">
         {% if workout.type == "time" %}
-            <div class="timer-box">
-                <span id="timer">{{ workout.amount }}</span> <span class="unit">sec</span>
-            </div>
+        <div class="timer-box">
+            <span id="timer">{{ workout.amount }}</span> <span class="unit">sec</span>
+        </div>
         {% else %}
-            <div class="reps-box">
-                <span class="amount">{{ workout.amount }}</span> <span class="unit">reps</span>
-            </div>
+        <div class="reps-box">
+            <span class="amount">{{ workout.amount }}</span> <span class="unit">reps</span>
+        </div>
         {% endif %}
     </div>
 
     <div class="controls-wrapper">
         {% if step > 0 %}
-            <a href="/workout/{{ muscle }}/{{ level }}/{{ step-1 }}" class="btn-control btn-secondary">Previous</a>
+        <a href="/workout/{{ muscle }}/{{ level }}/{{ step-1 }}" class="btn-control btn-secondary">Previous</a>
         {% endif %}
 
         {% if workout.type == "time" %}
-            <button id="startBtn" class="btn-control btn-primary" 
-                    data-time="{{ workout.amount }}" 
-                    data-next-url="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}">
-                Start
-            </button>
-            <a href="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}" class="btn-control btn-skip">Skip</a>
+        <button id="startBtn" class="btn-control btn-primary" data-time="{{ workout.amount }}"
+            data-next-url="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}">
+            Start
+        </button>
+        <a href="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}" class="btn-control btn-skip">Skip</a>
         {% else %}
-            <a href="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}" class="btn-control btn-primary">Next</a>
+        <a href="/rest/{{ muscle }}/{{ level }}/{{ step+1 }}" class="btn-control btn-primary">Next</a>
         {% endif %}
     </div>
 

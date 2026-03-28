@@ -1,0 +1,103 @@
+:root {
+    --primary: #dfff4f; /* Neon Lime */
+    --bg-dark: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #ffffff;
+    --text-dim: #a0a0a0;
+}
+
+/* MODIFIED: Changed 'body' selector to '.login-container'. 
+   Styling the body was overriding layout.html and turning the header/footer into a flex row.
+   Targeting .login-container isolates the centering perfectly. */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Swapped 100vh for 70vh so the header and footer have room to breathe */
+    min-height: 70vh; 
+    padding: 2rem 1rem;
+}
+
+.login-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.brand i {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.brand h1 {
+    margin: 0.5rem 0 0;
+    letter-spacing: 2px;
+}
+
+.brand span { color: var(--primary); }
+
+.brand p { color: var(--text-dim); font-size: 0.9rem; }
+
+.input-group { margin-bottom: 1.5rem; }
+
+/* ADDED: There was a 'label-row' class in the HTML, but no CSS for it. 
+   This cleanly pushes the 'Password' label left and 'Forgot?' link right. */
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.label-row label {
+    margin-bottom: 0; /* Prevents double-spacing from the flexbox */
+}
+
+label {
+    display: block;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    background: #cce644;
+}
+
+.footer { text-align: center; margin-top: 1.5rem; color: var(--text-dim); font-size: 0.85rem; }
+.footer a { color: var(--primary); text-decoration: none; }

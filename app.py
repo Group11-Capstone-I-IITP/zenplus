@@ -15,7 +15,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///zenpulse.db")
+db = SQL("sqlite:///zenplus.db")
 
 # Load your blueprint (the order of exercises) when the app starts
 with open('exercise/workouts.json', 'r') as f:
@@ -77,6 +77,10 @@ def login():
 def registration():
     """Register user"""
     if request.method == "POST":
+        if not request.form.get("first_name"):
+            return apology("must provide first name", 400)
+        if not request.form.get("last_name"):
+            return apology("must provide last name", 400)
         if not request.form.get("username"):
             return apology("must provide username", 400)
         elif not request.form.get("password"):
@@ -93,7 +97,8 @@ def registration():
         # Ensure username is not already taken
         if len(rows) == 0:
             new_id = db.execute(
-                "INSERT INTO users (username, hash) VALUES(?, ?)",
+                "INSERT INTO users (first_name, last_name, username, hash) VALUES(?, ?, ?, ?)",
+                request.form.get("first_name"), request.form.get("last_name"),
                 request.form.get("username"), generate_password_hash(request.form.get("password"))
             )
 
