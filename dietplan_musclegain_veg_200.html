@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZenPulse | Muscle Gain Veg Rs200</title>
+<style>
+        :root{--bg-deep:#0F0F2D;--accent-mint:#2ECC71;--btn-dark:#243447;--card-glass:rgba(255,255,255,0.06);}
+        *{box-sizing:border-box;}
+        body{margin:0;padding:0;font-family:'Segoe UI',sans-serif;background-color:var(--bg-deep);color:white;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;}
+        body::before{content:"";position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 20% 20%,#1A1A40 0%,transparent 40%),radial-gradient(circle at 80% 70%,#16213E 0%,transparent 40%);animation:moveBg 18s infinite alternate linear;z-index:-1;filter:blur(80px);}
+        @keyframes moveBg{from{transform:translate(0,0)}to{transform:translate(8%,8%)}}
+        @keyframes slideUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        .progress-container{padding:20px 30px 10px;display:flex;gap:8px;position:sticky;top:0;z-index:100;background:linear-gradient(to bottom,rgba(15,15,45,0.95) 80%,transparent);}
+        .step{height:6px;flex:1;background:rgba(255,255,255,0.1);border-radius:10px;}.step.active{background:var(--accent-mint);}
+        .content{padding:10px 24px 110px;flex-grow:1;}
+        .plan-header{background:rgba(46,204,113,0.1);border:1px solid rgba(46,204,113,0.3);border-radius:20px;padding:20px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;animation:slideUp 0.4s ease-out;}
+        .plan-label{font-size:11px;color:var(--accent-mint);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px;}
+        .plan-header h2{font-size:22px;font-weight:700;margin:0 0 4px;}.plan-meta{font-size:13px;opacity:0.5;}
+        .kcal-badge{background:rgba(46,204,113,0.15);border:1px solid var(--accent-mint);border-radius:14px;padding:12px 16px;text-align:center;flex-shrink:0;}
+        .kcal-num{font-size:26px;font-weight:800;color:var(--accent-mint);line-height:1;}.kcal-label{font-size:10px;opacity:0.6;margin-top:3px;}
+        .section-title{font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;opacity:0.5;margin:0 0 12px;}
+        .macro-card{background:var(--card-glass);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:18px;margin-bottom:24px;animation:slideUp 0.5s ease-out 0.1s both;}
+        .macro-bar-wrap{display:flex;gap:3px;height:10px;border-radius:10px;overflow:hidden;margin-bottom:14px;}
+        .macro-seg{border-radius:2px;}
+        .macro-legend{display:flex;justify-content:space-between;}.macro-item{text-align:center;flex:1;}
+        .macro-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px;vertical-align:middle;}
+        .macro-g{display:block;font-size:18px;font-weight:700;margin-bottom:2px;}.macro-name{font-size:11px;opacity:0.5;}
+        .macro-divider{width:1px;background:rgba(255,255,255,0.08);margin:0 8px;}
+        .tab-bar{display:flex;background:rgba(255,255,255,0.06);border-radius:14px;padding:4px;margin-bottom:20px;gap:4px;animation:slideUp 0.5s ease-out 0.15s both;}
+        .tab-btn{flex:1;padding:10px 6px;border-radius:10px;font-size:13px;font-weight:600;text-align:center;cursor:pointer;transition:0.2s;color:rgba(255,255,255,0.4);border:none;background:transparent;}
+        .tab-btn.active{background:var(--btn-dark);color:white;box-shadow:0 4px 12px rgba(0,0,0,0.3);}
+        #view-day{display:block}#view-week{display:none}
+        .meal-card{background:var(--card-glass);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:16px;margin-bottom:12px;display:flex;align-items:center;gap:14px;cursor:pointer;transition:border-color 0.2s,background 0.2s;animation:slideUp 0.4s ease-out both;}
+        .meal-card:nth-child(1){animation-delay:0.20s}.meal-card:nth-child(2){animation-delay:0.28s}.meal-card:nth-child(3){animation-delay:0.36s}.meal-card:nth-child(4){animation-delay:0.44s}
+        .meal-card:hover{border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.09);}
+        .meal-emoji{font-size:30px;flex-shrink:0;width:44px;text-align:center;}.meal-info{flex:1;min-width:0;}
+        .meal-time-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px;}
+        .meal-name{font-size:16px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .meal-desc{font-size:12px;opacity:0.45;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+        .meal-kcal{text-align:right;flex-shrink:0;}.meal-kcal .kcal-val{font-size:17px;font-weight:700;}.meal-kcal .kcal-unit{font-size:10px;opacity:0.4;display:block;}
+        .meal-detail{display:none;background:rgba(0,0,0,0.2);border-top:1px solid rgba(255,255,255,0.06);padding:14px 16px 4px;margin:8px -16px -16px;border-radius:0 0 18px 18px;}
+        .meal-detail.open{display:block;}
+        .ingredient-row{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);opacity:0.75;}
+        .ingredient-row:last-child{border-bottom:none;}.ingredient-row .qty{color:var(--accent-mint);font-weight:600;font-size:12px;}
+        .week-grid{display:flex;flex-direction:column;gap:10px;}
+        .week-row{background:var(--card-glass);border:1px solid rgba(255,255,255,0.08);border-radius:16px;overflow:hidden;animation:slideUp 0.4s ease-out both;}
+        .week-row:nth-child(1){animation-delay:0.15s}.week-row:nth-child(2){animation-delay:0.20s}.week-row:nth-child(3){animation-delay:0.25s}.week-row:nth-child(4){animation-delay:0.30s}.week-row:nth-child(5){animation-delay:0.35s}.week-row:nth-child(6){animation-delay:0.40s}.week-row:nth-child(7){animation-delay:0.45s}
+        .week-row-header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;cursor:pointer;}
+        .week-day-name{font-size:14px;font-weight:600;}.week-day-kcal{font-size:13px;color:var(--accent-mint);font-weight:600;}
+        .week-chevron{font-size:12px;opacity:0.4;transition:transform 0.2s;}
+        .week-meals{display:none;padding:0 16px 12px;border-top:1px solid rgba(255,255,255,0.06);}.week-meals.open{display:block;}
+        .week-meal-item{display:flex;font-size:13px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05);opacity:0.8;}
+        .week-meal-item:last-child{border-bottom:none;}.week-meal-type{font-size:10px;opacity:0.45;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:1px;}
+        .cost-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(46,204,113,0.12);border:1px solid rgba(46,204,113,0.25);border-radius:20px;padding:6px 14px;font-size:12px;font-weight:600;color:var(--accent-mint);margin-bottom:20px;}
+        .footer{position:fixed;bottom:0;left:0;right:0;padding:16px 24px 32px;background:linear-gradient(to top,rgba(15,15,45,1) 70%,transparent);z-index:50;}
+        .primary-btn{display:flex;width:100%;background:var(--btn-dark);color:white;padding:18px 0;border-radius:14px;font-size:17px;font-weight:600;border:1px solid rgba(255,255,255,0.1);cursor:pointer;justify-content:center;align-items:center;gap:10px;transition:0.2s;}
+        .primary-btn:active{transform:scale(0.98);background:#1a2634;}
+</style>
+</head>
+<body>
+<div class="progress-container">
+  <div class="step active"></div><div class="step active"></div><div class="step active"></div>
+  <div class="step active"></div><div class="step active"></div><div class="step active"></div>
+</div>
+<div class="content">
+  <div class="plan-header">
+    <div>
+      <div class="plan-label">Your Plan</div>
+      <h2>Muscle Gain &#x1F4AA;</h2>
+      <div class="plan-meta">&#x1F966; Vegetarian · ₹200/day</div>
+    </div>
+    <div class="kcal-badge"><div class="kcal-num">2,400</div><div class="kcal-label">kcal / day</div></div>
+  </div>
+  <div class="cost-pill">&#128176; Estimated cost: ₹160–200/day</div>
+  <p class="section-title">Daily Macros</p>
+  <div class="macro-card">
+    <div class="macro-bar-wrap">
+      <div class="macro-seg" style="flex:36;background:#2ECC71;"></div>
+      <div class="macro-seg" style="flex:46;background:#F39C12;"></div>
+      <div class="macro-seg" style="flex:18;background:#3498DB;"></div>
+    </div>
+    <div class="macro-legend">
+      <div class="macro-item"><span class="macro-g" style="color:#2ECC71;">185<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#2ECC71;"></span>Protein</span></div>
+      <div class="macro-divider"></div>
+      <div class="macro-item"><span class="macro-g" style="color:#F39C12;">280<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#F39C12;"></span>Carbs</span></div>
+      <div class="macro-divider"></div>
+      <div class="macro-item"><span class="macro-g" style="color:#3498DB;">65<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#3498DB;"></span>Fats</span></div>
+    </div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('day',this)">Today's Plan</button>
+    <button class="tab-btn" onclick="switchTab('week',this)">Weekly Schedule</button>
+  </div>
+  <div id="view-day"><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127749;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#2ECC71;">Breakfast · 7:00 AM</div>
+                <div class="meal-name">Paneer Omelette + Toast</div>
+                <div class="meal-desc">Protein-packed morning boost</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#2ECC71;">520</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Low-fat paneer (crumbled)</span><span class="qty">120g</span></div><div class="ingredient-row"><span>Whole eggs</span><span class="qty">2 eggs</span></div><div class="ingredient-row"><span>Brown bread</span><span class="qty">2 slices</span></div><div class="ingredient-row"><span>Spinach, onion</span><span class="qty">40g</span></div><div class="ingredient-row"><span>Oil</span><span class="qty">1 tsp</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#9728;&#65039;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#F39C12;">Lunch · 1:00 PM</div>
+                <div class="meal-name">Tofu Stir-fry + Brown Rice</div>
+                <div class="meal-desc">Complete amino acids, complex carbs</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#F39C12;">750</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Firm tofu</span><span class="qty">200g</span></div><div class="ingredient-row"><span>Brown rice (cooked)</span><span class="qty">150g</span></div><div class="ingredient-row"><span>Mixed veggies</span><span class="qty">100g</span></div><div class="ingredient-row"><span>Soy sauce + oil</span><span class="qty">1 tbsp</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127807;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#9B59B6;">Snack · 4:30 PM</div>
+                <div class="meal-name">Greek Yogurt + Nuts + Fruit</div>
+                <div class="meal-desc">Casein protein + healthy fats</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#9B59B6;">350</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Greek yogurt</span><span class="qty">200g</span></div><div class="ingredient-row"><span>Mixed nuts (almonds, cashew)</span><span class="qty">30g</span></div><div class="ingredient-row"><span>Banana or apple</span><span class="qty">1 piece</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127769;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#3498DB;">Dinner · 8:00 PM</div>
+                <div class="meal-name">Dal Makhani + Paneer + 3 Rotis</div>
+                <div class="meal-desc">Slow-digesting protein dinner</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#3498DB;">780</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Dal makhani (cooked)</span><span class="qty">200g</span></div><div class="ingredient-row"><span>Low-fat paneer</span><span class="qty">100g</span></div><div class="ingredient-row"><span>Whole wheat roti</span><span class="qty">3 pieces</span></div><div class="ingredient-row"><span>Ghee</span><span class="qty">1 tsp</span></div></div>
+        </div></div>
+  <div id="view-week"><div class="week-grid" id="weekGrid"></div></div>
+</div>
+<div class="footer"><button class="primary-btn">Start my journey &#128640;</button></div>
+<script>
+const weekData=[{day:"Monday",kcal:2400,meals:[{type:"Breakfast",name:"Paneer Omelette + Toast"},{type:"Lunch",name:"Tofu Stir-fry + Brown Rice"},{type:"Snack",name:"Greek Yogurt + Nuts + Fruit"},{type:"Dinner",name:"Dal Makhani + Paneer + 3 Rotis"}]},{day:"Tuesday",kcal:2380,meals:[{type:"Breakfast",name:"Protein Smoothie + Paratha"},{type:"Lunch",name:"Rajma + Brown Rice + Raita"},{type:"Snack",name:"Paneer Tikka"},{type:"Dinner",name:"Matar Paneer + 3 Rotis"}]},{day:"Wednesday",kcal:2420,meals:[{type:"Breakfast",name:"Masala Oats + Boiled Eggs"},{type:"Lunch",name:"Soya Chunk Pulao + Raita"},{type:"Snack",name:"Peanut Butter + Banana"},{type:"Dinner",name:"Kadai Paneer + Rice + Roti"}]},{day:"Thursday",kcal:2390,meals:[{type:"Breakfast",name:"Chana Dal Cheela x3 + Curd"},{type:"Lunch",name:"Chole Bhature (light)"},{type:"Snack",name:"Sprouts + Paneer Salad"},{type:"Dinner",name:"Dal + Paneer Sabzi + 3 Rotis"}]},{day:"Friday",kcal:2410,meals:[{type:"Breakfast",name:"Idli x4 + Sambar + Paneer"},{type:"Lunch",name:"Palak Paneer + Brown Rice"},{type:"Snack",name:"Mixed Nuts + Yogurt"},{type:"Dinner",name:"Tofu Curry + 3 Rotis"}]},{day:"Saturday",kcal:2440,meals:[{type:"Breakfast",name:"Paneer Paratha x2 + Curd"},{type:"Lunch",name:"Chana Masala + Rice"},{type:"Snack",name:"Peanut Butter Toast + Milk"},{type:"Dinner",name:"Paneer Biryani + Raita"}]},{day:"Sunday",kcal:2460,meals:[{type:"Breakfast",name:"Protein Oats + Milk + Almonds"},{type:"Lunch",name:"Dal Tadka + Paneer + Rice"},{type:"Snack",name:"Greek Yogurt + Granola"},{type:"Dinner",name:"Soya Keema + 3 Rotis"}]},];
+
+const grid=document.getElementById('weekGrid');
+weekData.forEach(d=>{
+  const row=document.createElement('div');row.className='week-row';
+  row.innerHTML='<div class="week-row-header" onclick="toggleWeek(this)"><span class="week-day-name">'+d.day+'</span><span class="week-day-kcal">'+d.kcal+' kcal</span><span class="week-chevron">&#9660;</span></div><div class="week-meals">'+d.meals.map(m=>'<div class="week-meal-item"><div><div class="week-meal-type">'+m.type+'</div><div>'+m.name+'</div></div></div>').join('')+'</div>';
+  grid.appendChild(row);
+});
+function switchTab(view,btn){document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.getElementById('view-day').style.display=view==='day'?'block':'none';document.getElementById('view-week').style.display=view==='week'?'block':'none';}
+function toggleMeal(card){card.querySelector('.meal-detail').classList.toggle('open');}
+function toggleWeek(header){const meals=header.nextElementSibling;const chev=header.querySelector('.week-chevron');const open=meals.classList.toggle('open');chev.style.transform=open?'rotate(180deg)':'';}
+
+</script>
+</body>
+</html>

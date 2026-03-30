@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenPulse | Your Journey</title>
+    <style>
+        :root {
+            --bg-deep: #0F0F2D;
+            --accent-mint: #2ECC71;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --card-white: #E9ECEF;
+        }
+
+        body {
+            margin: 0; padding: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            background: radial-gradient(circle at top right, #1A1A40, var(--bg-deep));
+            color: white; min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .container { width: 100%; max-width: 500px; text-align: center; }
+
+        h1 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
+        .accent-text { color: var(--accent-mint); }
+        .subtitle { opacity: 0.8; margin-bottom: 30px; font-size: 16px; }
+
+        /* Navigation Pages */
+        .page { display: none; width: 100%; animation: fadeIn 0.4s ease-out; }
+        .active { display: block; }
+
+        /* Dark Glass Cards */
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            text-align: left;
+        }
+
+        .card:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-2px); }
+
+        .plan-card { border-left: 5px solid var(--accent-mint); background: rgba(255, 255, 255, 0.07); }
+
+        /* Budget White Cards */
+        .budget-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px 20px;
+            border-radius: 30px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .white-card {
+            background: var(--card-white);
+            color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .white-card:active { transform: scale(0.98); }
+
+        .dot-icon { width: 25px; height: 25px; border-radius: 50%; margin-right: 15px; }
+        .green-dot { background: #76BA1B; }
+        .money-icon { font-size: 24px; margin-right: 15px; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-link { color: var(--accent-mint); cursor: pointer; display: block; margin-top: 20px; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="page-1" class="page active">
+            <h1>Pick Your Path ✨</h1>
+            <p class="subtitle">Select a goal to unlock your custom plan</p>
+            <div class="card" onclick="selectGoal('Weight Loss')">
+                <div style="font-size: 30px; margin-right: 15px;">🔥</div>
+                <div><h3>Weight Loss</h3><p style="opacity:0.6;margin:0;">Shred fat & get lean ⚡</p></div>
+            </div>
+            <div class="card" onclick="selectGoal('Muscle Gain')">
+                <div style="font-size: 30px; margin-right: 15px;">💪</div>
+                <div><h3>Muscle Gain</h3><p style="opacity:0.6;margin:0;">Build mass & strength 🏗️</p></div>
+            </div>
+          
+        </div>
+
+        <div id="page-2" class="page">
+            <h1><span id="goal-name" class="accent-text">Plan</span> 🔥</h1>
+            <p class="subtitle">Your personalized fitness roadmap</p>
+          
+            <div class="card plan-card" onclick="showPage(3)"><span>🥗</span><h3 style="margin-left:15px">DIET PLAN</h3></div>
+            <div class="back-link" onclick="showPage(1)">← Change Goal</div>
+        </div>
+
+        <div id="page-3" class="page">
+            <h1>Diet Style 🍽️</h1>
+            <p class="subtitle">Select your preferred meal type</p>
+            <div class="card" onclick="selectDiet('Veg')">
+                <div style="font-size:30px; margin-right:15px;">🥦</div>
+                <div><h3>Vegetarian</h3><p style="opacity:0.6;margin:0;">Plant-based protein</p></div>
+            </div>
+            <div class="card" onclick="selectDiet('Non-Veg')">
+                <div style="font-size:30px; margin-right:15px;">🍗</div>
+                <div><h3>Non-Vegetarian</h3><p style="opacity:0.6;margin:0;">Lean meats & protein</p></div>
+            </div>
+            <div class="back-link" onclick="showPage(2)">← Back</div>
+        </div>
+
+        <div id="page-4" class="page">
+            <div style="font-size: 50px; margin-bottom: 10px;">💰</div>
+            <h3 id="budget-header-main" style="margin-bottom: 5px;">Select Diet Budget</h3>
+            <div style="font-size: 40px; margin-bottom: 30px;">💵</div>
+
+            <div class="budget-container">
+                <h3 id="budget-header-sub" style="margin-bottom: 20px;">Select Diet Budget</h3>
+                
+                <div class="white-card" onclick="goToFinalPage('100')">
+                    <div class="dot-icon green-dot"></div>
+                    Under ₹100
+                </div>
+
+                <div class="white-card" onclick="goToFinalPage('200')">
+                    <span class="money-icon">💸</span>
+                    Under ₹200
+                </div>
+            </div>
+            <div class="back-link" onclick="showPage(3)">← Back to Diet Style</div>
+        </div>
+
+    </div>
+
+    <script>
+        // Global variables to "remember" choices
+        let userGoal = "";
+        let userDiet = "";
+
+        // Standard page switcher
+        function showPage(pageNumber) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.getElementById('page-' + pageNumber).classList.add('active');
+        }
+
+        // Saves Goal and goes to Page 2
+        function selectGoal(goal) {
+            userGoal = goal.toLowerCase().replace(" ", ""); // Converts "Weight Loss" to "weightloss"
+            document.getElementById('goal-name').innerText = goal + " Plan";
+            showPage(2);
+        }
+
+        // Saves Diet and goes to Page 4
+        function selectDiet(type) {
+            userDiet = type.toLowerCase().replace("-", ""); // Converts "Non-Veg" to "nonveg"
+            
+            // Update the text on the budget page
+            document.getElementById('budget-header-main').innerText = "Select " + type + " Diet Budget";
+            document.getElementById('budget-header-sub').innerText = "Select " + type + " Diet Budget";
+            
+            showPage(4);
+        }
+
+        // The Magic Logic: Combines everything to open the right file
+        function goToFinalPage(budget) {
+            // Build the filename: dietplan_weightloss_veg_100.html
+            const fileName = "dietplan_" + userGoal + "_" + userDiet + "_" + budget + ".html";
+            
+            // Redirect the browser to that file
+            window.location.href = fileName;
+        }
+    </script>
+</body>
+</html>
