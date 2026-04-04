@@ -17,6 +17,14 @@ def login_required(f):
 
     return decorated_function
 
+def admin_required(f):
+    def wrapper(*args, **kwargs):
+        if session.get("role") != "admin":
+            return "Forbidden", 400
+        return f(*args, **kwargs)
+    wrapper.__name__ = f.__name__
+    return wrapper
+
 def apology(message, code=400):
     """Render message as an apology to user."""
 
