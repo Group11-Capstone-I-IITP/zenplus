@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Assesment(Language)
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/lang.css') }}">
+{% endblock %}
+
+{% block main %}
+  <a href="#">
+    <div class="progress-container">
+      <div class="step active0"></div>
+      <div class="step active1"></div>
+      <div class="step"></div>
+      <div class="step"></div>
+      <div class="step"></div>
+      <div class="step"></div>
+    </div>
+  </a>
+
+  <div class="welcome">
+    <h1>Your Language<br>Helps us personalize content for you</h1>
+    <p class="greeting"></p>
+  </div>
+  
+  <form method="post" action="/language">
+    <div class="input-group">
+      <input type="text" value="English">
+      <span class="clear-btn">&times;</span>
+    </div>
+
+    <div class="options-container">
+      <h1 class="question">Which language do you prefer to speak in?</h1>
+      <p class="subtitle">This does not affect your app language</p>
+
+      <div class="language-grid">
+        <label class="lang-card">
+          <input type="radio" name="language" value="hindi">
+          <span class="card-content">Hindi (हिन्दी)</span>
+        </label>
+
+        <label class="lang-card active">
+          <input type="radio" name="language" value="english" checked>
+          <span class="card-content">English</span>
+        </label>
+
+        <label class="lang-card">
+          <input type="radio" name="language" value="tamil">
+          <span class="card-content">Tamil (தமிழ்)</span>
+        </label>
+
+        <label class="lang-card">
+          <input type="radio" name="language" value="telugu">
+          <span class="card-content">Telugu (తెలుగు)</span>
+        </label>
+
+        <label class="lang-card">
+          <input type="radio" name="language" value="malayalam">
+          <span class="card-content">Malayalam (മലയാളം)</span>
+        </label>
+
+        <label class="lang-card">
+          <input type="radio" name="language" value="other">
+          <span class="card-content">Other</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="button6">
+      <button class="button5" type="submit">Next</button>
+    </div>
+  </form>
+
+{% endblock %}
+      

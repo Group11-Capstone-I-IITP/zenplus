@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Admin Panel
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/admin_panel.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="admin-header">
+    <h1>Welcome {{ first_name }}</h1>
+    <p>Select a module to manage your application.</p>
+</div>
+
+<div class="admin-dashboard">
+    
+    <a href="{{ url_for('manage_users') }}" class="card">
+        <img src="static/images/gemini_user.png" alt="Users Module">
+        <div class="card-body">
+            <h3>Users</h3>
+            <p>Manage account settings, assign user roles, and monitor active sessions across the platform.</p>
+        </div>
+    </a>
+
+    <a href="{{ url_for('manage_messages') }}" class="card">
+        <img src="static/images/pexel_mail.jpg" alt="Contact Messages Module">
+        <div class="card-body">
+            <h3>Contact Messages</h3>
+            <p>Review user feedback, answer support inquiries, and track the status of support tickets.</p>
+        </div>
+    </a>
+    
+    <a href="{{ url_for('manage_finance') }}" class="card">
+        <img src="static/images/pexel_finance.jpg" alt="Finance Module">
+        <div class="card-body">
+            <h3>Finance</h3>
+            <p>Track application revenue, monitor daily transactions, and generate comprehensive financial reports.</p>
+        </div>
+    </a>
+
+</div>
+{% endblock %}

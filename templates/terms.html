@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Privacy & Terms
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/terms.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<h1>ZenPulse legal  Information</h1>
+
+<h2>Privacy Policy</h2>
+<p>
+ZenPluse respects your privacy. We may collect basic information such as name or email 
+to improve the user experience of our fitness and meditation platform.
+</p>
+
+<p>
+We do not sell or share personal information with third parties. All user data is kept secure.
+</p>
+
+<p>
+Information collected is only used to improve website services such as workout tracking 
+and wellness recommendations.
+</p>
+
+<h2>Terms and Conditions</h2>
+
+<p>
+By using the ZenPluse website, you agree to follow the rules and policies described here.
+</p>
+
+<p>
+The content on this website is for educational and fitness guidance purposes only.
+Users should consult a professional before starting any fitness program.
+</p>
+
+<p>
+All website content including design, text, and graphics belongs to ZenPulse.
+Unauthorized copying or redistribution is not allowed.
+</p>
+
+<p>
+ZenPluse may update these terms at any time without prior notice.
+</p>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+USERS
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/manage_users.css') }}">
+{% endblock %}
+
+{% block main %}
+
+    {% if users %}
+        <table class="users-table" id="usersTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Role</th>
+                    <th>Cash</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for us in users %}
+                <tr class="main-row" data-target="details-{{ us.id }}">
+                    <td>{{ us.first_name }}</td>
+                    <td>{{ us.last_name }}</td>
+                    <td>{{ us.username }}</td>
+                    <td class="role-badge {% if us.role == 'admin' %}role-admin{% else %}role-user{% endif %}">
+                        {{ us.role | capitalize }}
+                    </td>
+                    <td>${{ us.cash }}</td>
+                </tr>
+                
+                <tr id="details-{{ us.id }}" class="details-row">
+                    <td colspan="5">
+                        <div class="details-container">
+                            <h4>User Assessment Details</h4>
+                            {% if us.age %}
+                                <div class="details-grid">
+                                    <p><strong>Age:</strong> {{ us.age }}</p>
+                                    <p><strong>Gender:</strong> {{ us.gender }}</p>
+                                    <p><strong>City:</strong> {{ us.city }}</p>
+                                    <p><strong>Language:</strong> {{ us.lang }}</p>
+                                    <p><strong>Height:</strong> {{ us.height }} cm</p>
+                                    <p><strong>Current Weight:</strong> {{ us.initial_weight }} kg</p>
+                                    <p><strong>Target Weight:</strong> {{ us.targeted_weight }} kg</p>
+                                    <p><strong>Goal:</strong> {{ us.weight_goal }}</p>
+                                    <p><strong>Activity Level:</strong> {{ us.activity }}</p>
+                                    <p><strong>Specific Goals:</strong> {{ us.goals }}</p>
+                                    <p><strong>Medical:</strong> {{ us.medical }}</p>
+                                </div>
+                            {% else %}
+                                <p style="color: #666; font-style: italic;">This user has not completed the assessment yet.</p>
+                            {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No users found in the database.</p>
+    {% endif %}
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/manage_users.js') }}"></script>
+{% endblock %}

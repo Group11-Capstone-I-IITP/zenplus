@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Assesment(Fitness Level)
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fitness_level.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{% endblock %}
+
+{% block main %}
+
+  <a href="#">
+    <div class="progress-container">
+      <div class="step active"></div>
+      <div class="step active"></div>
+      <div class="step active"></div>
+      <div class="step active"></div>
+      <div class="step"></div>
+      <div class="step"></div>
+      <div class="step"></div>
+    </div>
+  </a>
+
+  <div class="welcome">
+    <h1>How active are you?</h1>
+    <p>Based on your lifestyle, we can assess your daily calorie requirements.</p>
+  </div>
+
+  <form method="post" action="/fitness_level">
+    <div class="options-container">
+      <div class="cards">
+        <label class="card">
+          <input type="radio" name="activity" value="sitting" required>
+          <div class="card-content">
+            <div class="icon"><i class="fa-solid fa-chair"></i></div>
+            <div class="text">
+              <h3>Mostly Sitting</h3>
+              <span>Seated work, low movement.</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card">
+          <input type="radio" name="activity" value="standing">
+          <div class="card-content">
+            <div class="icon"><i class="fa-solid fa-paw"></i></div>
+            <div class="text">
+              <h3>Often Standing</h3>
+              <span>Standing work, occasional walking.</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card">
+          <input type="radio" name="activity" value="walking">
+          <div class="card-content">
+            <div class="icon"><i class="fa-solid fa-shoe-prints"></i></div>
+            <div class="text">
+              <h3>Regularly Walking</h3>
+              <span>Frequent walking, steady activity.</span>
+            </div>
+          </div>
+        </label>
+
+        <label class="card">
+          <input type="radio" name="activity" value="intense">
+          <div class="card-content">
+            <div class="icon"><i class="fa-solid fa-helmet-safety"></i></div>
+            <div class="text">
+              <h3>Physically Intense Work</h3>
+              <span>Heavy labor, high exertion.</span>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="button6">
+      <button class="button5" type="submit">Next</button>
+    </div>
+  </form>
+
+{% endblock %}

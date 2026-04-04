@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Wallet
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/wallet.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="wallet-container">
+    <div class="wallet-top-row">
+        <section class="card-section">
+            <div class="credit-card">
+                <div class="card-header">
+                    <h2 class="card-logo">ZenPlus</h2>
+                    <div class="card-chip"></div>
+                </div>
+                <div class="card-body">
+                    <div class="card-number" id="cardNumber">1234 5678 9012 3459</div>
+                </div>
+                <div class="card-footer">
+                    <div class="card-holder">
+                        <span class="label">Card Holder</span>
+                        <div class="name">{{ first_name }} {{last_name }}</div>
+                    </div>
+                    <div class="card-balance">
+                        <span class="label">Balance</span>
+                        <div class="balance">₹{{ cash }}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="add-money-section">
+            <div class="form-card">
+                <h3>Add Money</h3>
+                <form id="addMoneyForm" action="/wallet" method="POST">
+                    <div class="input-group">
+                        <input autocomplete="off" type="number" id="amount" name="amount" placeholder="Amount (₹)" required min="1">
+                    </div>
+                    <div class="input-group">
+                        <input autocomplete="off" type="password" id="password" name="password" placeholder="Account Password" required>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn-proceed">Proceed to Pay</button>
+                </form>
+            </div>
+        </section> 
+    </div>
+
+    <section class="transactions-section">
+        <h3>Recent Transactions</h3>
+        <div class="transaction-list">
+            
+            {% if transactions %}
+                {% for tx in transactions %}
+                <div class="transaction-item">
+                    <div class="tx-details">
+                        <div class="tx-title">
+                            {% if tx.type == 'credit' %}
+                                Added to Wallet
+                            {% else %}
+                                Wallet Deduction
+                            {% endif %}
+                        </div>
+                        <div class="tx-date">{{ tx.timestamp }}</div>
+                    </div>
+                    <div class="tx-amount {% if tx.type == 'credit' %}tx-positive{% else %}tx-negative{% endif %}">
+                        {% if tx.type == 'credit' %}+{% else %}-{% endif %}₹{{ tx.amount }}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="no-transactions">
+                    <p>No recent transactions found.</p>
+                </div>
+            {% endif %}
+            
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/wallet') }}"></script>
+{% endblock %}

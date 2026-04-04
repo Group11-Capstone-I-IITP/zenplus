@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block title %}
+MESSAGES
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/manage_messages.css') }}"/>
+{% endblock %}
+
+{% block main %}
+
+<div id="tableView">
+  {% if contacts %}
+    <table class="messages-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Time</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for contact in contacts %}
+            <tr class="main-row {{ 'unread' if contact.is_read == 0 else 'read' }}" data-target="details-{{ contact.id }}">
+                <td>{{ contact.id }}</td>
+                <td>{{ contact.username or 'N/A' }}</td>
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.email }}</td>
+                <td>
+                {% if contact.is_read == 0 %}
+                    <span class="badge unread-badge">Unread</span>
+                {% else %}
+                    <span class="badge read-badge">Read</span>
+                {% endif %}
+                </td>
+                <td>{{ contact.timestamp }}</td>
+                <td class="action-cell">
+                    <form method="POST" action="/mark_read/{{ contact.id }}">
+                        <button type="submit" class="btn-read">Mark Read</button>
+                    </form>
+
+                    <form method="POST" action="/delete_message/{{ contact.id }}">
+                        <button type="submit" class="btn-delete">Delete</button>
+                    </form>
+                </td>
+            </tr>
+
+            <tr id="details-{{ contact.id }}" class="details-row">
+                <td colspan="7">
+                    <div class="details-container">
+                        <h4>Message from {{ contact.name }}</h4>
+                        <div class="full-message-box">
+                            {{ contact.message }}
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+  {% else %}
+    <p style="color: white;">No messages found.</p>
+  {% endif %}
+</div>
+
+{% endblock %}
+  
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/manage_messages.js') }}"></script>
+{% endblock %}

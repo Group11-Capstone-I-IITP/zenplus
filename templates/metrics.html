@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Assesment(Metrics)
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/metrics.css') }}">
+{% endblock %}
+
+{% block main %}
+    <a href="#"><div class="progress-container">
+        <div class="step active0"></div>
+        <div class="step active1"></div>
+        <div class="step active1"></div>
+        <div class="step active1"></div>
+        <div class="step active1"></div>
+        <div class="step active1"></div>
+    </div></a>
+
+    <div class="welcome">
+        <h1 class="Welcome">Build Better Habits. Build a Better You.”</h1>
+        <p class="greeting">“Your body is your responsibility.<br>
+        No one else will build it for you.<br><br>
+        Every day is a new chance to improve —<br>
+        one better meal, one extra rep, one step forward.<br><br>
+        You don’t need to be perfect.<br>
+        You just need to be consistent.<br><br>
+        Small efforts, repeated daily,<br>
+        create big transformations over time.<br><br>
+        Start now. Stay focused.<br>
+        And never stop until you become the best version of yourself.....</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Fitness Goal Calculator</h2>
+
+        <form method="POST" action="">
+            <label>AGE</label>
+            <input type="number" name="age" placeholder="Enter your Age" required>
+
+            <label>Height (cm)</label>
+            <input type="number" name="height" placeholder="Enter your height" required>
+
+            <label>Weight (kg)</label>
+            <input type="number" name="weight" placeholder="Enter your weight" required>
+
+            <label>Target Weight (kg)</label>
+            <input type="number" name="target_weight" placeholder="Enter target weight" required>
+
+            <label>Goal</label>
+            <select name="goal" required>
+                <option value="gain">Gain Weight</option>
+                <option value="lose">Lose Weight</option>
+                <option value="maintain">Maintain</option>
+            </select>
+
+            <button type="submit">START NOW</button>
+        </form>
+    </div>
+
+{% endblock %}

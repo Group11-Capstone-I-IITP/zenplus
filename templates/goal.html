@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Assesment(Goal)
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/goal.css') }}">
+{% endblock %}
+
+{% block main %}
+<form method="POST" action="">
+    <div class="progress-container">
+        <div class="step active0"></div>
+        <div class="step active1"></div>
+        <div class="step active1"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+     </div>
+
+    <div class="welcome">
+        <h1>Hey there!</h1>
+        <p>Prioritize exercise to improve your long-term health, gain strength, and increase your energy levels.</p>
+    </div>
+
+    <div class="gender">
+        <p>What's your biological sex?</p>
+        <small>We support all forms of gender expression. However, we need this to calculate your body metrics.</small>
+     </div>
+     
+    <div class="gender1">
+        <p id="gender2">Select Gender</p>
+        <label><input name="gender" type="radio" value="Male" required> Male</label>
+        <label><input name="gender" type="radio" value="Female" required> Female</label>
+    </div>
+
+    <div class="medical">
+        <p><strong>What are you looking for?</strong></p>
+        <small>Selecting one or more options would help us tailor your experience.</small>
+     </div>
+
+    <div class="box">
+        <label class="selecting"><input name="goals" type="checkbox" value="coach-guidance"><span>COACH GUIDANCE</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="snap"><span>SNAP</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="diet-plan"><span>DIET PLAN</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="weight-loss"><span>WEIGHT LOSS</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="glp-1"><span>GLP-1</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="intermittent-fasting"><span>INTERMITTENT FASTING</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="workout-yoga"><span>WORKOUT/YOGA</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="muscle-gain"><span>MUSCLE GAIN</span></label>
+        <label class="selecting"><input name="goals" type="checkbox" value="healthy-food"><span>HEALTHY FOOD</span></label>
+    </div>
+
+    <div class="button6">
+        <button class="button5" type="submit">Next</button>
+    </div>
+</form>
+{% endblock %}

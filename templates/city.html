@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Assessment(City)
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/city.css') }}">
+{% endblock %}
+
+{% block main %}
+<form method="post" action="/city">
+    <a href="#"><div class="progress-container">
+        <div class="step active0"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+     </div></a>
+
+     <div class="welcome">
+        <h1 class="Welcome">Where are you from</h1>
+        <p class="greeting">We need to know your location to provide you with the best experience.</p>
+     </div>
+     
+     <div class="input-container" style="display: flex; justify-content: center; align-items: center; ">
+        <input type="text" name="city" list="city" placeholder="city" required>
+        <datalist id="city">
+            <option value="Hyderabad">
+            <option value="Raipur">
+            <option value="Chennai">
+            <option value="Mumbai">
+            <option value="Delhi">
+            <option value="Patna">
+            <option value="Lucknow">
+            <option value="Ahmedabad">
+            <option value="Chandigarh">
+            <option value="Thiruvananthapuram">
+        </datalist>
+     </div>
+
+     <div class="city-grid">
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Bengaluru</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Mumbai</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>New Delhi</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Kolkata</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Chennai</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Hyderabad</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Ahmedabad</span>
+        </div>
+        <div class="city-item">
+            <div class="icon-placeholder">🏛️</div>
+            <span>Surat</span>
+        </div>
+     </div>
+
+     <div class="button6">
+        <button class="button5" type="submit">Next</button>
+     </div>
+     <hr>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/city.js') }}"></script>
+{% endblock %}

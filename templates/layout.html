@@ -34,20 +34,36 @@
 
         <ul class="nav nav-pills">
           {% if session["user_id"] %}
-            <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="/select_workout" class="nav-link">Workouts</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="{{ url_for('select_workout') }}" class="nav-link">Workouts</a></li>
             <li class="nav-item"><a href="/meditation" class="nav-link">Meditation</a></li>
-            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="{{ url_for('wallet') }}" class="nav-link">Wallet</a></li>
             <li class="nav-item"><a href="/profile" class="nav-link">Profile</a></li>
-            <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+            {% if session["role"] == "admin" %}
+              <li class="nav-item"><a href="{{ url_for('admin_panel') }}" class="nav-link">Admin Panel</a></li>
+            {% endif %}
+            <li class="nav-item"><a href="{{ url_for('logout') }}" class="nav-link">Logout</a></li>
           {% else %}
-            <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="/register" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="{{ url_for('login') }}" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="{{ url_for('register') }}" class="nav-link">Register</a></li>
           {% endif %}
         </ul>
 
       </div>
     </header>
+
+<!-- ===== Flash Messages ===== -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="container mt-3">
+          {% for category, message in messages %}
+            <div class="alert alert-{{ category }} flash-message" role="alert">
+              {{ message }}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
 
     <!-- ===== Main Content ===== -->
     <main class="container layout-main">
@@ -60,19 +76,19 @@
 
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a href="/home" class="nav-link px-2 text-muted">Home</a>
+            <a href="/" class="nav-link px-2 text-muted">Home</a>
           </li>
           <li class="nav-item">
-            <a href="/contact" class="nav-link px-2 text-muted">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="/careers" class="nav-link px-2 text-muted">Careers</a>
+            <a href="{{ url_for('contact') }}" class="nav-link px-2 text-muted">Contact</a>
           </li>
           <li class="nav-item">
             <a href="/faq" class="nav-link px-2 text-muted">FAQs</a>
           </li>
           <li class="nav-item">
-            <a href="/about" class="nav-link px-2 text-muted">About</a>
+            <a href="{{ url_for('terms') }}" class="nav-link px-2 text-muted">Privacy & Terms</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('about') }}" class="nav-link px-2 text-muted">About</a>
           </li>
         </ul>
 

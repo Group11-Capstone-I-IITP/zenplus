@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block titile %}
+About Us
+{% endblock %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="about-box">
+
+<h1>About ZenPluse</h1>
+
+<p>
+ZenPulse is a fitness and wellness website designed to help people maintain
+a healthy lifestyle. Our platform combines workout guidance, meditation,
+and health tracking features in one place.
+</p>
+
+<p>
+The goal of ZenPluse is to make fitness simple and accessible for everyone.
+Users can explore workouts, track their progress, and practice meditation
+to improve both physical and mental well-being.
+</p>
+
+<p>
+This website was created as a project to demonstrate modern web design
+and fitness-focused digital solutions.
+</p>
+
+<p>
+Thank you for visiting ZenPulse. We hope you find it helpful on your fitness journey!
+</p>
+<div>
+    <ul>
+        <underline><p>Our founder</p><hr></underline>
+        <li><strong>Amith</strong> - not decide</li>
+        <li><strong>Ameen</strong> - not decide</li>
+        <li><strong>Sarfaraz</strong> - not decide</li>
+        <li><strong>Anam alam</strong> - not decide</li>
+    </ul>
+</div>
+<div>
+    <underline><p>Special Partners</p><hr></underline>
+    <strong>SUPPORT AND GUIDANCE(HELP on this website)</strong><p>Acknowledgement:
+
+I would like to express my sincere gratitude to my college and faculty members for supporting me throughout the development of my project **ZenPulse**. Their guidance, encouragement, and valuable suggestions helped me improve my knowledge and complete this project successfully.
+
+I am especially thankful to my teachers and mentors for providing the necessary resources and direction during the project development process. Their support motivated me to learn new technologies and apply them in this project.
+
+I would also like to thank my college for giving me the opportunity to work on this project and enhance my practical skills.
+
+Thank you for your continuous guidance and support.
+</p>
+</div>
+
+<div>
+    <ul>
+        <underline><p>Our Vision</p><hr></underline>
+        <li>To empower individuals to lead healthier lives through accessible online resources.</li>
+        <li>To foster a supportive community focused on fitness and wellness.</li>
+        <li>To continuously innovate and improve our platform based on user feedback.</li>
+    </ul>
+</div>
+
+<div>
+    <ul>
+        <underline><p>Our Mission</p><hr></underline>
+        <li>to provide high-quality fitness and wellness resources online.</li>
+        <li>To create a supportive community for people on their health journeys.</li>
+        <li>To promote holistic well-being through exercise, nutrition, and mindfulness.</li>
+    </ul>
+</div>
+
+{% endblock %}

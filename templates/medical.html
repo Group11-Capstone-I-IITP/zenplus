@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Assesment(Medical)
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/medical.css') }}">
+{% endblock %}
+
+{% block main %}
+  <a href="#">
+    <div class="progress-container">
+      <div class="step active0"></div>
+      <div class="step active1"></div>
+      <div class="step active1"></div>
+      <div class="step active1"></div>
+      <div class="step active1"></div>
+      <div class="step"></div>
+    </div>
+  </a>
+
+  <div class="welcome">
+    <h1>Any Medical Condition we should be aware of?</h1>
+    <p>This info will help us guide you to your fitness goals safely and quickly.</p>
+  </div>
+
+  <form method="post" action="/medical">
+    <div class="options-container">
+      <div class="none">
+        <input type="checkbox" id="none" name="condition" value="None">
+        <label for="none"> None</label>
+      </div>
+
+      <div class="chips">
+          <input type="checkbox" id="d1" name="condition" value="Diabetes">
+          <label for="d1">Diabetes</label>
+
+          <input type="checkbox" id="d2" name="condition" value="Pre-Diabetes">
+          <label for="d2">Pre-Diabetes</label>
+
+          <input type="checkbox" id="d3" name="condition" value="Cholesterol">
+          <label for="d3">Cholesterol</label>
+
+          <input type="checkbox" id="d4" name="condition" value="Hypertension">
+          <label for="d4">Hypertension</label>
+
+          <input type="checkbox" id="d5" name="condition" value="PCOS">
+          <label for="d5">PCOS</label>
+
+          <input type="checkbox" id="d6" name="condition" value="Thyroid">
+          <label for="d6">Thyroid</label>
+
+          <input type="checkbox" id="d7" name="condition" value="Physical Injury">
+          <label for="d7">Physical Injury</label>
+
+          <input type="checkbox" id="d8" name="condition" value="Excessive stress/anxiety">
+          <label for="d8">Excessive stress/anxiety</label>
+
+          <input type="checkbox" id="d9" name="condition" value="Sleep issues">
+          <label for="d9">Sleep issues</label>
+
+          <input type="checkbox" id="d10" name="condition" value="Depression">
+          <label for="d10">Depression</label>
+
+          <input type="checkbox" id="d11" name="condition" value="Anger issues">
+          <label for="d11">Anger issues</label>
+
+          <input type="checkbox" id="d12" name="condition" value="Loneliness">
+          <label for="d12">Loneliness</label>
+
+          <input type="checkbox" id="d13" name="condition" value="Relationship stress">
+          <label for="d13">Relationship stress</label>
+      </div>
+    </div>
+
+    <div class="button6">
+      <button class="button5" type="submit">Next</button>
+    </div>
+  </form>
+
+{% endblock %}
