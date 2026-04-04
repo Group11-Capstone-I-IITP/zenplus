@@ -1,0 +1,141 @@
+#tableView {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.messages-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.messages-table th,
+.messages-table td {
+    padding: 14px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+.messages-table th {
+    background: #2c2c2c;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+}
+
+/* Backgrounds for unread vs read main rows */
+.unread {
+    background-color: #2a1a1a;
+}
+
+.read {
+    background-color: #1a1a1a;
+}
+
+/* Main row interactive styling */
+.main-row {
+    transition: background-color 0.2s ease, border-left 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+.main-row:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+
+.main-row.active-main {
+    background-color: #383838;
+    border-left: 4px solid #3498db; /* Blue highlight */
+}
+
+/* Badges and Buttons */
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.unread-badge {
+    background: #e74c3c; /* Red */
+}
+
+.read-badge {
+    background: #27ae60; /* Green */
+}
+
+.action-cell {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-read, .btn-delete {
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: opacity 0.2s;
+}
+
+.btn-read:hover, .btn-delete:hover {
+    opacity: 0.8;
+}
+
+.btn-read {
+    background: #3498db;
+}
+
+.btn-delete {
+    background: #e74c3c;
+}
+
+/* Hidden Details Row Styling */
+.details-row {
+    display: none; 
+    background-color: #242424;
+}
+
+.details-row.active {
+    display: table-row;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.details-row td {
+    padding: 0;
+    border-bottom: none;
+}
+
+.details-container {
+    padding: 20px 30px;
+    border-bottom: 3px solid #2c2c2c;
+}
+
+.details-container h4 {
+    margin-top: 0;
+    color: #3498db;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}
+
+.full-message-box {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Keeps paragraphs and line breaks */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

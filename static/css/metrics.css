@@ -1,0 +1,101 @@
+/* Removed the 'body' and reset selectors entirely because layout.html handles it */
+
+.welcome {
+  text-align: center;
+  padding: 50px;
+  background-color: #dfeee5;
+  margin: 0 auto 30px auto; /* Centers the green box */
+  max-width: 700px; /* Gives the box the "card" shape */
+}
+
+.welcome h1 {
+  font-size: 36px;
+  color: #121111;
+  margin-bottom: 10px;
+}
+
+/*container for the progress bar*/
+.progress-container {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto 30px auto; /* Adjusted bottom margin */
+}
+
+/*individual segments of the progress bar*/
+.step {
+  height: 4px;
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+/*active segment of the progress bar*/
+.step.active0,
+.step.active1 {
+  background-color: #1edf68;
+}
+
+/* Renamed to form-container to fix Bootstrap conflict */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #265d3c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #145a1f;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 15px;
+  background: #eafaf1;
+  border-radius: 8px;
+}
+
+.result h3 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}

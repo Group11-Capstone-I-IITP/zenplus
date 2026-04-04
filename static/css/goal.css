@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8fbfa; /* Match the very light background in screenshot */
+}
+
+/* Wide banner styling */
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e8f4ec;
+  margin: 0 auto 30px;
+  max-width: 1000px; /* Stretches wide like the screenshot */
+}
+
+.welcome h1 {
+  font-size: 32px;
+  color: #121111;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.progress-container {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.step {
+  height: 4px;
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.step.active0, .step.active1 {
+  background-color: #1edf68;
+}
+
+.gender, .gender1, .medical {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.gender p, .medical p {
+  margin-bottom: 5px;
+}
+
+#gender2 {
+  color: rgb(68, 127, 181);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* The light green box holding the checkboxes */
+.box {
+  background-color: #e8f4ec;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* The white rows inside the box */
+.selecting {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.selecting input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.selecting span {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.button6 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 15px;
+  margin: 0 auto 40px;
+}
+
+.button5 {
+  background-color: #265d3c;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button5:hover {
+  background-color: #145a1f;
+}

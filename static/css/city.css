@@ -1,0 +1,182 @@
+.body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.welcome {
+    text-align: center;
+    padding: 50px;
+    background-color: #dfeee5;
+    margin-bottom: 20px;
+}
+.welcome h1 {
+    font-size: 36px;
+    color: #121111;
+    margin-bottom: 10px;
+}
+/*container for the progress bar*/
+.progress-container{
+    display: flex;
+    gap:6px; /*space between segments*/
+    width:100%;
+    max-width:400px; /*max width of the progress bar*/
+    margin: 20px auto; /*center the progress bar*/
+}
+/*individual segments of the progress bar*/
+.step{
+    height: 4px;
+    flex:1;
+    background-color:#e0e0e0;
+    border-radius: 10px;
+}
+/*active segment of the progress bar*/
+.step.active0{
+    background-color:#1edf68;
+}
+.step.active1{
+    background-color:#1edf68;
+}
+
+ /* City Grid */
+ .city-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 10px;
+    padding: 0 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.city-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-placeholder {
+    font-size: 30px;
+    margin-bottom: 5px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.city-item span {
+    font-size: 11px;
+    font-weight: 500;
+    color: #444;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.city-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.city-item {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.city-item::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+}
+
+.city-item.selected {
+    border-color: #1edf68;
+    background-color: #e0f4e7;
+}
+
+.city-item.selected::before {
+    background-color: #1edf68;
+    border-color: #1edf68;
+}
+
+.city-item.selected::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.city-item:focus-visible {
+    outline: 3px solid rgba(30, 223, 104, 0.35);
+    outline-offset: 2px;
+}
+
+
+
+.button6 {
+    display: flex;
+    justify-content: center; /* Changed from space-between to center */
+    gap: 12px;
+    padding: 20px 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.button6 a {
+    text-decoration: none;
+}
+
+.backbutton {
+    background-color: #1a4d2e;
+    bottom: 0px;
+    color: white;
+    text-decoration: none;
+}
+.button7{
+    background-color: #265d3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button5{
+    background-color: #265d3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button7:hover, .button5:hover {
+    background-color: #145a1f;
+}

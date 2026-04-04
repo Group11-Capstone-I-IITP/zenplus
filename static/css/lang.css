@@ -1,0 +1,174 @@
+:root {
+  --primary-color: #1a4d44; /* Dark teal from image */
+  --bg-color: #fcfcfc;
+  --text-main: #333;
+  --text-muted: #888;
+  --border-color: #ddd;
+}
+
+/* Removed the 'body' selector to prevent layout.html background/font conflicts */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.welcome {
+    text-align: center;
+    padding: 50px;
+    background-color: #dfeee5;
+    margin: 0 auto 30px auto; /* Centers the green box */
+    max-width: 700px; /* Gives the box the "card" shape */
+}
+
+.welcome h1 {
+    font-size: 36px;
+    color: #121111;
+    margin-bottom: 10px;
+}
+
+.greeting {
+  font-size: 18px;
+  color: #121111;
+  margin: 0;
+}
+
+/*container for the progress bar*/
+.progress-container{
+    display: flex;
+    gap: 6px; 
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 30px auto; /* Adjusted bottom margin for spacing */
+}
+
+/*individual segments of the progress bar*/
+.step{
+    height: 4px;
+    flex: 1;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+/*active segment of the progress bar*/
+.step.active0,
+.step.active1 {
+    background-color: #1edf68;
+}
+
+/* Added for structural spacing */
+.options-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.question {
+  font-size: 35px;
+  color: #121111;
+  margin: 20px 0 8px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 20px;
+  padding: 0 15px;
+}
+
+/* Input Styles */
+.input-group {
+  position: relative;
+  width: 300px;
+  max-width: 80%;
+  margin: 0 auto 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Grid Layout for Languages */
+.language-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.lang-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.lang-card input {
+  position: absolute;
+  opacity: 0;
+}
+
+.card-content {
+  display: block;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+/* Selection State */
+.lang-card input:checked + .card-content {
+  border-color: var(--primary-color);
+  background-color: #e8f3f1;
+  font-weight: bold;
+}
+
+/* Centered the button container */
+.button6 {
+  display: flex;
+  justify-content: center; /* Changed from space-between */
+  gap: 12px;
+  padding: 20px 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.button6 a {
+  text-decoration: none;
+}
+
+.button7,
+.button5 {
+    background-color: #265d3c;
+    color: white;
+    border: none;
+    padding: 10px 40px; /* Added padding to match button width standard */
+    font-size: 14px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button7:hover, .button5:hover {
+    background-color: #145a1f;
+}

@@ -1,0 +1,15 @@
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+line-height:1.6;
+}
+
+.about-box{
+max-width:700px;
+margin:auto;
+text-align:center;
+}
+
+h1{
+color:#22c55e;
+}

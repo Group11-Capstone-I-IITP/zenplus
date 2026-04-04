@@ -1,0 +1,143 @@
+/* Removed the 'body' selector entirely because layout.html handles the page background/font */
+
+.welcome {
+  text-align: center;
+  padding: 50px;
+  background-color: #dfeee5;
+  margin: 0 auto 30px auto; /* Centers the green box */
+  max-width: 700px; /* Gives the box the "card" shape */
+}
+
+.welcome h1 {
+  font-size: 36px;
+  color: #121111;
+  margin: 0 0 10px;
+}
+
+.welcome p {
+  margin: 0;
+  color: #333;
+}
+
+/*container for the progress bar*/
+.progress-container {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto 30px auto; /* Adjusted bottom margin for spacing */
+}
+
+/*individual segments of the progress bar*/
+.step {
+  height: 4px;
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.step.active {
+  background-color: #1edf68;
+}
+
+/* Renamed to options-container to fix Bootstrap conflict */
+.options-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.card:hover .card-content {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card input:checked + .card-content {
+  border-color: #1edf68;
+  background-color: #e0f4e7;
+}
+
+.icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.text {
+  text-align: left;
+}
+
+.text h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.text span {
+  font-size: 13px;
+  color: gray;
+}
+
+/* Centered the button container */
+.button6 {
+  display: flex;
+  justify-content: center; /* Changed from space-between */
+  gap: 12px;
+  padding: 20px 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.button7,
+.button5 {
+  background-color: #265d3c;
+  color: white;
+  border: none;
+  padding: 10px 40px; /* Added extra padding to match button width */
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button7:hover,
+.button5:hover {
+  background-color: #145a1f;
+}
+
+.button6 a {
+  text-decoration: none;
+}
