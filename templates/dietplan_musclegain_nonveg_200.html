@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Diet Plan Non-Vegetarian Muscle Gain 200
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dietplan_musclegain_nonveg_200.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="progress-container">
+  <div class="step active"></div><div class="step active"></div><div class="step active"></div>
+  <div class="step active"></div><div class="step active"></div><div class="step active"></div>
+</div>
+<div class="content">
+  <div class="plan-header">
+    <div>
+      <div class="plan-label">Your Plan</div>
+      <h2>Muscle Gain &#x1F4AA;</h2>
+      <div class="plan-meta">&#x1F357; Non-Vegetarian · ₹200/day</div>
+    </div>
+    <div class="kcal-badge"><div class="kcal-num">2,500</div><div class="kcal-label">kcal / day</div></div>
+  </div>
+  <div class="cost-pill">&#128176; Estimated cost: ₹160–200/day</div>
+  <p class="section-title">Daily Macros</p>
+  <div class="macro-card">
+    <div class="macro-bar-wrap">
+      <div class="macro-seg" style="flex:40;background:#2ECC71;"></div>
+      <div class="macro-seg" style="flex:42;background:#F39C12;"></div>
+      <div class="macro-seg" style="flex:18;background:#3498DB;"></div>
+    </div>
+    <div class="macro-legend">
+      <div class="macro-item"><span class="macro-g" style="color:#2ECC71;">210<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#2ECC71;"></span>Protein</span></div>
+      <div class="macro-divider"></div>
+      <div class="macro-item"><span class="macro-g" style="color:#F39C12;">260<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#F39C12;"></span>Carbs</span></div>
+      <div class="macro-divider"></div>
+      <div class="macro-item"><span class="macro-g" style="color:#3498DB;">70<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#3498DB;"></span>Fats</span></div>
+    </div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('day',this)">Today's Plan</button>
+    <button class="tab-btn" onclick="switchTab('week',this)">Weekly Schedule</button>
+  </div>
+  <div id="view-day"><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127749;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#2ECC71;">Breakfast · 7:00 AM</div>
+                <div class="meal-name">Chicken Omelette + Brown Toast</div>
+                <div class="meal-desc">High protein morning with 3 eggs + chicken</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#2ECC71;">580</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Eggs</span><span class="qty">3 eggs</span></div><div class="ingredient-row"><span>Shredded chicken</span><span class="qty">80g</span></div><div class="ingredient-row"><span>Brown bread</span><span class="qty">2 slices</span></div><div class="ingredient-row"><span>Capsicum, onion</span><span class="qty">50g</span></div><div class="ingredient-row"><span>Oil</span><span class="qty">1 tsp</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#9728;&#65039;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#F39C12;">Lunch · 1:00 PM</div>
+                <div class="meal-name">Grilled Chicken + Rice + Dal</div>
+                <div class="meal-desc">Muscle fuel combo — lean, carbs, protein</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#F39C12;">850</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Chicken breast (grilled)</span><span class="qty">200g</span></div><div class="ingredient-row"><span>Rice (cooked)</span><span class="qty">180g</span></div><div class="ingredient-row"><span>Toor dal</span><span class="qty">150g</span></div><div class="ingredient-row"><span>Salad + lemon</span><span class="qty">80g</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127807;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#9B59B6;">Snack · 4:30 PM</div>
+                <div class="meal-name">Boiled Eggs + Greek Yogurt</div>
+                <div class="meal-desc">Casein + whey protein combo</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#9B59B6;">320</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Boiled eggs</span><span class="qty">3 eggs</span></div><div class="ingredient-row"><span>Greek yogurt</span><span class="qty">150g</span></div><div class="ingredient-row"><span>Mixed nuts</span><span class="qty">20g</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127769;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#3498DB;">Dinner · 8:00 PM</div>
+                <div class="meal-name">Mutton Curry + 3 Rotis</div>
+                <div class="meal-desc">Red meat for creatine + iron</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#3498DB;">750</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Lean mutton</span><span class="qty">180g</span></div><div class="ingredient-row"><span>Tomato-onion gravy</span><span class="qty">100g</span></div><div class="ingredient-row"><span>Whole wheat roti</span><span class="qty">3 pieces</span></div><div class="ingredient-row"><span>Oil + spices</span><span class="qty">1 tbsp</span></div></div>
+        </div></div>
+  <div id="view-week"><div class="week-grid" id="weekGrid"></div></div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/dietplan_musclegain_nonveg_200.js') }}"></script>
+{% endblock %}

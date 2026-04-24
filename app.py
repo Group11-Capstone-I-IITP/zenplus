@@ -458,3 +458,53 @@ def metrics():
         return redirect("/")
     return render_template('metrics.html')
 # -----------------------------------------------------------------------------------
+
+# ------------------------------------ Diet -----------------------------------------
+# ------------ Weight Loss ------------
+@login_required
+@app.route("/diet")
+def diet():
+    return render_template("diet.html")
+
+@login_required
+@app.route("/dietplan_weightloss_veg_200")
+def dietplan_weightloss_veg_200():
+    return render_template("dietplan_weightloss_veg_200.html")
+
+@login_required
+@app.route("/dietplan_weightloss_nonveg_200")
+def dietplan_weightloss_nonveg_200():
+    return render_template("dietplan_weightloss_nonveg_200.html")
+
+@login_required
+@app.route("/dietplan_weightloss_veg_100")
+def dietplan_weightloss_veg_100():
+    return render_template("dietplan_weightloss_veg_100.html")
+
+@login_required
+@app.route("/dietplan_weightloss_nonveg_100")
+def dietplan_weightloss_nonveg_100():
+    return render_template("dietplan_weightloss_nonveg_100.html")
+
+# ------------ Muscle Gain ------------
+@login_required
+@app.route("/dietplan_musclegain_veg_100")
+def dietplan_musclegain_veg_100():
+    return render_template("dietplan_musclegain_veg_100.html")
+
+@login_required
+@app.route("/dietplan_musclegain_nonveg_100")
+def dietplan_musclegain_nonveg_100():
+    return render_template("dietplan_musclegain_nonveg_100.html")
+
+@login_required
+@app.route("/dietplan_musclegain_veg_200")
+def dietplan_musclegain_veg_200():
+    return render_template("dietplan_musclegain_veg_200.html")
+
+@login_required
+@app.route("/dietplan_musclegain_nonveg_200")
+def dietplan_musclegain_nonveg_200():
+    return render_template("dietplan_musclegain_nonveg_200.html")
+
+# -------------------------------------------------------------------------------------------

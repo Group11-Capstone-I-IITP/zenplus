@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Diet Plan Vegetarian Muscle Gain 100
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dietplan_musclegain_veg_100.css') }}">
+{% endblock %}
+
+{% block main %}
+
+<div class="progress-container">
+  <div class="step active"></div><div class="step active"></div><div class="step active"></div>
+  <div class="step active"></div><div class="step active"></div><div class="step active"></div>
+</div>
+<div class="content">
+  <div class="plan-header">
+    <div>
+      <div class="plan-label">Your Plan</div>
+      <h2>Muscle Gain &#x1F4AA;</h2>
+      <div class="plan-meta">&#x1F966; Vegetarian · ₹100/day</div>
+    </div>
+    <div class="kcal-badge"><div class="kcal-num">2,200</div><div class="kcal-label">kcal / day</div></div>
+  </div>
+  <div class="cost-pill">&#128176; Estimated cost: ₹80–100/day</div>
+  <p class="section-title">Daily Macros</p>
+  <div class="macro-card">
+    <div class="macro-bar-wrap">
+      <div class="macro-seg" style="flex:35;background:#2ECC71;"></div>
+      <div class="macro-seg" style="flex:47;background:#F39C12;"></div>
+      <div class="macro-seg" style="flex:18;background:#3498DB;"></div>
+    </div>
+    <div class="macro-legend">
+      <div class="macro-item"><span class="macro-g" style="color:#2ECC71;">160<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#2ECC71;"></span>Protein</span></div>
+      <div class="macro-divider"></div>
+      <div class="macro-item"><span class="macro-g" style="color:#F39C12;">260<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#F39C12;"></span>Carbs</span></div>
+      <div class="macro-divider"></div>
+      <div class="macro-item"><span class="macro-g" style="color:#3498DB;">55<span style="font-size:12px;opacity:0.5;">g</span></span><span class="macro-name"><span class="macro-dot" style="background:#3498DB;"></span>Fats</span></div>
+    </div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('day',this)">Today's Plan</button>
+    <button class="tab-btn" onclick="switchTab('week',this)">Weekly Schedule</button>
+  </div>
+  <div id="view-day"><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127749;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#2ECC71;">Breakfast · 7:00 AM</div>
+                <div class="meal-name">Chana Dal Chilla + Curd</div>
+                <div class="meal-desc">High protein, filling breakfast</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#2ECC71;">480</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Chana dal (soaked, ground)</span><span class="qty">100g</span></div><div class="ingredient-row"><span>Onion, green chilli</span><span class="qty">30g</span></div><div class="ingredient-row"><span>Low-fat curd</span><span class="qty">150g</span></div><div class="ingredient-row"><span>Oil</span><span class="qty">1 tsp</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#9728;&#65039;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#F39C12;">Lunch · 1:00 PM</div>
+                <div class="meal-name">Rajma + Rice + Sabzi</div>
+                <div class="meal-desc">Kidney beans, rice, seasonal veg</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#F39C12;">720</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Rajma (cooked)</span><span class="qty">200g</span></div><div class="ingredient-row"><span>Rice (cooked)</span><span class="qty">150g</span></div><div class="ingredient-row"><span>Seasonal sabzi</span><span class="qty">100g</span></div><div class="ingredient-row"><span>Ghee</span><span class="qty">1 tsp</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127807;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#9B59B6;">Snack · 4:30 PM</div>
+                <div class="meal-name">Peanut Butter + Bread</div>
+                <div class="meal-desc">Protein-rich evening snack</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#9B59B6;">300</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Peanut butter</span><span class="qty">2 tbsp</span></div><div class="ingredient-row"><span>Whole wheat bread</span><span class="qty">2 slices</span></div><div class="ingredient-row"><span>Banana</span><span class="qty">1 small</span></div></div>
+        </div><div class="meal-card" onclick="toggleMeal(this)">
+            <div class="meal-emoji">&#127769;</div>
+            <div class="meal-info">
+                <div class="meal-time-label" style="color:#3498DB;">Dinner · 8:00 PM</div>
+                <div class="meal-name">Paneer Bhurji + 3 Rotis</div>
+                <div class="meal-desc">Protein-dense dinner, whole wheat</div>
+            </div>
+            <div class="meal-kcal"><span class="kcal-val" style="color:#3498DB;">700</span><span class="kcal-unit">kcal</span></div>
+            <div class="meal-detail"><div class="ingredient-row"><span>Low-fat paneer</span><span class="qty">150g</span></div><div class="ingredient-row"><span>Tomato, onion, capsicum</span><span class="qty">80g</span></div><div class="ingredient-row"><span>Whole wheat roti</span><span class="qty">3 pieces</span></div><div class="ingredient-row"><span>Oil + spices</span><span class="qty">1 tsp</span></div></div>
+        </div></div>
+  <div id="view-week"><div class="week-grid" id="weekGrid"></div></div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/dietplan_musclegain_veg_100.js') }}"></script>
+{% endblock %}

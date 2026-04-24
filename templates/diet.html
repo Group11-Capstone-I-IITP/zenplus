@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Diet Plan
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/diet.css') }}">
+{% endblock %}
+
+{% block main %}
+    <div class="diet-wrapper">
+        
+        <div class="diet-container">
+            
+            <div id="page-1" class="page active">
+                <h1>Pick Your Path ✨</h1>
+                <p class="subtitle">Select a goal to unlock your custom plan</p>
+                <div class="card" onclick="selectGoal('Weight Loss')">
+                    <div style="font-size: 30px; margin-right: 15px;">🔥</div>
+                    <div><h3>Weight Loss</h3><p style="opacity:0.6;margin:0;">Shred fat & get lean ⚡</p></div>
+                </div>
+                <div class="card" onclick="selectGoal('Muscle Gain')">
+                    <div style="font-size: 30px; margin-right: 15px;">💪</div>
+                    <div><h3>Muscle Gain</h3><p style="opacity:0.6;margin:0;">Build mass & strength 🏗️</p></div>
+                </div>
+            </div>
+
+            <div id="page-2" class="page">
+                <h1><span id="goal-name" class="accent-text">Plan</span> 🔥</h1>
+                <p class="subtitle">Your personalized fitness roadmap</p>
+              
+                <div class="card plan-card" onclick="showPage(3)"><span>🥗</span><h3 style="margin-left:15px">DIET PLAN</h3></div>
+                <div class="back-link" onclick="showPage(1)">← Change Goal</div>
+            </div>
+
+            <div id="page-3" class="page">
+                <h1>Diet Style 🍽️</h1>
+                <p class="subtitle">Select your preferred meal type</p>
+                <div class="card" onclick="selectDiet('Veg')">
+                    <div style="font-size:30px; margin-right:15px;">🥦</div>
+                    <div><h3>Vegetarian</h3><p style="opacity:0.6;margin:0;">Plant-based protein</p></div>
+                </div>
+                <div class="card" onclick="selectDiet('Non-Veg')">
+                    <div style="font-size:30px; margin-right:15px;">🍗</div>
+                    <div><h3>Non-Vegetarian</h3><p style="opacity:0.6;margin:0;">Lean meats & protein</p></div>
+                </div>
+                <div class="back-link" onclick="showPage(2)">← Back</div>
+            </div>
+
+            <div id="page-4" class="page">
+                <div style="font-size: 50px; margin-bottom: 10px;">💰</div>
+                <h3 id="budget-header-main" style="margin-bottom: 5px;">Select Diet Budget</h3>
+                <div style="font-size: 40px; margin-bottom: 30px;">💵</div>
+
+                <div class="budget-container">
+                    <h3 id="budget-header-sub" style="margin-bottom: 20px;">Select Diet Budget</h3>
+                    
+                    <div class="white-card" onclick="goToFinalPage('100')">
+                        <div class="dot-icon green-dot"></div>
+                        Under ₹100
+                    </div>
+
+                    <div class="white-card" onclick="goToFinalPage('200')">
+                        <span class="money-icon">💸</span>
+                        Under ₹200
+                    </div>
+                </div>
+                <div class="back-link" onclick="showPage(3)">← Back to Diet Style</div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/diet.js') }}"></script>
+{% endblock %}
