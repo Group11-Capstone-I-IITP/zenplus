@@ -1,0 +1,6 @@
+flask_session/
+__pycache__/
+
+.DS_Store
+
+*.db

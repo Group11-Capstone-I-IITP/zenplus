@@ -1,5 +1,26 @@
 {% extends "layout.html" %}
 
+{% block title %}
+Finance Summary
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/manage_finance.css') }}">
+{% endblock %}
+
 {% block main %}
-<h1>Perfecto</h1>
+
+<div class="finance-container">
+    <div class="stats-card">
+        <div class="stats-label">Total User Funds</div>
+        <h1 class="stats-value">
+            <span class="currency-symbol">$</span><span id="total-amount">{{ total }}</span>
+        </h1>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/manage_finance.js') }}"></script>
 {% endblock %}

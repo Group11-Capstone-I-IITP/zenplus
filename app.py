@@ -280,7 +280,7 @@ def wallet():
                            cash=cash,
                            transactions=transactions)
 
-# ------------------------------------ Assesment ------------------------------------
+# ------------------------------------ Admin Panel ------------------------------------
 @app.route("/manage_users")
 @admin_required
 def manage_users():
@@ -324,15 +324,12 @@ def delete_message(id):
     db.execute("DELETE FROM contact WHERE id = ?", id)
     return redirect("/manage_messages")
 
-@app.route("/manage_careers")
-@admin_required
-def manage_careers():
-    return render_template("manage_careers.html")
-
 @app.route("/manage_finance")
 @admin_required
 def manage_finance():
-    return render_template("manage_finance.html")
+    result = db.execute("SELECT SUM(cash) AS total FROM users")
+    total = result[0]["total"] if result[0]["total"] is not None else 0
+    return render_template("manage_finance.html", total=total)
 # -----------------------------------------------------------------------------------
 
 # ------------------------------------ Assesment ------------------------------------
