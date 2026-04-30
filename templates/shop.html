@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Zen Shop
+{% endblock %}
+
+{% block styles %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shop.css') }}">
+{% endblock %}
+
+{% block main %}
+
+    <!-- Header & Progress -->
+    <header class="pt-6 px-6 sticky top-0 bg-white/90 backdrop-blur-md z-50">
+        
+        <!-- Optional Back Button (kept for navigation) -->
+        <div class="mb-6">
+            <a href="/" class="inline-block p-2 bg-white border border-slate-200 rounded-full shadow-sm hover:bg-slate-50 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </a>
+        </div>
+
+        <h1 class="text-3xl font-bold mb-1 brand-logo inline-block" style="background: linear-gradient(90deg, #0d6efd, #6610f2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Zen Shop <span id="goalIcon" style="-webkit-text-fill-color: initial;">🔥</span></h1>
+        <p class="text-slate-400 text-sm mb-6">Recommended for your <span id="goalText" class="neon-text font-semibold">Weight Loss Plan</span></p>
+
+        <!-- Goal Switcher -->
+        <div class="flex gap-2 mb-6 overflow-x-auto no-scrollbar pb-2">
+            <div onclick="setGoal('Weight Loss')" id="pill-weight" class="goal-pill active px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap">🔥 Weight Loss</div>
+            <div onclick="setGoal('Muscle Gain')" id="pill-muscle" class="goal-pill px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap">💪 Muscle Gain</div>
+            <div onclick="setGoal('Meditation')" id="pill-meditation" class="goal-pill px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap">🧘 Meditation</div>
+        </div>
+    </header>
+
+    <!-- Category Filters (bg-white removed to fix visibility issue) -->
+    <div id="categoryContainer" class="flex gap-3 px-6 overflow-x-auto no-scrollbar mb-8">
+        <button onclick="filterProducts('All')" class="cat-btn active px-6 py-2 rounded-full font-semibold whitespace-nowrap text-sm border border-slate-200">All Items</button>
+        <button onclick="filterProducts('Supplements')" class="cat-btn px-6 py-2 rounded-full font-semibold whitespace-nowrap text-sm border border-slate-200">Supplements</button>
+        <button onclick="filterProducts('Gear')" class="cat-btn px-6 py-2 rounded-full font-semibold whitespace-nowrap text-sm border border-slate-200">Gear</button>
+        <button onclick="filterProducts('Wellness')" class="cat-btn px-6 py-2 rounded-full font-semibold whitespace-nowrap text-sm border border-slate-200">Wellness</button>
+    </div>
+
+    <!-- Dynamic Product Grid -->
+    <main id="productGrid" class="px-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <!-- Products injected here -->
+    </main>
+
+    <!-- Custom Cart Modal -->
+    <div id="cartDrawer" class="fixed inset-0 bg-slate-900/40 z-[100] hidden flex-end items-end">
+        <div class="w-full bg-white rounded-t-[32px] p-8 cart-animation border-t border-slate-200 max-h-[90vh] flex flex-col shadow-[0_-20px_50px_rgba(0,0,0,0.1)]">
+            <div class="w-12 h-1 bg-slate-200 rounded-full mx-auto mb-6 shrink-0"></div>
+            <div class="flex justify-between items-center mb-6 shrink-0">
+                <h2 class="text-2xl font-bold">Your Cart</h2>
+                <button onclick="clearCart()" class="text-xs text-red-400 font-bold uppercase tracking-widest">Clear All</button>
+            </div>
+            <div id="cartItems" class="space-y-4 mb-8 overflow-y-auto pr-2 custom-scrollbar"></div>
+            <div class="mt-auto">
+                <div class="flex justify-between items-center mb-6 pt-4 border-t border-slate-200">
+                    <span class="text-slate-400">Total</span>
+                    <span id="cartTotal" class="text-2xl font-bold neon-text">₹0</span>
+                </div>
+                <div class="flex gap-4">
+                    <button onclick="closeCart()" class="flex-1 py-4 bg-slate-100 rounded-2xl font-bold">Close</button>
+                    <button onclick="checkout()" class="flex-[2] py-4 neon-bg rounded-2xl font-bold">Checkout Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[150] hidden items-center justify-center p-4">
+        <div class="bg-white border border-slate-200 rounded-3xl w-full max-w-md overflow-y-auto shadow-2xl transform scale-95 opacity-0 transition-all duration-300 max-h-[90vh]" id="productModalContent">
+            <div class="relative h-64 bg-slate-100 shrink-0">
+                <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 p-2 bg-black/50 backdrop-blur-md rounded-full text-slate-800 hover:bg-slate-900/60 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+                <img id="modalImage" src="" alt="Product" class="w-full h-full object-cover">
+                <span id="modalBadge" class="absolute top-4 left-4 badge text-slate-800 z-10 font-heading"></span>
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-2">
+                    <h2 id="modalTitle" class="text-2xl font-bold font-heading text-slate-800"></h2>
+                    <span id="modalPrice" class="text-xl font-black neon-text"></span>
+                </div>
+                <div class="mb-4"></div>
+                <p id="modalDesc" class="text-slate-600 text-sm mb-6 leading-relaxed"></p>
+                <button id="modalAddBtn" class="w-full py-4 neon-bg rounded-2xl font-bold text-lg transition-all hover:scale-[1.02] active:scale-95 shadow-[0_0_20px_rgba(0,255,163,0.3)]">Add to Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Feedback Overlay -->
+    <div id="feedback" class="fixed top-10 left-1/2 -translate-x-1/2 bg-[#0d6efd] text-white px-8 py-4 rounded-full font-bold shadow-[0_0_20px_rgba(0,255,163,0.4)] z-[200] opacity-0 pointer-events-none transition-all duration-300 transform -translate-y-4">
+        Added to cart! 🛒
+    </div>
+
+    <!-- Floating Cart Bar -->
+    <div id="cartBar" class="fixed bottom-8 left-6 right-6 bg-white border border-slate-200 p-4 rounded-2xl flex justify-between items-center z-[90] hidden shadow-2xl transition-all">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center neon-bg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            </div>
+            <div>
+                <p id="itemCount" class="text-xs text-slate-400 font-semibold uppercase">0 ITEMS</p>
+                <p id="totalPreview" class="font-bold text-lg">₹0</p>
+            </div>
+        </div>
+        <button onclick="openCart()" class="bg-[#0d6efd]/10 text-blue-600 px-6 py-2 rounded-xl font-bold border border-[#00ffa3]/20 hover:bg-[#0d6efd]/20">
+            View Cart
+        </button>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/shop.js') }}"></script>
+{% endblock %}

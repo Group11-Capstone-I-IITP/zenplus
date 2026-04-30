@@ -1,40 +1,114 @@
-    /* Minimal Professional CSS */
-    .finance-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60vh;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
+/* Container for the cards */
+.finance-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+}
 
-    .stats-card {
-        background: #ffffff;
-        padding: 3rem;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        text-align: center;
-        border: 1px solid #f0f0f0;
-        min-width: 350px;
-    }
+/* Base Card Styling */
+.stats-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    text-align: center;
+    min-width: 280px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
 
-    .stats-label {
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-size: 0.85rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-    }
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
 
-    .stats-value {
-        font-size: 3.5rem;
-        font-weight: 800;
-        color: #1e293b;
-        margin: 0;
-    }
+/* Typography Base */
+.stats-label {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
 
-    .currency-symbol {
-        color: #94a3b8;
-        font-weight: 400;
-        margin-right: 0.2rem;
-    }
+.stats-value {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.currency-symbol {
+    font-size: 1.75rem;
+    vertical-align: super;
+    margin-right: 0.25rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   BLUE HIGHLIGHT (Total User Funds)
+   ========================================= */
+.highlight-blue {
+    border-color: rgba(13, 110, 253, 0.3);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+/* Blue Top Accent Line */
+.highlight-blue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+}
+
+.highlight-blue .stats-value {
+    color: #0d6efd;
+}
+
+.highlight-blue .currency-symbol {
+    color: rgba(13, 110, 253, 0.5);
+}
+
+
+/* =========================================
+   GREEN HIGHLIGHT (Total Shop Revenue)
+   ========================================= */
+.highlight-green {
+    border-color: rgba(16, 185, 129, 0.3);
+    background: linear-gradient(180deg, #ffffff 0%, #ecfdf5 100%);
+}
+
+/* Green Top Accent Line */
+.highlight-green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #10b981, #059669);
+}
+
+.highlight-green .stats-value {
+    color: #10b981; /* Professional Emerald Green */
+}
+
+.highlight-green .currency-symbol {
+    color: rgba(16, 185, 129, 0.5);
+}

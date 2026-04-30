@@ -328,8 +328,12 @@ def delete_message(id):
 @admin_required
 def manage_finance():
     result = db.execute("SELECT SUM(cash) AS total FROM users")
-    total = result[0]["total"] if result[0]["total"] is not None else 0
-    return render_template("manage_finance.html", total=total)
+    total_cash = result[0]["total"] if result[0]["total"] is not None else 0
+
+    result_debit = db.execute("SELECT SUM(amount) AS total FROM wallet_transactions WHERE type = 'debit'")
+    total_revenue = result_debit[0]["total"] if result_debit[0]["total"] is not None else 0
+
+    return render_template("manage_finance.html", total_cash=total_cash, total_revenue=total_revenue)
 # -----------------------------------------------------------------------------------
 
 # ------------------------------------ Assesment ------------------------------------
@@ -505,3 +509,55 @@ def dietplan_musclegain_nonveg_200():
     return render_template("dietplan_musclegain_nonveg_200.html")
 
 # -------------------------------------------------------------------------------------------
+
+# ------------------------------------ Shop -----------------------------------------
+@app.route("/shop")
+@login_required
+def shop():
+    """Display the ZenPlus Shopping Page"""
+    return render_template("shop.html")
+
+@app.route("/shop_checkout", methods=["GET", "POST"])
+@login_required
+def shop_checkout():
+    # initial data
+    user_row = db.execute("SELECT hash, cash FROM users WHERE id = ?", session["user_id"])
+    user_hash = user_row[0]["hash"]
+    cash = user_row[0]["cash"]
+
+    if request.method == "POST":
+        # getting total amount
+        if "total_amount" in request.form:
+            total_amount = float(request.form.get("total_amount"))
+            session["checkout_amount"] = total_amount
+            return render_template("shop_checkout.html", amount=total_amount, cash=cash)
+        # checking password and purchase
+        elif "password" in request.form:
+            password = request.form.get("password")
+            amount = session.get("checkout_amount")
+
+            if not amount:
+                return apology("No active checkout session", 400)
+            if not password:
+                return apology("Must provide password", 400)
+            if not check_password_hash(user_hash, password):
+                return apology("Password does not match", 400)
+            if cash < amount:
+                return apology("Insufficient wallet funds", 400)
+            
+            # updating user cash
+            db.execute("UPDATE users SET cash = cash - ? WHERE id = ?", amount, session["user_id"])
+
+            # storing purchase details
+            db.execute("""
+                INSERT INTO wallet_transactions (user_id, type, amount) 
+                VALUES (?, ?, ?)""",
+                session["user_id"], "debit", amount
+            )
+
+            # Clearing session memory
+            session.pop("checkout_amount", None)
+            flash("Purchase Successful! Funds have been deducted.")
+            return redirect("/wallet")
+        
+    return redirect("/shop")

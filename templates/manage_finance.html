@@ -5,20 +5,28 @@ Finance Summary
 {% endblock %}
 
 {% block styles %}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/manage_finance.css') }}">
 {% endblock %}
 
 {% block main %}
-
 <div class="finance-container">
-    <div class="stats-card">
+
+    <div class="stats-card highlight-blue">
         <div class="stats-label">Total User Funds</div>
         <h1 class="stats-value">
-            <span class="currency-symbol">$</span><span id="total-amount">{{ total }}</span>
+            <span class="currency-symbol">₹</span><span class="format-number">{{ total_cash }}</span>
         </h1>
     </div>
-</div>
 
+    <div class="stats-card highlight-green">
+        <div class="stats-label">Total Shop Revenue</div>
+        <h1 class="stats-value">
+            <span class="currency-symbol">₹</span><span class="format-number">{{ total_revenue }}</span>
+        </h1>
+    </div>
+    
+</div>
 {% endblock %}
 
 {% block scripts %}

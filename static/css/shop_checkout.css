@@ -1,0 +1,128 @@
+/* Container positioning */
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* The main modal card */
+.checkout-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+}
+
+.checkout-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* The Bill UI */
+.bill-summary {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #f1f5f9;
+}
+
+.bill-label {
+    color: #64748b;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.875rem;
+}
+
+.bill-amount {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #0d6efd; /* Your primary blue */
+    margin: 0;
+}
+
+.wallet-balance {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
+
+.wallet-balance span {
+    font-weight: 700;
+    color: #334155;
+}
+
+/* Form & Inputs */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.password-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cancel {
+    flex: 1;
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.btn-cancel:hover {
+    background-color: #cbd5e1;
+}
+
+.btn-pay {
+    flex: 2;
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+.btn-pay:hover {
+    background-color: #0b5ed7;
+}

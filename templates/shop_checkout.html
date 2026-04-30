@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Checkout
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shop_checkout.css') }}">
+{% endblock %}
+
+{% block main %}
+<div class="checkout-container">
+    <div class="checkout-card">
+        
+        <h2 class="checkout-title">Confirm Purchase</h2>
+        
+        <div class="bill-summary">
+            <p class="bill-label">Total Bill</p>
+            <p class="bill-amount">₹{{ amount }}</p>
+        </div>
+
+        <p class="wallet-balance">
+            Your current wallet balance is: <span>₹{{ cash }}</span>
+        </p>
+
+        <form action="/shop_checkout" method="POST" class="checkout-form">
+            <input type="password" name="password" placeholder="Enter your password to confirm" class="password-input" required>
+            
+            <div class="button-group">
+                <a href="/shop" class="btn btn-cancel">Cancel</a>
+                <button type="submit" class="btn btn-pay">Pay Now</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
+{% endblock %}
