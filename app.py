@@ -561,3 +561,48 @@ def shop_checkout():
             return redirect("/wallet")
         
     return redirect("/shop")
+# -------------------------------------------------------------------------------------------
+
+# ------------------------------------ Meditation -----------------------------------------
+@app.route("/meditation")
+@login_required
+def meditation():
+    """Display the Meditation Page"""
+    return render_template("meditation.html")
+
+@app.route("/guided_meditation")
+@login_required
+def guided_meditation():
+    """Display the Guided Meditation Page"""
+    return render_template("guided_meditation.html")
+
+@app.route("/advanced_meditation")
+@login_required
+def advanced_meditation():
+    """Display the Advanced Meditation Page"""
+    return render_template("advanced_meditation.html")
+
+@app.route("/yoga")
+@login_required
+def yoga():
+    """Display the Yoga Page"""
+    return render_template("yoga.html")
+
+@app.route("/rehabilitation")
+@login_required
+def rehabilitation():
+    """Display the Rehabilitation Page"""
+    return render_template("rehabilitation.html")
+
+@app.route("/happiness")
+@login_required
+def happiness():
+    """Display the Happiness Page"""
+    return render_template("happiness.html")
+
+@app.route("/sleep")
+@login_required
+def sleep():
+    """Display the Sleep Page"""
+    return render_template("sleep.html")
+# -------------------------------------------------------------------------------------------

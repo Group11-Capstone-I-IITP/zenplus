@@ -1,0 +1,48 @@
+.sub-page-content {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(128, 128, 128, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #00b894;
+  margin-bottom: 15px;
+}
+
+.steps li {
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.benefit-box {
+  background: rgba(0, 184, 148, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 184, 148, 0.2);
+}

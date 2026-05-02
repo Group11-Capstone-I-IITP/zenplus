@@ -1,0 +1,51 @@
+.sub-page-content {
+  width: 85%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.section {
+  background: rgba(128, 128, 128, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+body.dark .section {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+.section h2 {
+  color: #3f51b5;
+  margin-bottom: 15px;
+}
+
+body.dark .section h2 {
+  color: #7986cb;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  flex: 1 1 200px;
+  background: rgba(63, 81, 181, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(63, 81, 181, 0.2);
+}

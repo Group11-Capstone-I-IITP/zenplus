@@ -1,0 +1,190 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Yoga & Meditation
+{% endblock %}
+
+{% block styles %}
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/meditation.css') }}" />
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block main %}
+  <!-- Dark Mode Toggle Button injected seamlessly -->
+  <div class="d-flex justify-content-end my-3">
+    <button class="toggle-btn" onclick="toggleMode()">
+      <i class="fa-solid fa-moon"></i> Dark Mode
+    </button>
+  </div>
+
+  <!-- Banner -->
+  <section class="banner-section">
+    <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/banner.jpg" alt="Meditation Banner" class="banner" />
+  </section>
+
+  <section class="content-section">
+    <h2 id="meditation">MEDITATION</h2>
+    <p id="meditation-desc">
+      Meditation is a sacred journey of turning inward, where the mind becomes
+      still and the soul begins to awaken. Rooted in ancient yoga traditions,
+      it is the practice of connecting with your inner self through silence,
+      breath, and awareness. In this peaceful state, thoughts dissolve, and a
+      deep sense of harmony, clarity, and divine energy emerges. Regular
+      meditation brings balance to the body, mind, and spirit, guiding one
+      toward inner peace, self-realization, and spiritual growth.
+    </p>
+    <hr>
+    
+    <div class="meditations">
+      <div class="meditation1" id="meditation1">
+        <h3>Guided Meditation for Beginners</h3>
+        <div class="meditation1-img">
+          <a href="/guided_meditation">
+            <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/post1.jpg" alt="Guided Meditation" />
+          </a>
+        </div>
+      </div>
+      <div class="meditation2" id="meditation2">
+        <h3>Advanced Meditation Techniques</h3>
+        <div class="meditation2-img">
+          <a href="/advanced_meditation">
+            <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/Adle.jpg" alt="Advanced Meditation" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr id="hr">
+
+  <section class="bottom" id="bottom">
+    <h2>Yoga / rehabilitation ice bath / sleep / happiness ^ mindfulness</h2>
+
+    <p id="para">
+      Your daily routine should include practices that support both your body and mind. Yoga helps improve
+      flexibility, balance, and inner calm while reducing stress. Rehabilitation ice baths can be used after
+      physical activity to help reduce muscle soreness and refresh the body. Quality sleep is essential for
+      recovery, allowing your brain and body to restore energy and function properly. Finally, happiness and
+      mindfulness help you stay emotionally balanced, present, and positive throughout the day.
+    </p>
+
+    <!-- Image Container -->
+    <div class="image-container">
+      <div class="image-card">
+        <a href="/yoga">
+          <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/yoga.jpg" alt="Yoga">
+        </a>
+        <p>Yoga</p>
+      </div>
+      <div class="image-card">
+        <a href="/rehabilitation">
+          <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/reha.jpg" alt="Ice Bath">
+        </a>
+        <p>Rehabilitation Ice Bath</p>
+      </div>
+      <div class="image-card">
+       <a href="/sleep">
+         <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/sel.jpg" alt="Sleep">
+       </a>
+        <p>Quality Sleep</p>
+      </div>
+      <div class="image-card">
+       <a href="/happiness">
+         <img src="https://cdn.jsdelivr.net/gh/Group11-Capstone-I-IITP/zenplus_meditation_imgs@main/hp.jpg" alt="Happiness">
+       </a>
+        <p>Happiness</p>
+      </div>
+    </div>
+  </section>
+
+  <hr id="hr">
+
+  <!-- Added Blog / Articles Section -->
+  <section class="blog-section">
+    <h2>Latest Articles</h2>
+    <div class="blog-cards">
+      <div class="blog-card">
+        <h3>Morning Yoga Routine</h3>
+        <p>Boost your energy in 10 minutes.</p>
+        <a href="#">Read More &rarr;</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>5 Meditation Tips</h3>
+        <p>Improve focus and calmness.</p>
+        <a href="#">Read More &rarr;</a>
+      </div>
+
+      <div class="blog-card">
+        <h3>Healthy Diet Guide</h3>
+        <p>Combine yoga with nutrition.</p>
+        <a href="#">Read More &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="opt">
+    <h3 id="btn">Explore More</h3>
+
+    <div class="fit-card">
+      <div class="fit-header">
+        <h3>STAY FIT <span>#WITH ME</span></h3>
+        <span class="close">✕</span>
+      </div>
+
+      <div class="fit-slider">
+        <!-- Yoga -->
+        <div class="fit-item">
+          <div class="icon"><i class="fa-solid fa-person"></i></div>
+          <h4>Yoga</h4>
+          <a href="https://www.youtube.com/playlist?list=PLbpi6ZahtOH7ywA3QW1TzGTdke3fs_a3M">
+            <p>▶ Playlist</p>
+          </a>
+        </div>
+
+        <!-- Meditation -->
+        <div class="fit-item">
+          <div class="icon"><i class="fa-solid fa-vihara"></i></div>
+          <h4>Meditation</h4>
+          <a href="https://www.youtube.com/playlist?list=PLbpi6ZahtOH5DkgyNn-zbBWf3CmYT-dRt">
+            <p>▶ Playlist</p>
+          </a>
+        </div>
+
+        <!-- Mental Health -->
+        <div class="fit-item">
+          <div class="icon"><i class="fa-solid fa-brain"></i></div>
+          <h4>Mental Health</h4>
+          <a href="https://www.youtube.com/playlist?list=PLbpi6ZahtOH6bljmu-_jyG-Th3NH-vqcB">
+            <p>▶ Playlist</p>
+          </a>
+        </div>
+
+        <!-- Sleep -->
+        <div class="fit-item">
+          <div class="icon"><i class="fa-solid fa-bed"></i></div>
+          <h4>Sleep</h4>
+          <a href="https://www.youtube.com/playlist?list=PLbpi6ZahtOH5g4TSKKX4TfI-TaRhH8q8d">
+            <p>▶ Playlist</p>
+          </a>
+        </div>
+      </div>
+
+      <p class="fit-desc">
+        Follow along with curated playlists to help you stay healthy from home
+      </p>
+    </div>
+  </section>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/meditation.js') }}"></script>
+{% endblock %}

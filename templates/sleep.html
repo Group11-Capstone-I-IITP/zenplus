@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Sleep Guide
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sleep.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+<div class="text-center my-4">
+    <h1>Sleep Guide</h1>
+    <a href="/meditation" id="back-link" class="btn btn-outline-primary mt-2"><i class="fa-solid fa-arrow-left"></i> Step-by-Step Guide for Beginners</a>
+</div>
+
+<div class="sub-page-content">
+    <div class="section">
+        <h2><i class="fa-solid fa-moon"></i> Night Routine</h2>
+        <ul>
+            <li>Go to bed at the same time daily</li>
+            <li>Keep room dark and quiet</li>
+            <li>Relax before sleeping</li>
+            <li>Take deep breaths</li>
+            <li>Avoid heavy food</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><i class="fa-solid fa-exclamation-triangle"></i> Avoid at Night</h2>
+        <ul>
+            <li><i class="fa-solid fa-mobile"></i> Using phone before sleep</li>
+            <li><i class="fa-solid fa-tv"></i> Watching too much TV</li>
+            <li><i class="fa-solid fa-mug-hot"></i> Drinking coffee/tea</li>
+            <li><i class="fa-solid fa-brain"></i> Stress and overthinking</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2><i class="fa-solid fa-lightbulb"></i> Improve Sleep</h2>
+        <div class="grid">
+            <div class="box"><i class="fa-solid fa-mobile"></i> Keep phone away</div>
+            <div class="box"><i class="fa-solid fa-moon"></i> Dim lights</div>
+            <div class="box"><i class="fa-solid fa-book"></i> Read book</div>
+            <div class="box"><i class="fa-solid fa-leaf"></i> Meditation</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><i class="fa-solid fa-check-circle"></i> Benefits</h2>
+        <div class="grid">
+            <div class="box"><i class="fa-solid fa-bolt"></i> More energy</div>
+            <div class="box"><i class="fa-solid fa-brain"></i> Better focus</div>
+            <div class="box"><i class="fa-solid fa-smile"></i> Good mood</div>
+            <div class="box"><i class="fa-solid fa-dumbbell"></i> Strong body</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <p style="text-align:center; font-style: italic;">
+            "Good sleep leads to a healthy life."
+        </p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Advanced Meditation Techniques
+{% endblock %}
+
+{% block styles %}
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/advanced_meditation.css') }}" />
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block main %}
+<div class="sub-page-content">
+  <h1>
+    <a href="/meditation">← 🧘</a> Silver String Meditation Guide
+  </h1>
+
+  <div class="card">
+    <h2>1. Preparation (Creating the Right State)</h2>
+    <p>Before starting, your body and environment must support stillness.</p>
+    <ul>
+      <li>Sit comfortably (cross-legged or on a chair)</li>
+      <li>Keep your <span class="highlight">spine straight but relaxed</span></li>
+      <li>Imagine your head gently lifted upward</li>
+      <li>Keep your body loose, not stiff</li>
+      <li>Close your eyes to reduce distractions</li>
+      <li>Practice in a quiet or dim-light space</li>
+    </ul>
+    <div class="note">A straight spine keeps you alert, while relaxation prevents tension and fatigue.</div>
+  </div>
+
+  <div class="card">
+    <h2>2. Visualizing the Silver String (Center Awareness)</h2>
+    <p>Now bring attention inside your body.</p>
+    <ul>
+      <li>Imagine a <span class="highlight">thin silver string</span> running:</li>
+      <li>From the base of your spine</li>
+      <li>Through the center of your body</li>
+      <li>Up through your head</li>
+      <li>Extending upward above you</li>
+      <li>Think of your body like a bead placed on this string</li>
+    </ul>
+    <div class="note">Your attention becomes centered, your body balances naturally, and posture improves effortlessly.</div>
+  </div>
+
+  <div class="card">
+    <h2>3. Breath + Attention Movement (Core Practice)</h2>
+    <p class="emoji"><span class="highlight">Inhale (Going Up)</span></p>
+    <ul>
+      <li>Move attention up the string</li>
+      <li>Feel it travel from spine → head → above</li>
+    </ul>
+    <p class="emoji">⏸ <span class="highlight">Hold</span></p>
+    <ul>
+      <li>Pause gently at the top</li>
+    </ul>
+    <p class="emoji"><span class="highlight">Exhale (Coming Down)</span></p>
+    <ul>
+      <li>Let awareness flow down like a soft shower</li>
+      <li>Feel calm spreading across your body</li>
+    </ul>
+    <div class="note">This creates rhythm between mind and breath, making attention steady and melting tension.</div>
+  </div>
+
+  <div class="card">
+    <h2>4. Brain Relaxation (Deep Inner Reset)</h2>
+    <ul>
+      <li>Imagine <span class="highlight">cosmic energy</span> entering your head</li>
+      <li>Relax your brain step by step:</li>
+      <li>Front → Right → Back → Left → Top</li>
+    </ul>
+    <div class="note">Reduces overthinking, calms stress, and improves clarity.</div>
+  </div>
+
+  <div class="card">
+    <h2>5. Full Body Relaxation</h2>
+    <p><span class="highlight">Face:</span> Relax jaw, eyes, forehead</p>
+    <p><span class="highlight">Neck & Throat:</span> Release tightness</p>
+    <p><span class="highlight">Shoulders & Arms:</span> Drop shoulders fully</p>
+    <p><span class="highlight">Chest & Stomach:</span> Let belly soften</p>
+    <div class="note">Feel appreciation for your body — this creates emotional calm and connection.</div>
+  </div>
+
+  <div class="card">
+    <h2>6. State of Repose (Most Important)</h2>
+    <ul>
+      <li>No control</li>
+      <li>No effort</li>
+      <li>No technique</li>
+    </ul>
+    <p><span class="highlight">Just observe, rest, and be still.</span></p>
+    <div class="note">Don’t fight thoughts, don’t follow them. This is the real meditation state.</div>
+  </div>
+
+  <div class="card">
+    <h2>7. Completion (Returning Gently)</h2>
+    <ul>
+      <li>Slowly bring awareness back</li>
+      <li>Notice surroundings</li>
+      <li>Take a deep breath</li>
+      <li>Smile gently</li>
+      <li>Open your eyes slowly</li>
+    </ul>
+    <details class="video-card">
+      <summary>🧘 Advanced Techniques</summary>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/5yfIOtOBMBo" title="Meditation Guide" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </details>
+  </div>
+</div>
+{% endblock %}

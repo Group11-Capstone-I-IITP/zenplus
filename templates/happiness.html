@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Happiness & Mindfulness
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/happiness.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block main %}
+    <div class="text-center my-4">
+        <h1>Happiness & Mindfulness <i class="fa-solid fa-smile"></i></h1>
+        <a href="/meditation" id="back-link" class="btn btn-outline-primary mt-2"><i class="fa-solid fa-arrow-left"></i> Step-by-Step Guide for Beginners</a>
+    </div>
+
+    <div class="sub-page-content">
+        <div class="section">
+            <h2>What is Mindfulness?</h2>
+            <p>Mindfulness means paying attention to the present moment. It helps you stay calm and avoid stress by focusing on what is happening now.</p>
+        </div>
+
+        <div class="section">
+            <h2>Daily Steps <i class="fa-solid fa-calendar-day"></i></h2>
+            <ul>
+                <li>Wake up and take deep breaths</li>
+                <li>Stay focused on what you are doing</li>
+                <li>Don't think too much about past or future</li>
+                <li>Be thankful for small things</li>
+                <li>Take short breaks</li>
+                <li>Meditate for few minutes</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Benefits <i class="fa-solid fa-check-circle"></i></h2>
+            <div class="grid">
+                <div class="box"><i class="fa-solid fa-exclamation-triangle"></i> Less stress</div>
+                <div class="box"><i class="fa-solid fa-brain"></i> Better focus</div>
+                <div class="box"><i class="fa-solid fa-moon"></i> Good sleep</div>
+                <div class="box"><i class="fa-solid fa-smile"></i> More happiness</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Simple Happiness Tips <i class="fa-solid fa-lightbulb"></i></h2>
+            <div class="grid">
+                <div class="box"><i class="fa-solid fa-users"></i> Spend time with family</div>
+                <div class="box"><i class="fa-solid fa-dumbbell"></i> Exercise daily</div>
+                <div class="box"><i class="fa-solid fa-heart"></i> Stay positive</div>
+                <div class="box"><i class="fa-solid fa-gift"></i> Enjoy small moments</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <p style="text-align:center; font-style: italic;">
+                "Happiness depends on your mindset."
+            </p>
+        </div>
+    </div>
+{% endblock %}

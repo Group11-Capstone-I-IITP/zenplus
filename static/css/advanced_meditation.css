@@ -1,0 +1,125 @@
+/* Container Override */
+.sub-page-content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Title */
+h1, h1 a {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Card */
+.card {
+  background: rgba(128, 128, 128, 0.12);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+body.dark .card {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+.card h2 {
+  color: #00b894;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+  margin: 10px 0 15px 20px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+/* Highlight text */
+.highlight {
+  color: #00b894;
+  font-weight: bold;
+}
+
+/* Note box */
+.note {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0, 184, 148, 0.1);
+  border-left: 4px solid #00b894;
+  border-radius: 8px;
+}
+
+/* Video Card Style */
+.video-card {
+  margin: 20px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(128, 128, 128, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card summary {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00b894;
+  cursor: pointer;
+  list-style: none;
+}
+
+.video-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.video-card summary::after {
+  content: "▼";
+  float: right;
+  transition: 0.3s;
+}
+
+.video-card[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.emoji {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 26px; }
+}

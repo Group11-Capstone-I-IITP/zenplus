@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Meditation Guide
+{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/guided_meditation.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block main %}
+<div class="sub-page-content">
+    <h1><a href="/meditation">← 🧘</a> Meditation Beginner's Guide</h1>
+
+    <div class="card">
+        <h2>1. Comfortable Posture</h2>
+        <ul>
+            <li>Sit comfortably without falling asleep</li>
+            <li>Keep your back straight</li>
+            <li>Hands on lap or knees</li>
+            <li>Close eyes or look down</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>2. Focus on Breathing</h2>
+        <ul>
+            <li>Take a deep breath in</li>
+            <li>Hold for a moment</li>
+            <li>Breathe out slowly</li>
+            <li>Repeat and relax</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Handle Distractions</h2>
+        <p>If your mind wanders, gently bring your focus back to breathing.</p>
+    </div>
+
+    <div class="card">
+        <h2>4. Body Relaxation</h2>
+        <ul>
+            <li>Feet → Feel grounded</li>
+            <li>Legs → Relax muscles</li>
+            <li>Stomach → Soften</li>
+            <li>Heart → Feel calm</li>
+            <li>Shoulders → Drop tension</li>
+            <li>Face → Relax completely</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5. Energy Flow</h2>
+        <p>Imagine your breath moving through your entire body.</p>
+    </div>
+
+    <div class="card">
+        <h2>6. No Judgment</h2>
+        <p>Meditation is practice. Everything is okay.</p>
+    </div>
+
+    <div class="card">
+        <h2>7. Finish Slowly</h2>
+        <ul>
+            <li>Take 3 deep breaths</li>
+            <li>Feel energy from toes to head</li>
+            <li>Slowly open your eyes</li>
+        </ul>
+        <details class="video-card">
+            <summary>🧘 Watch Guided Meditation</summary>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/U9YKY7fdwyg" title="Meditation Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </details>
+    </div>
+</div>
+{% endblock %}

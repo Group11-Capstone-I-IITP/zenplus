@@ -1,0 +1,131 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Morning Yoga Routine
+{% endblock %}
+
+{% block styles %}
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/yoga.css') }}" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block main %}
+
+<!-- HEADER -->
+<div class="text-center my-4">
+    <h1>10-Minute Morning Yoga</h1>
+    <a href="{{ url_for('meditation') }}" id="back-link" class="btn btn-outline-primary mt-2">
+        <i class="fa-solid fa-arrow-left"></i> Back to Meditation
+    </a>
+</div>
+
+<div class="sub-page-content">
+
+    <!-- INTRO -->
+    <div class="card">
+        <p>
+            This gentle 10-minute yoga routine helps you start your day with energy,
+            focus, and calmness. No equipment needed—just your body and breath.
+        </p>
+    </div>
+
+    <!-- STEP 1 -->
+    <div class="card">
+        <div class="step-title"><i class="fa-solid fa-leaf"></i> Grounding & Warm-up</div>
+        <ul>
+            <li>Lie on your back, knees bent, feet flat</li>
+            <li>Relax shoulders, palms facing up</li>
+            <li>Pull right knee to chest, extend left leg</li>
+            <li>Rotate ankle and stretch toes</li>
+            <li>Twist gently to the left</li>
+            <li>Repeat on other side</li>
+        </ul>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="card">
+        <div class="step-title"><i class="fa-solid fa-heart"></i> Bridge & Leg Stretch</div>
+        <ul>
+            <li>Lift hips into Bridge Pose</li>
+            <li>Squeeze glutes and thighs</li>
+            <li>Slowly lower down</li>
+            <li>Cross ankle for Reclined Pigeon stretch</li>
+            <li>Stretch hamstring upward</li>
+            <li>Repeat both sides</li>
+        </ul>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="card">
+        <div class="step-title"><i class="fa-solid fa-arrows-alt"></i> Flow Movements</div>
+        <ul>
+            <li>Move into Downward Dog</li>
+            <li>Shift into plank</li>
+            <li>Lower to belly</li>
+            <li>Lift chest in Cobra Pose</li>
+            <li>Rest in Child’s Pose</li>
+        </ul>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="card">
+        <div class="step-title"><i class="fa-solid fa-chair"></i> Seated Stretches</div>
+        <ul>
+            <li>Neck stretch side to side</li>
+            <li>Gentle seated twist</li>
+            <li>Open chest and lift heart</li>
+            <li>Bring hands together and breathe</li>
+            <li>Close with one “Om”</li>
+        </ul>
+    </div>
+
+    <!-- BENEFITS -->
+    <div class="card">
+        <div class="step-title"><i class="fa-solid fa-star"></i> Benefits</div>
+        <div class="grid">
+            <div class="box"><i class="fa-solid fa-bolt"></i> More energy</div>
+            <div class="box"><i class="fa-solid fa-leaf"></i> Better flexibility</div>
+            <div class="box"><i class="fa-solid fa-brain"></i> Clear mind</div>
+            <div class="box"><i class="fa-solid fa-cloud"></i> Less stress</div>
+            <div class="box"><i class="fa-solid fa-heart"></i> Better circulation</div>
+            <div class="box"><i class="fa-solid fa-leaf"></i> Healthy body</div>
+        </div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="card">
+        <div class="step-title">
+            <i class="fa-solid fa-video"></i> Video Demonstration
+        </div>
+        <p>Watch the video below for a visual guide to each pose:</p>
+        <div class="video-box">
+            <iframe 
+                src="https://www.youtube.com/embed/C2RAjUEAoLI" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- TIPS -->
+    <div class="card">
+        <div class="step-title"><i class="fa-solid fa-lightbulb"></i> Tips</div>
+        <ul>
+            <li>Breathe slowly and deeply</li>
+            <li>Move gently without forcing</li>
+            <li>Practice daily for best results</li>
+            <li>Stay consistent</li>
+        </ul>
+    </div>
+
+</div>
+
+{% endblock %}

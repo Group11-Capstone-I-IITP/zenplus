@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Rehabilitation & Recovery
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rehabilitation.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock %}
+
+{% block main %}
+<div class="text-center my-4">
+    <h1>Ice Bath Recovery</h1>
+    <a href="/meditation" id="back-link" class="btn btn-outline-info mt-2"><i class="fa-solid fa-arrow-left"></i> Step-by-Step Guide for Beginners</a>
+</div>
+
+<div class="sub-page-content">
+    <div class="card">
+        <h2>Step-by-step Instructions</h2>
+        <ul class="steps">
+            <li>1. Fill tub with cold water and add ice</li>
+            <li>2. Check temperature (10–15°C)</li>
+            <li>3. Enter slowly to avoid shock</li>
+            <li>4. Focus on breathing</li>
+            <li>5. Stay for 5–15 minutes</li>
+            <li>6. Exit carefully</li>
+            <li>7. Warm up naturally</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2><i class="fa-brands fa-envira"></i> Benefits</h2>
+        <div class="benefits">
+            <div class="benefit-box"><i class="fa-solid fa-heart"></i> Reduces soreness</div>
+            <div class="benefit-box"><i class="fa-solid fa-bolt"></i> Faster recovery</div>
+            <div class="benefit-box"><i class="fa-solid fa-droplet"></i> Improves circulation</div>
+            <div class="benefit-box"><i class="fa-solid fa-fire"></i> Reduces inflammation</div>
+            <div class="benefit-box"><i class="fa-solid fa-brain"></i> Mental strength</div>
+            <div class="benefit-box"><i class="fa-solid fa-bed"></i> Better sleep</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
