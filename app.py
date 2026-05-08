@@ -70,7 +70,7 @@ def login():
         session["role"] = rows[0]["role"]
 
         # Redirect user to home page
-        return redirect("/")
+        return redirect("/index")
     else:
         return render_template("login.html")
 
@@ -124,6 +124,11 @@ def logout():
     return redirect("/")
 
 @app.route("/")
+def intro():
+    """Show introduction page"""
+    return render_template("intro.html")
+
+@app.route("/index")
 @login_required
 def index():
     """Show homepage"""

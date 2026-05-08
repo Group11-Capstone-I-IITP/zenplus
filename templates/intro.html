@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZenPluse - Healthy Lifestyle</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/intro.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">Zen<span>Pluse</span></div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#inspired">Inspire</a></li>
+      </ul>
+      <a class="nav-btn" href="{{ url_for('login') }}">Get Started</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-emoji-row">
+          <i class="fas fa-leaf"></i> <i class="fas fa-dumbbell"></i>
+          <i class="fas fa-brain"></i>
+        </div>
+
+        <h1>
+          Welcome to <span class="green">Zen</span
+          ><span class="blue">Pluse</span>
+        </h1>
+
+        <p>
+          Your platform for a healthy lifestyle through diet, meditation, and
+          exercise. Start your journey today — it's simpler than you think.
+        </p>
+
+        <div class="hero-btns">
+          <a class="btn-green" href="{{ url_for('login') }}"
+            >Get Started <i class="fas fa-rocket"></i
+          ></a>
+        </div>
+
+        <div class="icon-row">
+          <div class="icon-bubble">
+            <span class="emoji"><i class="fas fa-dumbbell"></i></span>
+            <div class="label">Workout</div>
+          </div>
+          <div class="icon-bubble">
+            <span class="emoji"><i class="fas fa-brain"></i></span>
+            <div class="label">Meditation</div>
+          </div>
+          <div class="icon-bubble">
+            <span class="emoji"><i class="fas fa-leaf"></i></span>
+            <div class="label">Diet</div>
+          </div>
+          <div class="icon-bubble">
+            <span class="emoji"><i class="fas fa-tint"></i></span>
+            <div class="label">Hydration</div>
+          </div>
+          <div class="icon-bubble">
+            <span class="emoji"><i class="fas fa-bed"></i></span>
+            <div class="label">Sleep</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about text-center" id="about">
+      <span class="section-tag">About ZenPluse</span>
+      <h2 class="sec-title reveal">What is ZenPluse?</h2>
+      <p class="sec-sub reveal">
+        *“ZenPluse is a platform focused on helping people improve their health,
+        mindset, and daily habits in a simple way.”*
+      </p>
+      <div class="about-cards">
+        <div class="about-card reveal">
+          <div class="icon"><i class="fas fa-brain"></i></div>
+          <h4>Mind</h4>
+          <p>
+            Guided meditation and breathing exercises to reduce stress and
+            sharpen your focus.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="icon"><i class="fas fa-heart"></i></div>
+          <h4>Body</h4>
+          <p>
+            Workout plans and exercise tracking to keep your body strong and
+            active every day.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="icon"><i class="fas fa-leaf"></i></div>
+          <h4>Nutrition</h4>
+          <p>
+            Smart meal ideas and hydration tips to fuel your body the right way.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features text-center" id="features">
+      <span class="section-tag">Core Features</span>
+      <h2 class="sec-title reveal">What We Offer</h2>
+      <p class="sec-sub reveal">
+        Everything you need to build better, healthier habits — all in one
+        platform.
+      </p>
+
+      <div class="features-grid">
+        <div class="feat-card reveal">
+          <div class="icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Workout Tracking</h3>
+          <p>
+            Log your exercises, sets, and reps to monitor your progress and stay
+            consistent with your routines.
+          </p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="icon"><i class="fas fa-list"></i></div>
+          <h3>Custom Plans</h3>
+          <p>
+            Get fitness plans tailored to your specific goals, whether it's
+            strength, endurance, or flexibility.
+          </p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Progress Analytics</h3>
+          <p>
+            Visualize your achievements with simple charts and celebrate every
+            milestone along the way.
+          </p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="icon"><i class="fas fa-yoga"></i></div>
+          <h3>Meditation Sessions</h3>
+          <p>
+            Short guided sessions to calm your mind and start or end your day
+            feeling peaceful and focused.
+          </p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="icon"><i class="fas fa-bed"></i></div>
+          <h3>Sleep Tips</h3>
+          <p>
+            Simple advice to improve your sleep quality so your body can recover
+            and recharge properly.
+          </p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="icon"><i class="fas fa-trophy"></i></div>
+          <h3>Daily Challenges</h3>
+          <p>
+            Fun and easy daily challenges to keep your routine exciting and help
+            you stay motivated.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUTRITION -->
+    <section class="nutrition text-center" id="nutrition">
+      <span class="section-tag">Fuel Your Body</span>
+      <h2 class="sec-title reveal">Eat Smart, Feel Amazing</h2>
+      <p class="sec-sub reveal">
+        Simple nutrition guidance to power your workouts and keep your energy
+        high all day.
+      </p>
+
+      <div class="nut-grid">
+        <div class="nut-card green-card reveal">
+          <div class="icon"><i class="fas fa-leaf"></i></div>
+          <h3>Balanced Meals</h3>
+          <p>
+            Discover delicious and nutritious recipes designed to give you the
+            energy you need every day.
+          </p>
+        </div>
+        <div class="nut-card blue-card reveal">
+          <div class="icon"><i class="fas fa-tint"></i></div>
+          <h3>Hydration Guide</h3>
+          <p>
+            Learn why water matters and get easy tips to make sure you stay
+            hydrated throughout the day.
+          </p>
+        </div>
+        <div class="nut-card yellow-card reveal">
+          <div class="icon"><i class="fas fa-apple-alt"></i></div>
+          <h3>Smart Snacking</h3>
+          <p>
+            Healthy snack ideas that keep your metabolism going and stop you
+            from feeling tired between meals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how text-center" id="how">
+      <span class="section-tag">Simple Process</span>
+      <h2 class="sec-title reveal">How It Works</h2>
+      <p class="sec-sub reveal">
+        Getting started with ZenPluse is really easy. Just follow these 3 simple
+        steps.
+      </p>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h4>Create Your Profile</h4>
+          <p>
+            Tell us about your goals, fitness level, and what you want to work
+            on.
+          </p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h4>Get Your Plan</h4>
+          <p>
+            We give you a simple and personalized plan for workouts, meals, and
+            meditation.
+          </p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h4>Track &amp; Improve</h4>
+          <p>
+            Log your daily progress and watch yourself get healthier, fitter,
+            and happier over time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAY INSPIRED -->
+    <section class="inspired text-center" id="inspired">
+      <span class="section-tag">Stay Inspired</span>
+      <h2 class="sec-title reveal">Keep the Momentum Going</h2>
+      <p class="sec-sub reveal">
+        Tools and tips to make sure you never lose motivation on your wellness
+        journey.
+      </p>
+
+      <div class="inspo-grid">
+        <div class="inspo-card reveal">
+          <div class="icon"><i class="fas fa-edit"></i></div>
+          <h3>Fitness Tips</h3>
+          <p>
+            Easy and practical advice on exercise technique, recovery, and
+            staying consistent every week.
+          </p>
+        </div>
+        <div class="inspo-card reveal">
+          <div class="icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Daily Challenges</h3>
+          <p>
+            Fun and achievable daily tasks that keep your routine fresh and help
+            you build good habits.
+          </p>
+        </div>
+        <div class="inspo-card reveal">
+          <div class="icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Goal Setting</h3>
+          <p>
+            Set short and long-term health goals and track your progress one
+            step at a time.
+          </p>
+        </div>
+        <div class="inspo-card reveal">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h3>Community</h3>
+          <p>
+            Be part of a supportive group of people who are all working towards
+            a healthier life together.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2 class="reveal">Ready to Start? <i class="fas fa-leaf"></i></h2>
+      <p class="reveal">
+        ZenPluse is a free student project. We built it because we believe
+        everyone deserves to live a healthier and happier life. Come join us!
+      </p>
+      <button class="btn-white reveal">Get Started</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo"><i class="fas fa-leaf"></i> ZenPluse</div>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#how">How It Works</a>
+        <a href="#inspired">Inspire</a>
+      </div>
+      <p>© 2025 ZenPluse – A Student Health Project. All rights reserved.</p>
+      <p class="tagline">
+        Find Your Inner Strength <i class="fas fa-heart"></i>
+      </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/intro.js') }}"></script>
+  </body>
+</html>

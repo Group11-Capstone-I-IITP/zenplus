@@ -40,7 +40,6 @@
             <li class="nav-item"><a href="{{ url_for('diet') }}" class="nav-link">Diet</a></li>
             <li class="nav-item"><a href="{{ url_for('shop') }}" class="nav-link">Shop</a></li>
             <li class="nav-item"><a href="{{ url_for('wallet') }}" class="nav-link">Wallet</a></li>
-            <li class="nav-item"><a href="/profile" class="nav-link">Profile</a></li>
             {% if session["role"] == "admin" %}
               <li class="nav-item"><a href="{{ url_for('admin_panel') }}" class="nav-link">Admin Panel</a></li>
             {% endif %}
@@ -82,9 +81,6 @@
           </li>
           <li class="nav-item">
             <a href="{{ url_for('contact') }}" class="nav-link px-2 text-muted">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a href="/faq" class="nav-link px-2 text-muted">FAQs</a>
           </li>
           <li class="nav-item">
             <a href="{{ url_for('terms') }}" class="nav-link px-2 text-muted">Privacy & Terms</a>
