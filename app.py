@@ -134,6 +134,7 @@ def index():
     """Show homepage"""
     return render_template("index.html")
 
+
 @app.route("/workout/<muscle>/<level>/<int:step>")
 @login_required
 def workout_step(muscle, level, step):
@@ -291,7 +292,7 @@ def wallet():
 def manage_users():
     users = db.execute("""
         SELECT u.id, u.first_name, u.last_name, u.username, u.role, u.cash, d.city, d.lang,
-            d.goals, d.activity, d.medical, d.gender, d.age, d.initial_weight, d.targeted_weight,
+            d.goals, d.activity, d.medical, d.gender, d.age, d.height, d.initial_weight, d.targeted_weight,
             d.weight_goal
         FROM users u
         LEFT JOIN user_data d ON u.id = d.user_id
