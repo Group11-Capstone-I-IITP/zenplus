@@ -17,16 +17,14 @@ Session(app)
 # Configure CS50 Library to use SQLite database
 db = SQL("sqlite:///zenplus.db")
 
-# Load your blueprint (the order of exercises) when the app starts
 with open('exercise/workouts.json', 'r') as f:
     WORKOUT_ROUTINES = json.load(f)
 
-# Helper function to dynamically load the right muscle file
+
 def load_muscle_data(muscle_name):
     # Format the name: "shoulder & back" -> "shoulder_and_back"
     formatted_name = muscle_name.replace(" & ", "_and_").replace(" ", "_")
     
-    # Add the 'exercise/' folder path here!
     filename = f"exercise/{formatted_name}.json"
     
     try:
@@ -147,7 +145,6 @@ def workout_step(muscle, level, step):
         if ex in muscle_db:
             full_workout.append(muscle_db[ex])
         else:
-            # This will print in your terminal so you know exactly which typo to fix!
             print(f"WARNING: Exercise '{ex}' not found in {muscle}.json")
 
     if step >= len(full_workout):
